@@ -32,7 +32,7 @@ This is an unlicensed, free, public domain example design with the following IP:
 
 ### Device tree
 
-```dts
+```objective-c
 #include <dt-bindings/gpio/gpio.h>
 
 /dts-v1/;
