@@ -1,0 +1,1085 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Feb 23 22:35:16 2026
+# Process ID         : 704701
+# Current directory  : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1
+# Command line       : vivado -log minimal_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minimal_wrapper.tcl
+# Log file           : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.vds
+# Journal file       : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/vivado.jou
+# Running On         : npc
+# Platform           : Arch
+# Operating System   : Arch Linux
+# Processor Detail   : AMD Ryzen 9 7950X3D 16-Core Processor
+# CPU Frequency      : 4541.787 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 66310 MB
+# Swap memory        : 25741 MB
+# Total Virtual      : 92052 MB
+# Available Virtual  : 55211 MB
+#-----------------------------------------------------------
+source minimal_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/utils_1/imports/synth_1/ios.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/utils_1/imports/synth_1/ios.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top minimal_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 704758
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2234.441 ; gain = 482.273 ; free physical = 4895 ; free virtual = 51328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'minimal_wrapper' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6157] synthesizing module 'minimal' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:13]
+INFO: [Synth 8-638] synthesizing module 'minimal_axi_ethernetlite_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/synth/minimal_axi_ethernetlite_0_0.vhd:98]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_SELECT_XPM bound to: 1 - type: integer 
+	Parameter C_INSTANCE bound to: axi_ethernetlite_inst - type: string 
+	Parameter C_S_AXI_ACLK_PERIOD_PS bound to: 4000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
+	Parameter C_INCLUDE_MDIO bound to: 1 - type: integer 
+	Parameter C_INCLUDE_INTERNAL_LOOPBACK bound to: 0 - type: integer 
+	Parameter C_INCLUDE_GLOBAL_BUFFERS bound to: 1 - type: integer 
+	Parameter C_DUPLEX bound to: 1 - type: integer 
+	Parameter C_TX_PING_PONG bound to: 1 - type: integer 
+	Parameter C_RX_PING_PONG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'axi_ethernetlite' declared at '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13181' bound to instance 'U0' of component 'axi_ethernetlite' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/synth/minimal_axi_ethernetlite_0_0.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'axi_ethernetlite' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13290]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_sync_rst' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059' bound to instance 'BUS_RST_RX_SYNC_CORE_I' of component 'xpm_cdc_sync_rst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13425]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_sync_rst' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059' bound to instance 'BUS_RST_TX_SYNC_CORE_I' of component 'xpm_cdc_sync_rst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13439]
+INFO: [Synth 8-3491] module 'IBUF' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804' bound to instance 'TX_IBUF_INST' of component 'IBUF' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13647]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
+INFO: [Synth 8-3491] module 'IBUF' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804' bound to instance 'RX_IBUF_INST' of component 'IBUF' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13653]
+INFO: [Synth 8-3491] module 'BUFG' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678' bound to instance 'CLOCK_BUFG_TX' of component 'BUFG' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13661]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-3491] module 'BUFG' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678' bound to instance 'CLOCK_BUFG_RX' of component 'BUFG' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13670]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'CDC_PHY_TX_EN_O' of component 'xpm_cdc_single' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13707]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'CDC_PHY_TX_DATA_OUT' of component 'xpm_cdc_array_single' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13724]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'RX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13746]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'TX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13754]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'RX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13746]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'TX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13754]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'RX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13746]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'TX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13754]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'RX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13746]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'TX_FF_I' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13754]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'DVD_FF' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13773]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'RER_FF' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13781]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'TEN_FF' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13789]
+INFO: [Synth 8-638] synthesizing module 'xemac' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:10766]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'IP2INTC_IRPT_REG_I' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:10944]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383]
+INFO: [Synth 8-638] synthesizing module 'axi_ethernetlite_v3_0_36_emac' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:10233]
+INFO: [Synth 8-638] synthesizing module 'receive' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:8404]
+INFO: [Synth 8-638] synthesizing module 'rx_statemachine' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4217]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'crcokdelay' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4340]
+INFO: [Synth 8-3491] module 'FDS' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49519' bound to instance 'state0a' of component 'FDS' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4393]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49519]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49519]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state1a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4409]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state2a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4434]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state3a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4451]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state4a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4475]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state17a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4684]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state18a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4709]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state20a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4726]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state21a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4750]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'state22a' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4776]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'preamble' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5025]
+INFO: [Synth 8-256] done synthesizing module 'rx_statemachine' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:4217]
+INFO: [Synth 8-638] synthesizing module 'rx_intrfce' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5232]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_sync_rst' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059' bound to instance 'CDC_FIFO_RST' of component 'xpm_cdc_sync_rst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5282]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 6 - type: integer 
+	Parameter READ_MODE bound to: std - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 1 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_DATA_WIDTH bound to: 6 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 2 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 2 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_async' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173' bound to instance 'I_RX_FIFO' of component 'xpm_fifo_async' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:522]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst__parameterized1' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst__parameterized1' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-256] done synthesizing module 'rx_intrfce' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5232]
+INFO: [Synth 8-638] synthesizing module 'crcgenrx' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:6736]
+INFO: [Synth 8-256] done synthesizing module 'crcgenrx' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:6736]
+INFO: [Synth 8-256] done synthesizing module 'receive' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:8404]
+INFO: [Synth 8-638] synthesizing module 'transmit' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:7540]
+INFO: [Synth 8-638] synthesizing module 'crcgentx' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:6435]
+INFO: [Synth 8-638] synthesizing module 'crcnibshiftreg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:1837]
+INFO: [Synth 8-256] done synthesizing module 'crcnibshiftreg' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:1837]
+INFO: [Synth 8-256] done synthesizing module 'crcgentx' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:6435]
+INFO: [Synth 8-638] synthesizing module 'tx_intrfce' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:3859]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 6 - type: integer 
+	Parameter READ_MODE bound to: std - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 1 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_DATA_WIDTH bound to: 6 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 2 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 2 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_async' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173' bound to instance 'I_TX_FIFO' of component 'xpm_fifo_async' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:3912]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized1' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized1' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'pipeIt' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:3972]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'CDC_FIFO_EMPTY' of component 'xpm_cdc_single' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:3983]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized1' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized1' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-256] done synthesizing module 'tx_intrfce' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:3859]
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:410]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:506]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:118]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-6157] synthesizing module 'MULT_AND' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836]
+INFO: [Synth 8-6155] done synthesizing module 'MULT_AND' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-3491] module 'MULT_AND' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104836' bound to instance 'MULT_AND_i1' of component 'MULT_AND' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:238]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:104847' bound to instance 'MUXCY_i1' of component 'MUXCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:248]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:171315' bound to instance 'XORCY_i1' of component 'XORCY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:259]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396' bound to instance 'FDRE_i1' of component 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:275]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'tx_statemachine' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2365]
+INFO: [Synth 8-638] synthesizing module 'cntr5bit' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2041]
+INFO: [Synth 8-256] done synthesizing module 'cntr5bit' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2041]
+INFO: [Synth 8-3491] module 'FDS' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49519' bound to instance 'STATE0A' of component 'FDS' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2694]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'STATE5A' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2726]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'STATE6A' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2741]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'STATE7A' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2759]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'STATE8A' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2777]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'STATE9A' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2794]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'tx_statemachine' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2365]
+INFO: [Synth 8-638] synthesizing module 'deferral' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:6182]
+INFO: [Synth 8-638] synthesizing module 'defer_state' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:1567]
+INFO: [Synth 8-226] default block is never used [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:1614]
+INFO: [Synth 8-256] done synthesizing module 'defer_state' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:1567]
+INFO: [Synth 8-256] done synthesizing module 'deferral' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:6182]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'ld_arith_reg__parameterized1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:118]
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49532]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49532]
+INFO: [Synth 8-256] done synthesizing module 'ld_arith_reg__parameterized1' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:118]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst__parameterized3' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst__parameterized3' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-256] done synthesizing module 'transmit' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:7540]
+INFO: [Synth 8-638] synthesizing module 'MacAddrRAM' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:8725]
+INFO: [Synth 8-638] synthesizing module 'ram16x4' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5539]
+INFO: [Synth 8-6157] synthesizing module 'RAM16X1S' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:153963]
+INFO: [Synth 8-6155] done synthesizing module 'RAM16X1S' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:153963]
+INFO: [Synth 8-256] done synthesizing module 'ram16x4' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5539]
+INFO: [Synth 8-256] done synthesizing module 'MacAddrRAM' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:8725]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized4' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized4' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-256] done synthesizing module 'axi_ethernetlite_v3_0_36_emac' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:10233]
+INFO: [Synth 8-638] synthesizing module 'emac_dpram' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:9518]
+	Parameter MEMORY_SIZE bound to: 8192 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: blockram - type: string 
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 4 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 4 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 11 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: read_first - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: read_first - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9490]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:524]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9490]
+	Parameter MEMORY_SIZE bound to: 8192 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: blockram - type: string 
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 4 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 4 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 11 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: read_first - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: read_first - type: string 
+INFO: [Synth 8-256] done synthesizing module 'emac_dpram' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:9518]
+INFO: [Synth 8-638] synthesizing module 'mdio_if' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:8947]
+INFO: [Synth 8-256] done synthesizing module 'mdio_if' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:8947]
+INFO: [Synth 8-256] done synthesizing module 'xemac' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:10766]
+INFO: [Synth 8-638] synthesizing module 'axi_interface' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:12259]
+INFO: [Synth 8-256] done synthesizing module 'axi_interface' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:12259]
+INFO: [Synth 8-256] done synthesizing module 'axi_ethernetlite' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13290]
+INFO: [Synth 8-256] done synthesizing module 'minimal_axi_ethernetlite_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/synth/minimal_axi_ethernetlite_0_0.vhd:98]
+INFO: [Synth 8-6157] synthesizing module 'minimal_axi_smc_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/synth/minimal_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1CMTIP3' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:660]
+INFO: [Synth 8-638] synthesizing module 'bd_1c4e_psr_aclk_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_1/synth/bd_1c4e_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'bd_1c4e_psr_aclk_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_1/synth/bd_1c4e_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:691]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:691]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:691]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:691]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_1c4e_psr_aclk_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:691]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1CMTIP3' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:660]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_OE3J98' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:700]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00e_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_12/synth/bd_1c4e_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m00e_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_12/synth/bd_1c4e_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_OE3J98' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:700]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00s2a_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_11/synth/bd_1c4e_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m00s2a_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_11/synth/bd_1c4e_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00a2s_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_5/synth/bd_1c4e_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00a2s_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_5/synth/bd_1c4e_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1N15GZJ' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:942]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00mmu_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_2/synth/bd_1c4e_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00mmu_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_2/synth/bd_1c4e_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00sic_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_4/synth/bd_1c4e_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00sic_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_4/synth/bd_1c4e_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00tr_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_3/synth/bd_1c4e_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00tr_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_3/synth/bd_1c4e_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1N15GZJ' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:942]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1HOID5X' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1518]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_sarn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_6/synth/bd_1c4e_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_sarn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_6/synth/bd_1c4e_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_sawn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_8/synth/bd_1c4e_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_sawn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_8/synth/bd_1c4e_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_sbn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_10/synth/bd_1c4e_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_sbn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_10/synth/bd_1c4e_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_srn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_7/synth/bd_1c4e_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_srn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_7/synth/bd_1c4e_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_swn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_9/synth/bd_1c4e_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_swn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_9/synth/bd_1c4e_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1HOID5X' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1518]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_smc_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/synth/minimal_axi_smc_0.v:53]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:222]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:222]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'minimal_axi_smc_0' has 59 connections declared, but only 57 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:222]
+INFO: [Synth 8-6157] synthesizing module 'minimal_processing_system7_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:325]
+INFO: [Synth 8-6155] done synthesizing module 'minimal_processing_system7_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'minimal_rst_ps7_0_50M_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset__parameterized1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf__parameterized0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized1' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'minimal_rst_ps7_0_50M_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:344]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:344]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:344]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:344]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:344]
+INFO: [Synth 8-6155] done synthesizing module 'minimal' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'minimal_wrapper' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v:13]
+INFO: [Synth 8-6014] Unused sequential element busFifoData_is_5_d2_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5014]
+INFO: [Synth 8-6014] Unused sequential element busFifoData_is_5_d3_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:5015]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6014] Unused sequential element phy_tx_en_i_p_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:8137]
+WARNING: [Synth 8-6014] Unused sequential element gen_wr_b.gen_word_wide.wr_sync.addrblsb_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1779]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_rd_b_synth_template.gen_rf_wide_reg.rd_sync.addrblsb_reg was removed.  [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2955]
+Info : Asymmetric Ram write pattern identified
+Info : Asymmetric Ram read pattern identified
+INFO: [Synth 8-6014] Unused sequential element reg_access_d1_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:11336]
+WARNING: [Synth 8-6014] Unused sequential element AXI4_LITE_IF_GEN.write_complete_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:12718]
+WARNING: [Synth 8-6014] Unused sequential element AXI4_LITE_IF_GEN.read_complete_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:12874]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1CMTIP3 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:676]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[28] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[27] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[26] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[25] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[24] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[23] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[22] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[21] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[20] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[19] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[18] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[17] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[16] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[15] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[14] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[13] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[12] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[11] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[10] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[9] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[8] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_VALID in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slow_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fast_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_19_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_19_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_19_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_19_si_handler__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_19_si_handler__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_19_si_handler__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_req[0] in module sc_node_v1_0_19_si_handler__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_19_si_handler__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2481.090 ; gain = 728.922 ; free physical = 4644 ; free virtual = 51082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2484.059 ; gain = 731.891 ; free physical = 4643 ; free virtual = 51082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2484.059 ; gain = 731.891 ; free physical = 4643 ; free virtual = 51082
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.3 . Memory (MB): peak = 2487.027 ; gain = 0.000 ; free physical = 4652 ; free virtual = 51090
+INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc] for cell 'minimal_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc] for cell 'minimal_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_board.xdc] for cell 'minimal_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_board.xdc] for cell 'minimal_i/axi_ethernetlite_0/U0'
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0.xdc] for cell 'minimal_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0.xdc] for cell 'minimal_i/axi_ethernetlite_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_1/bd_1c4e_psr_aclk_0_board.xdc] for cell 'minimal_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_1/bd_1c4e_psr_aclk_0_board.xdc] for cell 'minimal_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc] for cell 'minimal_i/axi_smc/inst'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc] for cell 'minimal_i/axi_smc/inst'
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0_board.xdc] for cell 'minimal_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0_board.xdc] for cell 'minimal_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pl_key_1'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pl_key_1'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pl_led_1'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pl_led_1'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_clocks.xdc] for cell 'minimal_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_clocks.xdc] for cell 'minimal_i/axi_ethernetlite_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 49 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2628.797 ; gain = 0.000 ; free physical = 4578 ; free virtual = 51017
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  FDR => FDRE: 55 instances
+  FDS => FDSE: 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  MULT_AND => LUT2: 28 instances
+  RAM16X1S => RAM32X1S (RAMS32): 4 instances
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2628.832 ; gain = 0.000 ; free physical = 4570 ; free virtual = 51010
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2628.832 ; gain = 876.664 ; free physical = 4514 ; free virtual = 50964
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2636.801 ; gain = 884.633 ; free physical = 4514 ; free virtual = 50964
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2636.801 ; gain = 884.633 ; free physical = 4512 ; free virtual = 50962
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rdDestAddrNib_D_t_q_reg' in module 'rx_statemachine'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'thisState_reg' in module 'defer_state'
+INFO: [Synth 8-802] inferred FSM for state register 'mdio_state_reg' in module 'mdio_if'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_16_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_16_top'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.r_state_reg' in module 'sc_mmu_v1_0_16_top'
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_si_converter_v1_0_16_axilite_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_si_converter_v1_0_16_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  "0000" |                    0000000000001 |                             0000
+                  "0001" |                    0000000000010 |                             0001
+                  "0010" |                    0000000000100 |                             0010
+                  "0011" |                    0000000001000 |                             0011
+                  "0100" |                    0000000010000 |                             0100
+                  "0101" |                    0000000100000 |                             0101
+                  "0110" |                    0000001000000 |                             0110
+                  "0111" |                    0000010000000 |                             0111
+                  "1000" |                    0000100000000 |                             1000
+                  "1001" |                    0001000000000 |                             1001
+                  "1010" |                    0010000000000 |                             1010
+                  "1011" |                    0100000000000 |                             1011
+                  "1100" |                    1000000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rdDestAddrNib_D_t_q_reg' using encoding 'one-hot' in module 'rx_statemachine'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                loadcntr |                               01 |                               00
+           startifgp1cnt |                               11 |                               01
+           startifgp2cnt |                               10 |                               10
+                 cntdone |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'thisState_reg' using encoding 'sequential' in module 'defer_state'
+INFO: [Synth 8-3971] The signal "xpm_memory_base__parameterized0:/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                    0000000000001 |                             0000
+                preamble |                    0000000000010 |                             0001
+                     st1 |                    0000000000100 |                             0010
+                     st2 |                    0000000001000 |                             0011
+                     op1 |                    0000000010000 |                             0100
+                     op2 |                    0000000100000 |                             0101
+                phy_addr |                    0000001000000 |                             1000
+                reg_addr |                    0000010000000 |                             1001
+                     ta1 |                    0000100000000 |                             0110
+                     ta2 |                    0001000000000 |                             0111
+                   write |                    0010000000000 |                             1010
+                    read |                    0100000000000 |                             1011
+                    done |                    1000000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mdio_state_reg' using encoding 'one-hot' in module 'mdio_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_16_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 W_STALL |                               01 | 00000000000000000000000000000001
+               W_PENDING |                               10 | 00000000000000000000000000000010
+                W_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+*
+                 R_STALL |                               01 | 00000000000000000000000000000001
+               R_PENDING |                               10 | 00000000000000000000000000000010
+                R_DECERR |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                    W_RX |                              001 | 00000000000000000000000000000001
+                    W_TX |                              010 | 00000000000000000000000000000010
+              W_COMPLETE |                              011 | 00000000000000000000000000000100
+               W_RECOVER |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_16_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                             0001 | 00000000000000000000000000000000
+               R_PENDING |                             0010 | 00000000000000000000000000000001
+                    R_RX |                             0100 | 00000000000000000000000000000010
+                    R_TX |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'one-hot' in module 'sc_si_converter_v1_0_16_axilite_conv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2636.801 ; gain = 884.633 ; free physical = 4533 ; free virtual = 50976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "xpm_memory_tdpram__1:/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "xpm_memory_tdpram__2:/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "xpm_memory_tdpram__3:/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "xpm_memory_tdpram:/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/RX/INST_RX_STATE/state21a) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE18A) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE19A) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE20A) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE21A) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE22A) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE23A) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[7].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[6].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[5].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[4].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+INFO: [Synth 8-3332] Sequential element (XEMAC_I/EMAC_I/TX/INST_TXBUSFIFOWRITENIBBLECOUNT/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1) is unused and will be removed from module axi_ethernetlite.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_1c4e.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_1c4e.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_1c4e.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_1c4e.
+INFO: [Synth 8-3332] Sequential element (exit_inst/gen_w_cmd_reg.m_write_cmd_mesg_i_reg) is unused and will be removed from module sc_exit_v1_0_18_top.
+INFO: [Synth 8-3332] Sequential element (exit_inst/gen_r_cmd_reg.m_read_cmd_mesg_i_reg) is unused and will be removed from module sc_exit_v1_0_18_top.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2636.801 ; gain = 884.633 ; free physical = 4585 ; free virtual = 51074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2786.801 ; gain = 1034.633 ; free physical = 4392 ; free virtual = 50886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2831.824 ; gain = 1079.656 ; free physical = 4356 ; free virtual = 50848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2847.840 ; gain = 1095.672 ; free physical = 4333 ; free virtual = 50826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2991.652 ; gain = 1239.484 ; free physical = 4179 ; free virtual = 50672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2991.652 ; gain = 1239.484 ; free physical = 4179 ; free virtual = 50672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2991.652 ; gain = 1239.484 ; free physical = 4179 ; free virtual = 50672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2991.652 ; gain = 1239.484 ; free physical = 4179 ; free virtual = 50672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2995.621 ; gain = 1243.453 ; free physical = 4174 ; free virtual = 50667
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2995.621 ; gain = 1243.453 ; free physical = 4174 ; free virtual = 50667
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BIBUF    |   130|
+|2     |BUFG     |     3|
+|3     |CARRY4   |    20|
+|4     |LUT1     |   111|
+|5     |LUT2     |   230|
+|6     |LUT3     |   258|
+|7     |LUT4     |   276|
+|8     |LUT5     |   252|
+|9     |LUT6     |   409|
+|10    |MULT_AND |    17|
+|11    |MUXCY    |    25|
+|12    |MUXF7    |     2|
+|13    |PS7      |     1|
+|14    |RAM16X1S |     4|
+|15    |RAM32M   |     2|
+|16    |RAMB18E1 |     8|
+|17    |SRL16    |     2|
+|18    |XORCY    |    20|
+|19    |FDCE     |    42|
+|20    |FDR      |    48|
+|21    |FDRE     |  1270|
+|22    |FDS      |     2|
+|23    |FDSE     |    90|
+|24    |IBUF     |    11|
+|25    |IOBUF    |     1|
+|26    |OBUF     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2995.621 ; gain = 1243.453 ; free physical = 4174 ; free virtual = 50667
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13548 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2995.621 ; gain = 1098.680 ; free physical = 4176 ; free virtual = 50669
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2995.629 ; gain = 1243.453 ; free physical = 4176 ; free virtual = 50669
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2995.629 ; gain = 0.000 ; free physical = 4332 ; free virtual = 50823
+INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3051.648 ; gain = 0.000 ; free physical = 4342 ; free virtual = 50834
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 85 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 9 instances
+  FDR => FDRE: 48 instances
+  FDS => FDSE: 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  MULT_AND => LUT2: 17 instances
+  RAM16X1S => RAM32X1S (RAMS32): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  SRL16 => SRL16E: 2 instances
+
+Synth Design complete | Checksum: 50f592f4
+INFO: [Common 17-83] Releasing license: Synthesis
+408 Infos, 132 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 3051.684 ; gain = 1482.773 ; free physical = 4339 ; free virtual = 50832
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2191.229; main = 2191.229; forked = 316.274
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3625.105; main = 3051.652; forked = 988.301
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3075.660 ; gain = 0.000 ; free physical = 4342 ; free virtual = 50835
+INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 23 22:35:52 2026...

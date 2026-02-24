@@ -1,0 +1,64 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Feb 23 22:36:29 2026
+| Host         : npc running 64-bit Arch Linux
+| Command      : report_drc -file minimal_wrapper_drc_routed.rpt -pb minimal_wrapper_drc_routed.pb -rpx minimal_wrapper_drc_routed.rpx
+| Design       : minimal_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 2
++-----------+----------+---------------------+--------+
+| Rule      | Severity | Description         | Checks |
++-----------+----------+---------------------+--------+
+| PLCK-12   | Warning  | Clock Placer Checks | 1      |
+| RTSTAT-10 | Warning  | No routable loads   | 1      |
++-----------+----------+---------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST (IBUF.O) is locked to L14
+	minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+16 net(s) have no routable loads. The problem bus(es) and/or net(s) are minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/overflow,
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/rd_data_count[1:0],
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/underflow,
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/wr_ack,
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/wr_data_count[1:0],
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/data_valid,
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/doutb[1],
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/overflow,
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/rd_data_count[1:0],
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/underflow,
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/wr_ack
+minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/wr_data_count[1:0].
+Related violations: <none>
+
+

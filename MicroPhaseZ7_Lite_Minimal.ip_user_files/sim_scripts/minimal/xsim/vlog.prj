@@ -1,0 +1,25 @@
+verilog xil_defaultlib -i "../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef" --include "/opt/Xilinx/2025.2/data/xilinx_vip/include" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/ec67/hdl" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9a25/hdl" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/f0b6/hdl/verilog" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/00fe/hdl/verilog" \
+"../../../bd/minimal/ip/minimal_processing_system7_0_0/sim/minimal_processing_system7_0_0.v" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/sim/bd_1c4e.v" \
+
+sv xil_defaultlib -i "../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef" --include "/opt/Xilinx/2025.2/data/xilinx_vip/include" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/ec67/hdl" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9a25/hdl" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/f0b6/hdl/verilog" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/00fe/hdl/verilog" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_2/sim/bd_1c4e_s00mmu_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_3/sim/bd_1c4e_s00tr_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_4/sim/bd_1c4e_s00sic_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_5/sim/bd_1c4e_s00a2s_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_6/sim/bd_1c4e_sarn_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_7/sim/bd_1c4e_srn_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_8/sim/bd_1c4e_sawn_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_9/sim/bd_1c4e_swn_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_10/sim/bd_1c4e_sbn_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_11/sim/bd_1c4e_m00s2a_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_12/sim/bd_1c4e_m00e_0.sv" \
+"../../../bd/minimal/ip/minimal_axi_smc_0/sim/minimal_axi_smc_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef" --include "/opt/Xilinx/2025.2/data/xilinx_vip/include" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/ec67/hdl" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9a25/hdl" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/f0b6/hdl/verilog" --include "../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/00fe/hdl/verilog" \
+"../../../bd/minimal/sim/minimal.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
