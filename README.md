@@ -30,6 +30,10 @@ This is an unlicensed, free, public domain example design with the following IP:
  - PL LED 1 bound to AXI clock binary counter output to blink an LED
  - PL LED 2 bound to PL KEY 2 to verify PL region is working
 
+### Block diagram
+
+![Block diagram](diagram.png)
+
 ### Device tree
 
 ```objective-c
