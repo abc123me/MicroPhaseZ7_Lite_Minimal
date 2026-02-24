@@ -1,12 +1,11 @@
-set_property PACKAGE_PIN P16 [get_ports pl_key_1]
-set_property IOSTANDARD LVCMOS33 [get_ports pl_key_1]
-set_property PACKAGE_PIN T12 [get_ports pl_key_2]
-set_property IOSTANDARD LVCMOS33 [get_ports pl_key_2]
-set_property PACKAGE_PIN P15 [get_ports pl_led_1]
-set_property IOSTANDARD LVCMOS33 [get_ports pl_led_1]
-set_property PACKAGE_PIN U12 [get_ports pl_led_2]
-set_property IOSTANDARD LVCMOS33 [get_ports pl_led_2]
+set_property PACKAGE_PIN T12 [get_ports PL_KEY_2]
+set_property IOSTANDARD LVCMOS33 [get_ports PL_KEY_2]
+set_property PACKAGE_PIN P15 [get_ports PL_LED_1]
+set_property IOSTANDARD LVCMOS33 [get_ports PL_LED_1]
+set_property PACKAGE_PIN U12 [get_ports PL_LED_2]
+set_property IOSTANDARD LVCMOS33 [get_ports PL_LED_2]
 
+# Vivado told me to do it, otherwise fails to implement
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets minimal_i/axi_ethernetlite_0/U0/o]
 
 set_property PACKAGE_PIN M17 [get_ports {ETH_MII_rxd[3]}]
@@ -40,15 +39,38 @@ set_property IOSTANDARD LVCMOS33 [get_ports ETH_MDIO_mdio_io]
 set_property PACKAGE_PIN G14 [get_ports ETH_MDIO_mdc]
 set_property IOSTANDARD LVCMOS33 [get_ports ETH_MDIO_mdc]
 
-set_property PACKAGE_PIN V13 [get_ports ETH_MII_rx_er]
+# Just bind these miscellaneous signals to some pins nobody cares about
+set_property PACKAGE_PIN Y17 [get_ports ETH_MII_rx_er]
 set_property IOSTANDARD LVCMOS33 [get_ports ETH_MII_rx_er]
 set_property PULLDOWN true [get_ports ETH_MII_rx_er]
-set_property PACKAGE_PIN U13 [get_ports ETH_MII_col]
+set_property PACKAGE_PIN V18 [get_ports ETH_MII_col]
 set_property IOSTANDARD LVCMOS33 [get_ports ETH_MII_col]
 set_property PULLDOWN true [get_ports ETH_MII_col]
-set_property PACKAGE_PIN U15 [get_ports ETH_MII_crs]
+set_property PACKAGE_PIN Y14 [get_ports ETH_MII_crs]
 set_property IOSTANDARD LVCMOS33 [get_ports ETH_MII_crs]
 set_property PULLDOWN true [get_ports ETH_MII_crs]
+
+# SPI 0 for an ILI9341 display, MISO / SPI_0_io1_io is just bound to a random pin
+set_property PACKAGE_PIN T11 [get_ports SPI_0_io1_io]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io1_io]
+set_property PULLDOWN true [get_ports SPI_0_io1_io]
+set_property PACKAGE_PIN W15 [get_ports SPI_0_io0_io]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io0_io]
+set_property PACKAGE_PIN V15 [get_ports SPI_0_sck_io]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_sck_io]
+set_property PACKAGE_PIN R14 [get_ports SPI_0_ss_io]
+set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_ss_io]
+
+# Miscellaneous GPIO for an ILI9341 display
+# Backlight
+set_property PACKAGE_PIN U14 [get_ports {GPIO_0_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_tri_o[0]}]
+# DC
+set_property PACKAGE_PIN U15 [get_ports {GPIO_0_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_tri_o[1]}]
+# Reset
+set_property PACKAGE_PIN P14 [get_ports {GPIO_0_tri_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_tri_o[2]}]
 
 # set_property PACKAGE_PIN N18 [get_ports PL_CLK_50M]
 # set_property IOSTANDARD LVCMOS33 [get_ports PL_CLK_50M]
