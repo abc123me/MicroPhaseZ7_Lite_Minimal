@@ -394,7 +394,7 @@
         "parameters": {
           "PortWidth": {
             "value": "1",
-            "value_src": "user_prop"
+            "value_src": "default_prop"
           },
           "SENSITIVITY": {
             "value": "LEVEL_HIGH",
@@ -428,7 +428,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "250.000000"
+            "value": "150.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -488,7 +488,7 @@
             "value": "0"
           },
           "PCW_CLK0_FREQ": {
-            "value": "250000000"
+            "value": "150000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -551,7 +551,7 @@
             "value": "1"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "250"
+            "value": "150"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -950,7 +950,7 @@
         "has_run_ip_tcl": "true",
         "parameters": {
           "AXI_ACLK_FREQ_MHZ": {
-            "value": "250"
+            "value": "150"
           }
         }
       },
@@ -988,6 +988,10 @@
               "M02_AXI"
             ],
             "bd_attributes": {
+              "BRIDGES": {
+                "value": "M00_AXI:M01_AXI:M02_AXI",
+                "value_src": "auto"
+              },
               "TYPE": {
                 "value": "interior",
                 "value_src": "default"

@@ -16,7 +16,7 @@
         "C_S_AXI_PROTOCOL": [ { "value": "AXI4LITE", "resolve_type": "user", "usage": "all" } ],
         "Component_Name": [ { "value": "minimal_axi_ethernetlite_0_0", "resolve_type": "user", "usage": "all" } ],
         "C_DUPLEX": [ { "value": "1", "resolve_type": "user", "usage": "all" } ],
-        "AXI_ACLK_FREQ_MHZ": [ { "value": "250", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "AXI_ACLK_FREQ_MHZ": [ { "value": "150", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "Enable_Constraints": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "USE_BOARD_FLOW": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "MII_BOARD_INTERFACE": [ { "value": "Custom", "resolve_type": "user", "usage": "all" } ],
@@ -29,7 +29,7 @@
         "C_FAMILY": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
         "C_SELECT_XPM": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_INSTANCE": [ { "value": "axi_ethernetlite_inst", "usage": "all" } ],
-        "C_S_AXI_ACLK_PERIOD_PS": [ { "value": "4000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S_AXI_ACLK_PERIOD_PS": [ { "value": "6666", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXI_ADDR_WIDTH": [ { "value": "13", "format": "long", "usage": "all" } ],
         "C_S_AXI_DATA_WIDTH": [ { "value": "32", "format": "long", "usage": "all" } ],
         "C_S_AXI_ID_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -111,7 +111,7 @@
           "parameters": {
             "DATA_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "250000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "150000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ID_WIDTH": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ADDR_WIDTH": [ { "value": "13", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -168,7 +168,7 @@
           "parameters": {
             "ASSOCIATED_BUSIF": [ { "value": "S_AXI", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "ASSOCIATED_RESET": [ { "value": "s_axi_aresetn", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
-            "FREQ_HZ": [ { "value": "250000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "150000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -549,5 +549,5 @@
       }
     }
   },
-  "checksum": "087d4426"
+  "checksum": "2132e19c"
 }

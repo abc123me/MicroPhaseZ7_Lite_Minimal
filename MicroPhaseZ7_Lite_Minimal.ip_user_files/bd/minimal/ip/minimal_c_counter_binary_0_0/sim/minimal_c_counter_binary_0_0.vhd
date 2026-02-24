@@ -59,7 +59,7 @@ USE c_counter_binary_v12_0_22.c_counter_binary_v12_0_22;
 ENTITY minimal_c_counter_binary_0_0 IS
   PORT (
     CLK : IN STD_LOGIC;
-    Q : OUT STD_LOGIC_VECTOR(19 DOWNTO 0)
+    Q : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END minimal_c_counter_binary_0_0;
 
@@ -99,9 +99,9 @@ ARCHITECTURE minimal_c_counter_binary_0_0_arch OF minimal_c_counter_binary_0_0 I
       SINIT : IN STD_LOGIC;
       UP : IN STD_LOGIC;
       LOAD : IN STD_LOGIC;
-      L : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
+      L : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       THRESH0 : OUT STD_LOGIC;
-      Q : OUT STD_LOGIC_VECTOR(19 DOWNTO 0)
+      Q : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
   END COMPONENT c_counter_binary_v12_0_22;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -109,18 +109,18 @@ ARCHITECTURE minimal_c_counter_binary_0_0_arch OF minimal_c_counter_binary_0_0 I
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF CLK: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_intf CLK";
   ATTRIBUTE X_INTERFACE_MODE OF CLK: SIGNAL IS "slave clk_intf";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF q_intf:thresh0_intf:l_intf:load_intf:up_intf:sinit_intf:sset_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF q_intf:thresh0_intf:l_intf:load_intf:up_intf:sinit_intf:sset_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 150000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF Q: SIGNAL IS "xilinx.com:signal:data:1.0 q_intf DATA";
   ATTRIBUTE X_INTERFACE_MODE OF Q: SIGNAL IS "master q_intf";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF Q: SIGNAL IS "XIL_INTERFACENAME q_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 20} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}" & 
-"} value false}}}} DATA_WIDTH 20}";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF Q: SIGNAL IS "XIL_INTERFACENAME q_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}" & 
+"} value false}}}} DATA_WIDTH 32}";
 BEGIN
   U0 : c_counter_binary_v12_0_22
     GENERIC MAP (
       C_IMPLEMENTATION => 0,
       C_VERBOSITY => 0,
       C_XDEVICEFAMILY => "zynq",
-      C_WIDTH => 20,
+      C_WIDTH => 32,
       C_HAS_CE => 0,
       C_HAS_SCLR => 0,
       C_RESTRICT_COUNT => 0,
@@ -148,7 +148,7 @@ BEGIN
       SINIT => '0',
       UP => '1',
       LOAD => '0',
-      L => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 20)),
+      L => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
       Q => Q
     );
 END minimal_c_counter_binary_0_0_arch;

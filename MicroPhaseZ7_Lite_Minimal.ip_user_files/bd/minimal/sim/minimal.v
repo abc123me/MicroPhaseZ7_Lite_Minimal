@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Mon Feb 23 23:55:49 2026
+//Date        : Tue Feb 24 00:25:40 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -218,7 +218,7 @@ module minimal
   wire axi_smc_M02_AXI_WREADY;
   wire [3:0]axi_smc_M02_AXI_WSTRB;
   wire axi_smc_M02_AXI_WVALID;
-  wire [19:0]c_counter_binary_0_Q;
+  wire [31:0]c_counter_binary_0_Q;
   wire [1:0]ilconcat_0_dout;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
@@ -449,7 +449,7 @@ module minimal
        (.CLK(processing_system7_0_FCLK_CLK0),
         .Q(c_counter_binary_0_Q));
   assign ilconcat_0_dout = {axi_quad_spi_0_ip2intc_irpt, axi_ethernetlite_0_ip2intc_irpt};
-  assign PL_LED_1 = c_counter_binary_0_Q[0:0];
+  assign PL_LED_1 = c_counter_binary_0_Q[24:24];
   minimal_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),

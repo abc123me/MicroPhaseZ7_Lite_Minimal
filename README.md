@@ -14,7 +14,7 @@ This is an unlicensed, free, public domain example design with the following IP:
    - QSPI0 (works / only tested reads)
    - SD0 (works / use it for booting)
    - LPDDR3 (works / done somewhat involved memory tests in u-boot to verify stability)
-   - AXI bus clocked at 250MHz, DDR at 534MHz, PS at 667MHz
+   - AXI bus clocked at 150MHz, DDR at 534MHz, PS at 667MHz
  - Xilinx AXI EthernetLite
    - 10/100Mbps ethernet subsytem
    - Utilizes MII to the RTL8201F
@@ -23,7 +23,7 @@ This is an unlicensed, free, public domain example design with the following IP:
  - AXI GPIO with three PL outputs
    - Intended for the Backlight, DC, and Reset lines of an ILI9341 display
    - Memory address at 0x41200000+0x10000
- - AXI Quad SPI running at ~62MHz
+ - AXI Quad SPI running at AXI clock /4 MHz
    - Intended for a ILI9341 display hence the high speed
    - Interrupt on GIC input 62
    - Memory address at 0x41e00000+0x10000
