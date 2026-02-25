@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+ls -la MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.c MicroPhaseZ7_Lite_Minimal.runs/impl_1/minimal_wrapper.bit
+cp -v MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.* /opt/bsp/jlbsp/board/z7lite
+cp -v MicroPhaseZ7_Lite_Minimal.runs/impl_1/minimal_wrapper.bit  /opt/bsp/jlbsp/board/z7lite/fpga.bit
