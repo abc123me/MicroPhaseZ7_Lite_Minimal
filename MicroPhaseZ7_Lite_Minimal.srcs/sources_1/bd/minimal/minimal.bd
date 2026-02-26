@@ -394,7 +394,7 @@
         "parameters": {
           "PortWidth": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "user_prop"
           },
           "SENSITIVITY": {
             "value": "LEVEL_HIGH",
@@ -431,7 +431,7 @@
             "value": "150.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "120.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -491,7 +491,7 @@
             "value": "150000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "10000000"
+            "value": "120000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -516,6 +516,9 @@
           },
           "PCW_EN_CAN0": {
             "value": "0"
+          },
+          "PCW_EN_CLK1_PORT": {
+            "value": "1"
           },
           "PCW_EN_EMIO_CAN0": {
             "value": "0"
@@ -550,10 +553,19 @@
           "PCW_EN_UART0": {
             "value": "1"
           },
+          "PCW_FCLK_CLK1_BUF": {
+            "value": "TRUE"
+          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "150"
           },
+          "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "120"
+          },
           "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_EMIO_GPIO_ENABLE": {
@@ -1003,6 +1015,9 @@
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "parameters": {
+              "MAX_BURST_LENGTH": {
+                "value": "1"
+              },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
               },
@@ -1016,6 +1031,9 @@
                 "value": "1"
               },
               "RUSER_BITS_PER_BYTE": {
+                "value": "0"
+              },
+              "SUPPORTS_NARROW_BURST": {
                 "value": "0"
               },
               "WUSER_BITS_PER_BYTE": {
@@ -1034,6 +1052,9 @@
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "parameters": {
+              "MAX_BURST_LENGTH": {
+                "value": "16"
+              },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
               },
@@ -1047,6 +1068,9 @@
                 "value": "1"
               },
               "RUSER_BITS_PER_BYTE": {
+                "value": "0"
+              },
+              "SUPPORTS_NARROW_BURST": {
                 "value": "0"
               },
               "WUSER_BITS_PER_BYTE": {
@@ -1065,6 +1089,9 @@
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "parameters": {
+              "MAX_BURST_LENGTH": {
+                "value": "1"
+              },
               "NUM_READ_OUTSTANDING": {
                 "value": "8"
               },
@@ -1078,6 +1105,9 @@
                 "value": "1"
               },
               "RUSER_BITS_PER_BYTE": {
+                "value": "0"
+              },
+              "SUPPORTS_NARROW_BURST": {
                 "value": "0"
               },
               "WUSER_BITS_PER_BYTE": {
@@ -1109,10 +1139,25 @@
         "inst_hier_path": "axi_quad_spi_0",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "C_BYTE_LEVEL_INTERRUPT_EN": {
+            "value": "0"
+          },
+          "C_FIFO_DEPTH": {
+            "value": "256"
+          },
+          "C_NUM_TRANSFER_BITS": {
+            "value": "8"
+          },
           "C_SCK_RATIO": {
-            "value": "4"
+            "value": "2"
+          },
+          "C_TYPE_OF_AXI4_INTERFACE": {
+            "value": "0"
           },
           "C_USE_STARTUP": {
+            "value": "0"
+          },
+          "C_XIP_MODE": {
             "value": "0"
           },
           "FIFO_INCLUDED": {
@@ -1155,10 +1200,10 @@
         "vlnv": "xilinx.com:inline_hdl:ilslice:1.0",
         "parameters": {
           "DIN_FROM": {
-            "value": "24"
+            "value": "25"
           },
           "DIN_TO": {
-            "value": "24"
+            "value": "25"
           },
           "DIN_WIDTH": {
             "value": "32"
@@ -1239,8 +1284,8 @@
       },
       "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "axi_smc/S00_AXI"
+          "axi_smc/S00_AXI",
+          "processing_system7_0/M_AXI_GP0"
         ]
       }
     },
@@ -1288,10 +1333,15 @@
           "axi_smc/aclk",
           "axi_ethernetlite_0/s_axi_aclk",
           "rst_ps7_0_50M/slowest_sync_clk",
-          "axi_quad_spi_0/s_axi_aclk",
           "axi_gpio_0/s_axi_aclk",
-          "axi_quad_spi_0/ext_spi_clk",
-          "c_counter_binary_0/CLK"
+          "c_counter_binary_0/CLK",
+          "axi_quad_spi_0/s_axi_aclk"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK1": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK1",
+          "axi_quad_spi_0/ext_spi_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1305,8 +1355,8 @@
           "rst_ps7_0_50M/peripheral_aresetn",
           "axi_ethernetlite_0/s_axi_aresetn",
           "axi_smc/aresetn",
-          "axi_quad_spi_0/s_axi_aresetn",
-          "axi_gpio_0/s_axi_aresetn"
+          "axi_gpio_0/s_axi_aresetn",
+          "axi_quad_spi_0/s_axi_aresetn"
         ]
       }
     },

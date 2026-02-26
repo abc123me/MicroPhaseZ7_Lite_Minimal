@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x153A5276292280F",
+      "boundary_crc": "0x153A5277BEBEF59",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_1c4e",
@@ -308,8 +308,7 @@
             "value_src": "default"
           },
           "MAX_BURST_LENGTH": {
-            "value": "1",
-            "value_src": "default"
+            "value": "1"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -343,8 +342,7 @@
             "value_src": "default"
           },
           "SUPPORTS_NARROW_BURST": {
-            "value": "0",
-            "value_src": "default"
+            "value": "0"
           },
           "WUSER_BITS_PER_BYTE": {
             "value": "0"
@@ -440,8 +438,7 @@
             "value_src": "default"
           },
           "MAX_BURST_LENGTH": {
-            "value": "1",
-            "value_src": "default"
+            "value": "16"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -475,8 +472,7 @@
             "value_src": "default"
           },
           "SUPPORTS_NARROW_BURST": {
-            "value": "0",
-            "value_src": "default"
+            "value": "0"
           },
           "WUSER_BITS_PER_BYTE": {
             "value": "0"
@@ -572,8 +568,7 @@
             "value_src": "default"
           },
           "MAX_BURST_LENGTH": {
-            "value": "1",
-            "value_src": "default"
+            "value": "1"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -607,8 +602,7 @@
             "value_src": "default"
           },
           "SUPPORTS_NARROW_BURST": {
-            "value": "0",
-            "value_src": "default"
+            "value": "0"
           },
           "WUSER_BITS_PER_BYTE": {
             "value": "0"

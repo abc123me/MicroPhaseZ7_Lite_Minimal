@@ -21,6 +21,7 @@ This is an unlicensed, free, public domain example design with the following IP:
    - Interrupt on GIC 61
    - Memory address at 0x40e00000+0x10000
  - AXI GPIO with three PL outputs
+   - Dedicated 120MHz clock so SPI runs at 60MHz
    - Intended for the Backlight, DC, and Reset lines of an ILI9341 display
    - Memory address at 0x41200000+0x10000
  - AXI Quad SPI running at AXI clock /4 MHz
