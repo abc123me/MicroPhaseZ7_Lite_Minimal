@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sat Mar 14 14:04:59 2026
+| Date         : Tue Mar 31 00:17:42 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_drc -file minimal_wrapper_drc_opted.rpt -pb minimal_wrapper_drc_opted.pb -rpx minimal_wrapper_drc_opted.rpx
 | Design       : minimal_wrapper
@@ -24,24 +24,501 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 1
-+---------+----------+---------------------+--------+
-| Rule    | Severity | Description         | Checks |
-+---------+----------+---------------------+--------+
-| PLCK-12 | Warning  | Clock Placer Checks | 1      |
-+---------+----------+---------------------+--------+
+             Checks found: 97
++--------+----------+------------------------+--------+
+| Rule   | Severity | Description            | Checks |
++--------+----------+------------------------+--------+
+| DPIP-1 | Warning  | Input pipelining       | 48     |
+| DPOP-1 | Warning  | PREG Output pipelining | 24     |
+| DPOP-2 | Warning  | MREG Output pipelining | 24     |
+| ZPS7-1 | Warning  | PS7 block required     | 1      |
++--------+----------+------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
-PLCK-12#1 Warning
-Clock Placer Checks  
-Poor placement for routing between an IO pin and BUFG. 
-Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
- This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+DPIP-1#1 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
 
-	minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST (IBUF.O) is locked to L14
-	minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX (BUFG.I) cannot be placed
+DPIP-1#2 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
 
+DPIP-1#3 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4 input minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4 output minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball1/squaredDist0__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball2/squaredDist0__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball3/squaredDist0__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4 multiplier stage minimal_i/tft_ili9341_wrapper_0/inst/inst/ball4/squaredDist0__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
 Related violations: <none>
 
 
