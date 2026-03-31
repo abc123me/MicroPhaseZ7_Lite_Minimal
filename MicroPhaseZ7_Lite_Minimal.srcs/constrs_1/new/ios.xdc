@@ -50,27 +50,15 @@ set_property PACKAGE_PIN Y14 [get_ports ETH_MII_crs]
 set_property IOSTANDARD LVCMOS33 [get_ports ETH_MII_crs]
 set_property PULLDOWN true [get_ports ETH_MII_crs]
 
-# SPI 0 for an ILI9341 display, MISO / SPI_0_io1_io is just bound to a random pin
-set_property PACKAGE_PIN T11 [get_ports SPI_0_io1_io]
-set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io1_io]
-set_property PULLDOWN true [get_ports SPI_0_io1_io]
-set_property PACKAGE_PIN W15 [get_ports SPI_0_io0_io]
-set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_io0_io]
-set_property PACKAGE_PIN V15 [get_ports SPI_0_sck_io]
-set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_sck_io]
-set_property PACKAGE_PIN R14 [get_ports SPI_0_ss_io]
-set_property IOSTANDARD LVCMOS33 [get_ports SPI_0_ss_io]
-
-# Miscellaneous GPIO for an ILI9341 display
-# Backlight
-set_property PACKAGE_PIN U14 [get_ports {GPIO_0_tri_o[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_tri_o[0]}]
-# DC
-set_property PACKAGE_PIN U15 [get_ports {GPIO_0_tri_o[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_tri_o[1]}]
-# Reset
-set_property PACKAGE_PIN P14 [get_ports {GPIO_0_tri_o[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_0_tri_o[2]}]
+# ILI9341 display
+###################################################################
+set_property -dict {PACKAGE_PIN U13 IOSTANDARD LVCMOS33} [get_ports SPI_0_io1_io]
+set_property -dict {PACKAGE_PIN V15 IOSTANDARD LVCMOS33} [get_ports SPI_0_sck_io]
+set_property -dict {PACKAGE_PIN W15 IOSTANDARD LVCMOS33} [get_ports SPI_0_io0_io]
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports SPI_0_ss_io]
+set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33} [get_ports {GPIO_0_tri_o[0]}]
+set_property -dict {PACKAGE_PIN U15 IOSTANDARD LVCMOS33} [get_ports {GPIO_0_tri_o[1]}]
+set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports {GPIO_0_tri_o[2]}]
 
 # set_property PACKAGE_PIN N18 [get_ports PL_CLK_50M]
 # set_property IOSTANDARD LVCMOS33 [get_ports PL_CLK_50M]

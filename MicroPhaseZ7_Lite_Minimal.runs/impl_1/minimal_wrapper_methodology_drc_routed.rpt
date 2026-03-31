@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Wed Feb 25 01:28:19 2026
+| Date         : Sat Mar 14 14:05:30 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_methodology -file minimal_wrapper_methodology_drc_routed.rpt -pb minimal_wrapper_methodology_drc_routed.pb -rpx minimal_wrapper_methodology_drc_routed.rpx
 | Design       : minimal_wrapper
@@ -23,21 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 26
-+-----------+----------+-------------------------------------------------+--------+
-| Rule      | Severity | Description                                     | Checks |
-+-----------+----------+-------------------------------------------------+--------+
-| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 1      |
-| TIMING-18 | Warning  | Missing input or output delay                   | 25     |
-+-----------+----------+-------------------------------------------------+--------+
+             Checks found: 27
++-----------+----------+-------------------------------+--------+
+| Rule      | Severity | Description                   | Checks |
++-----------+----------+-------------------------------+--------+
+| TIMING-18 | Warning  | Missing input or output delay | 27     |
++-----------+----------+-------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
-PDRC-190#1 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell minimal_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/syncstages_ff_reg[1] in site SLICE_X21Y30 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell minimal_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
-Related violations: <none>
-
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on ETH_MDIO_mdio_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
@@ -80,87 +74,97 @@ Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An input delay is missing on SPI_0_io1_io relative to the rising and/or falling clock edge(s) of clk_fpga_1.
+An input delay is missing on SPI_0_io0_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MDIO_mdc relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An input delay is missing on SPI_0_io1_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MDIO_mdio_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An input delay is missing on SPI_0_sck_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MII_rst_n relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on ETH_MDIO_mdc relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MII_tx_en relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
+An output delay is missing on ETH_MDIO_mdio_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MII_txd[0] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
+An output delay is missing on ETH_MII_rst_n relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MII_txd[1] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
+An output delay is missing on ETH_MII_tx_en relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MII_txd[2] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
+An output delay is missing on ETH_MII_txd[0] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on ETH_MII_txd[3] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
+An output delay is missing on ETH_MII_txd[1] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on GPIO_0_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on ETH_MII_txd[2] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on GPIO_0_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on ETH_MII_txd[3] relative to the rising and/or falling clock edge(s) of ETH_MII_tx_clk.
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on GPIO_0_tri_o[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on GPIO_0_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on PL_LED_1[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on GPIO_0_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on SPI_0_io0_io relative to the rising and/or falling clock edge(s) of clk_fpga_1.
+An output delay is missing on GPIO_0_tri_o[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on SPI_0_io1_io relative to the rising and/or falling clock edge(s) of clk_fpga_1.
+An output delay is missing on PL_LED_1[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
-An output delay is missing on SPI_0_sck_io relative to the rising and/or falling clock edge(s) of clk_fpga_1.
+An output delay is missing on SPI_0_io0_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#25 Warning
 Missing input or output delay  
-An output delay is missing on SPI_0_ss_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_1.
+An output delay is missing on SPI_0_io1_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on SPI_0_sck_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on SPI_0_ss_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 

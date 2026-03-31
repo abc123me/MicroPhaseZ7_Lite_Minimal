@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Wed Feb 25 01:26:48 2026
+//Date        : Sat Mar 14 14:03:32 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -221,7 +221,6 @@ module minimal
   wire [31:0]c_counter_binary_0_Q;
   wire [1:0]ilconcat_0_dout;
   wire processing_system7_0_FCLK_CLK0;
-  wire processing_system7_0_FCLK_CLK1;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
@@ -321,7 +320,7 @@ module minimal
         .s_axi_wstrb(axi_smc_M02_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M02_AXI_WVALID));
   minimal_axi_quad_spi_0_0 axi_quad_spi_0
-       (.ext_spi_clk(processing_system7_0_FCLK_CLK1),
+       (.ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .io0_i(SPI_0_io0_i),
         .io0_o(SPI_0_io0_o),
         .io0_t(SPI_0_io0_t),
@@ -470,7 +469,6 @@ module minimal
         .DDR_VRP(FIXED_IO_ddr_vrp),
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
-        .FCLK_CLK1(processing_system7_0_FCLK_CLK1),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
         .IRQ_F2P(ilconcat_0_dout),
         .MIO(FIXED_IO_mio),

@@ -394,7 +394,7 @@
         "parameters": {
           "PortWidth": {
             "value": "1",
-            "value_src": "user_prop"
+            "value_src": "default_prop"
           },
           "SENSITIVITY": {
             "value": "LEVEL_HIGH",
@@ -431,7 +431,7 @@
             "value": "150.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "120.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -491,7 +491,7 @@
             "value": "150000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "120000000"
+            "value": "10000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -518,7 +518,7 @@
             "value": "0"
           },
           "PCW_EN_CLK1_PORT": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_EMIO_CAN0": {
             "value": "0"
@@ -553,9 +553,6 @@
           "PCW_EN_UART0": {
             "value": "1"
           },
-          "PCW_FCLK_CLK1_BUF": {
-            "value": "TRUE"
-          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "150"
           },
@@ -563,9 +560,6 @@
             "value": "120"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
-            "value": "1"
-          },
-          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_EMIO_GPIO_ENABLE": {
@@ -1149,7 +1143,7 @@
             "value": "8"
           },
           "C_SCK_RATIO": {
-            "value": "2"
+            "value": "4"
           },
           "C_TYPE_OF_AXI4_INTERFACE": {
             "value": "0"
@@ -1335,12 +1329,7 @@
           "rst_ps7_0_50M/slowest_sync_clk",
           "axi_gpio_0/s_axi_aclk",
           "c_counter_binary_0/CLK",
-          "axi_quad_spi_0/s_axi_aclk"
-        ]
-      },
-      "processing_system7_0_FCLK_CLK1": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK1",
+          "axi_quad_spi_0/s_axi_aclk",
           "axi_quad_spi_0/ext_spi_clk"
         ]
       },
