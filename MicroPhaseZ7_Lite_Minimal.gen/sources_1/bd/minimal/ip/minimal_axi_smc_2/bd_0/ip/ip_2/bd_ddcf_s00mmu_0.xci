@@ -34,8 +34,8 @@
         "NUM_READ_OUTSTANDING": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "SINGLE_ISSUING": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "SUPPORTS_NARROW": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "SEG000_BASE_ADDR": [ { "value": "0x000000001FC00000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
-        "SEG000_SIZE": [ { "value": "22", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "SEG000_BASE_ADDR": [ { "value": "0x0000000000000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "SEG000_SIZE": [ { "value": "29", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "SEG000_SEP_ROUTE": [ { "value": "0b0000000000000000000000000000000000000000000000000000000000000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "SEG000_SUPPORTS_READ": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "SEG000_SUPPORTS_WRITE": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -2089,8 +2089,8 @@
         "C_IS_CASCADED": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ENABLE_PIPELINING": [ { "value": "0", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_NUM_SEG": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_SEG_BASE_ADDR_ARRAY": [ { "value": "0x000000001fc00000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
-        "C_SEG_SIZE_ARRAY": [ { "value": "0x00000016", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_SEG_BASE_ADDR_ARRAY": [ { "value": "0x0000000000000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_SEG_SIZE_ARRAY": [ { "value": "0x0000001d", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_SEG_SEP_ROUTE_ARRAY": [ { "value": "0x0000000000000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_SEG_SUPPORTS_READ_ARRAY": [ { "value": "0b1", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_SEG_SUPPORTS_WRITE_ARRAY": [ { "value": "0b1", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
@@ -2313,7 +2313,8 @@
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ],
+            "PortWidth": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "CLK": [ { "physical_name": "aclk" } ]
@@ -2335,5 +2336,5 @@
       }
     }
   },
-  "checksum": "7807d6a0"
+  "checksum": "bd275326"
 }

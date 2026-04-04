@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Mar 31 22:17:29 2026
+//Date        : Sat Apr  4 01:53:52 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
+(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
 module minimal
    (DDR_addr,
     DDR_ba,
@@ -47,7 +47,6 @@ module minimal
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    PL_CLK_50M,
     PL_LED_1,
     TFT_CLK,
     TFT_CS,
@@ -90,13 +89,12 @@ module minimal
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PL_CLK_50M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PL_CLK_50M, CLK_DOMAIN minimal_clk_0, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input PL_CLK_50M;
   (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 INTR.PL_LED_1 INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME INTR.PL_LED_1, PortWidth 1, SENSITIVITY LEVEL_HIGH" *) output [0:0]PL_LED_1;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TFT_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TFT_CLK, CLK_DOMAIN minimal_axi_fb_ili9341_0_1_tft_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output TFT_CLK;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TFT_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TFT_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output TFT_CLK;
   output TFT_CS;
   output TFT_DC;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.TFT_LED RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.TFT_LED, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output TFT_LED;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.TFT_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.TFT_RST, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output TFT_RST;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.TFT_LED RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.TFT_LED, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) output TFT_LED;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.TFT_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.TFT_RST, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) output TFT_RST;
   output TFT_SDA;
 
   wire [14:0]DDR_addr;
@@ -134,7 +132,6 @@ module minimal
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire PL_CLK_50M;
   wire [0:0]PL_LED_1;
   wire TFT_CLK;
   wire TFT_CS;
@@ -159,6 +156,7 @@ module minimal
   wire axi_dma_0_M_AXI_MM2S_RREADY;
   wire [1:0]axi_dma_0_M_AXI_MM2S_RRESP;
   wire axi_dma_0_M_AXI_MM2S_RVALID;
+  wire axi_dma_0_mm2s_introut;
   wire axi_ethernetlite_0_ip2intc_irpt;
   wire [31:0]axi_smc1_M00_AXI_ARADDR;
   wire [1:0]axi_smc1_M00_AXI_ARBURST;
@@ -208,11 +206,13 @@ module minimal
   wire [31:0]axi_smc_M01_AXI_WDATA;
   wire axi_smc_M01_AXI_WREADY;
   wire axi_smc_M01_AXI_WVALID;
-  wire [31:0]axis_data_fifo_0_m_axis_tdata;
-  wire [31:0]c_counter_binary_0_Q;
+  wire [15:0]axis_dwidth_converter_0_M_AXIS_TDATA;
+  wire axis_dwidth_converter_0_M_AXIS_TLAST;
+  wire axis_dwidth_converter_0_M_AXIS_TREADY;
+  wire axis_dwidth_converter_0_M_AXIS_TVALID;
   wire [1:0]ilconcat_0_dout;
-  wire [0:0]ilconstant_0_dout;
-  wire [15:0]ilslice_1_Dout;
+  wire [15:0]ilslice_0_Dout;
+  wire ilvector_logic_0_Res;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
@@ -254,7 +254,8 @@ module minimal
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
-  wire tft_ili9341_wrapper_0_fbclk;
+  wire tft_ili9341_wrapper_0_pixel_clock;
+  wire tft_ili9341_wrapper_0_pixel_sync;
 
   assign TFT_RST = TFT_LED;
   minimal_axi_dma_0_1 axi_dma_0
@@ -278,6 +279,7 @@ module minimal
         .m_axis_mm2s_tlast(axi_dma_0_M_AXIS_MM2S_TLAST),
         .m_axis_mm2s_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
         .m_axis_mm2s_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID),
+        .mm2s_introut(axi_dma_0_mm2s_introut),
         .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_lite_araddr(axi_smc_M01_AXI_ARADDR),
         .s_axi_lite_arready(axi_smc_M01_AXI_ARREADY),
@@ -437,24 +439,33 @@ module minimal
         .S00_AXI_rvalid(axi_dma_0_M_AXI_MM2S_RVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_50M_peripheral_aresetn));
-  minimal_axis_data_fifo_0_0 axis_data_fifo_0
-       (.m_axis_aclk(tft_ili9341_wrapper_0_fbclk),
-        .m_axis_tdata(axis_data_fifo_0_m_axis_tdata),
-        .m_axis_tready(1'b1),
-        .s_axis_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axis_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+  minimal_axi_stream_to_ili_93_0_0 axi_stream_to_ili_93_0
+       (.axis_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .axis_clock(processing_system7_0_FCLK_CLK0),
+        .axis_tdata(axis_dwidth_converter_0_M_AXIS_TDATA),
+        .axis_tlast(axis_dwidth_converter_0_M_AXIS_TLAST),
+        .axis_tready(axis_dwidth_converter_0_M_AXIS_TREADY),
+        .axis_tvalid(axis_dwidth_converter_0_M_AXIS_TVALID),
+        .core_clk_out(ilvector_logic_0_Res),
+        .pixel_clock(tft_ili9341_wrapper_0_pixel_clock),
+        .pixel_data(ilslice_0_Dout),
+        .pixel_sync(tft_ili9341_wrapper_0_pixel_sync));
+  minimal_axis_dwidth_converter_0_0 axis_dwidth_converter_0
+       (.aclk(processing_system7_0_FCLK_CLK0),
+        .aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .m_axis_tdata(axis_dwidth_converter_0_M_AXIS_TDATA),
+        .m_axis_tlast(axis_dwidth_converter_0_M_AXIS_TLAST),
+        .m_axis_tready(axis_dwidth_converter_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_dwidth_converter_0_M_AXIS_TVALID),
         .s_axis_tdata(axi_dma_0_M_AXIS_MM2S_TDATA),
         .s_axis_tkeep(axi_dma_0_M_AXIS_MM2S_TKEEP),
         .s_axis_tlast(axi_dma_0_M_AXIS_MM2S_TLAST),
         .s_axis_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
         .s_axis_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID));
-  minimal_c_counter_binary_0_0 c_counter_binary_0
-       (.CLK(processing_system7_0_FCLK_CLK0),
-        .Q(c_counter_binary_0_Q));
-  assign ilconcat_0_dout = {1'b0, axi_ethernetlite_0_ip2intc_irpt};
-  assign ilconstant_0_dout = 1'h0;
-  assign PL_LED_1 = c_counter_binary_0_Q[25:25];
-  assign ilslice_1_Dout = axis_data_fifo_0_m_axis_tdata[15:0];
+  minimal_c_counter_binary_0_1 c_counter_binary_1
+       (.CLK(tft_ili9341_wrapper_0_pixel_sync),
+        .Q(PL_LED_1));
+  assign ilconcat_0_dout = {axi_dma_0_mm2s_introut, axi_ethernetlite_0_ip2intc_irpt};
   minimal_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),
@@ -562,13 +573,13 @@ module minimal
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
   minimal_tft_ili9341_wrapper_0_0 tft_ili9341_wrapper_0
-       (.clk(PL_CLK_50M),
-        .fbclk(tft_ili9341_wrapper_0_fbclk),
-        .fbdat(ilslice_1_Dout),
+       (.core_clk(ilvector_logic_0_Res),
+        .pixel_clock(tft_ili9341_wrapper_0_pixel_clock),
+        .pixel_data(ilslice_0_Dout),
+        .pixel_sync(tft_ili9341_wrapper_0_pixel_sync),
         .tft_cs(TFT_CS),
         .tft_dc(TFT_DC),
-        .tft_reset(TFT_LED),
+        .tft_nrst(TFT_LED),
         .tft_sck(TFT_CLK),
-        .tft_sdi(TFT_SDA),
-        .tft_sdo(ilconstant_0_dout));
+        .tft_sda(TFT_SDA));
 endmodule

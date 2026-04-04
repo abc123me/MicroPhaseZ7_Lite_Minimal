@@ -55,42 +55,42 @@
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module minimal_tft_ili9341_wrapper_0_0 (
-  clk,
-  tft_sdo,
   tft_sck,
-  tft_sdi,
+  tft_sda,
   tft_dc,
-  tft_reset,
+  tft_nrst,
   tft_cs,
-  fbdat,
-  fbclk
+  pixel_clock,
+  pixel_sync,
+  pixel_data,
+  core_clk
 );
 
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
-(* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_clk_0, INSERT_VIP 0" *)
-input wire clk;
-input wire tft_sdo;
 output wire tft_sck;
-output wire tft_sdi;
+output wire tft_sda;
 output wire tft_dc;
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 tft_reset RST" *)
-(* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME tft_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
-output wire tft_reset;
+output wire tft_nrst;
 output wire tft_cs;
-input wire [15 : 0] fbdat;
-output wire fbclk;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 pixel_clock CLK" *)
+(* X_INTERFACE_MODE = "master" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pixel_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_tft_ili9341_wrapper_0_0_pixel_clock, INSERT_VIP 0" *)
+output wire pixel_clock;
+output wire pixel_sync;
+input wire [15 : 0] pixel_data;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 core_clk CLK" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME core_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *)
+input wire core_clk;
 
   tft_ili9341_wrapper inst (
-    .clk(clk),
-    .tft_sdo(tft_sdo),
     .tft_sck(tft_sck),
-    .tft_sdi(tft_sdi),
+    .tft_sda(tft_sda),
     .tft_dc(tft_dc),
-    .tft_reset(tft_reset),
+    .tft_nrst(tft_nrst),
     .tft_cs(tft_cs),
-    .fbdat(fbdat),
-    .fbclk(fbclk)
+    .pixel_clock(pixel_clock),
+    .pixel_sync(pixel_sync),
+    .pixel_data(pixel_data),
+    .core_clk(core_clk)
   );
 endmodule

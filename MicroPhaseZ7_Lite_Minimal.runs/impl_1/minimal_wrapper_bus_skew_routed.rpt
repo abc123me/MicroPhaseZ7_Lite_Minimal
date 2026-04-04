@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Tue Mar 31 22:19:03 2026
+| Date         : Sat Apr  4 01:55:31 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_bus_skew -warn_on_violation -file minimal_wrapper_bus_skew_routed.rpt -pb minimal_wrapper_bus_skew_routed.pb -rpx minimal_wrapper_bus_skew_routed.rpx
 | Design       : minimal_wrapper
@@ -24,34 +24,28 @@ Id  Position  From                            To                              Co
 --  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
 1   64        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow             10.000       0.828      9.172
+                                                                              Slow             10.000       1.038      8.962
 2   66        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow             10.000       0.878      9.122
+                                                                              Slow             10.000       0.664      9.336
 3   68        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow             10.000       0.687      9.313
+                                                                              Slow             10.000       0.794      9.206
 4   70        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              Slow             10.000       0.808      9.192
+                                                                              Slow             10.000       0.603      9.397
 5   72        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]]
-                                                                              Slow             10.000       0.700      9.300
+                                                                              Slow             10.000       0.873      9.127
 6   74        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]]
-                                                                              Slow             10.000       0.858      9.142
+                                                                              Slow             10.000       0.890      9.110
 7   76        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]]
-                                                                              Slow             10.000       0.846      9.154
+                                                                              Slow             10.000       0.715      9.285
 8   78        [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]]
                                               [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]]
-                                                                              Slow             10.000       0.740      9.260
-9   80        [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
-                                              [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              NA               10.000          NA         NA
-10  82        [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
-                                              [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
-                                                                              NA               10.000          NA         NA
+                                                                              Slow             10.000       0.679      9.321
 
 
 2. Bus Skew Report Per Constraint
@@ -64,26 +58,26 @@ Endpoints: 4
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-clk_fpga_0            ETH_MII_rx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                                                            Slow         0.828      9.172
+clk_fpga_0            ETH_MII_rx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         1.038      8.962
 
 
-Slack (MET) :             9.172ns  (requirement - actual skew)
-  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+Slack (MET) :             8.962ns  (requirement - actual skew)
+  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:   -0.550ns
-  Reference Relative Delay:  -2.118ns
-  Relative CRPR:              0.740ns
-  Actual Bus Skew:            0.828ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+  Endpoint Relative Delay:   -0.575ns
+  Reference Relative Delay:  -2.134ns
+  Relative CRPR:              0.521ns
+  Actual Bus Skew:            1.038ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -93,12 +87,12 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.669     2.977    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X25Y43         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=2747, routed)        1.666     2.974    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X20Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X25Y43         FDRE (Prop_fdre_C_Q)         0.456     3.433 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.818     4.251    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
-    SLICE_X26Y43         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X20Y34         FDRE (Prop_fdre_C_Q)         0.478     3.452 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.592     4.044    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
+    SLICE_X23Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ETH_MII_rx_clk rise edge)
@@ -108,15 +102,15 @@ Endpoint path:
     K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
                          net (fo=1, routed)           1.880     3.301    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.392 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.502     4.894    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X26Y43         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     4.894    
-    SLICE_X26Y43         FDRE (Setup_fdre_C_D)       -0.093     4.801    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=97, routed)          1.493     4.885    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X23Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     4.885    
+    SLICE_X23Y35         FDRE (Setup_fdre_C_D)       -0.267     4.618    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           4.251    
-                         clock arrival                          4.802    
+                         data arrival                           4.044    
+                         clock arrival                          4.618    
   -------------------------------------------------------------------
-                         relative delay                        -0.550    
+                         relative delay                        -0.575    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -126,12 +120,12 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.495     2.687    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X25Y43         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=2747, routed)        1.495     2.688    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X26Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X25Y43         FDRE (Prop_fdre_C_Q)         0.367     3.054 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.341     3.395    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[0]
-    SLICE_X26Y43         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X26Y37         FDRE (Prop_fdre_C_Q)         0.367     3.055 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.384     3.438    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X28Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ETH_MII_rx_clk rise edge)
@@ -141,15 +135,15 @@ Reference path:
     K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
                          net (fo=1, routed)           2.076     3.568    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.669 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.676     5.345    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X26Y43         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000     5.345    
-    SLICE_X26Y43         FDRE (Hold_fdre_C_D)         0.169     5.514    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=97, routed)          1.673     5.342    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X28Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     5.342    
+    SLICE_X28Y37         FDRE (Hold_fdre_C_D)         0.230     5.572    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           3.395    
-                         clock arrival                          5.514    
+                         data arrival                           3.438    
+                         clock arrival                          5.572    
   -------------------------------------------------------------------
-                         relative delay                        -2.118    
+                         relative delay                        -2.134    
 
 
 
@@ -161,25 +155,25 @@ Endpoints: 4
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 ETH_MII_rx_clk        clk_fpga_0            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                                                            Slow         0.878      9.122
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.664      9.336
 
 
-Slack (MET) :             9.122ns  (requirement - actual skew)
+Slack (MET) :             9.336ns  (requirement - actual skew)
   Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
   Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    4.096ns
-  Reference Relative Delay:   2.596ns
-  Relative CRPR:              0.622ns
-  Actual Bus Skew:            0.878ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+  Endpoint Relative Delay:    3.918ns
+  Reference Relative Delay:   2.539ns
+  Relative CRPR:              0.715ns
+  Actual Bus Skew:            0.664ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -191,12 +185,12 @@ Endpoint path:
     K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
                          net (fo=1, routed)           2.076     3.568    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.669 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.671     5.340    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X25Y42         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                         net (fo=97, routed)          1.672     5.341    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X18Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X25Y42         FDRE (Prop_fdre_C_Q)         0.419     5.759 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.756     6.514    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[1]
-    SLICE_X25Y41         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X18Y35         FDRE (Prop_fdre_C_Q)         0.419     5.760 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.630     6.390    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[1]
+    SLICE_X16Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -204,15 +198,15 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.494     2.686    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X25Y41         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     2.686    
-    SLICE_X25Y41         FDRE (Setup_fdre_C_D)       -0.268     2.418    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=2747, routed)        1.495     2.687    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X16Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     2.687    
+    SLICE_X16Y35         FDRE (Setup_fdre_C_D)       -0.216     2.471    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           6.514    
-                         clock arrival                          2.418    
+                         data arrival                           6.390    
+                         clock arrival                          2.471    
   -------------------------------------------------------------------
-                         relative delay                         4.096    
+                         relative delay                         3.918    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -224,12 +218,12 @@ Reference path:
     K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
                          net (fo=1, routed)           1.880     3.301    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.392 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.501     4.893    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X27Y41         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=97, routed)          1.499     4.891    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X18Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X27Y41         FDRE (Prop_fdre_C_Q)         0.367     5.260 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.485     5.745    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
-    SLICE_X26Y41         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X18Y37         FDRE (Prop_fdre_C_Q)         0.367     5.259 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.489     5.747    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X16Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -237,15 +231,15 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.672     2.980    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X26Y41         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     2.980    
-    SLICE_X26Y41         FDRE (Hold_fdre_C_D)         0.169     3.149    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=2747, routed)        1.669     2.977    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X16Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     2.977    
+    SLICE_X16Y35         FDRE (Hold_fdre_C_D)         0.231     3.208    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           5.745    
-                         clock arrival                          3.149    
+                         data arrival                           5.747    
+                         clock arrival                          3.208    
   -------------------------------------------------------------------
-                         relative delay                         2.596    
+                         relative delay                         2.539    
 
 
 
@@ -256,26 +250,26 @@ Endpoints: 4
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-ETH_MII_tx_clk        clk_fpga_0            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.687      9.313
+ETH_MII_tx_clk        clk_fpga_0            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         0.794      9.206
 
 
-Slack (MET) :             9.313ns  (requirement - actual skew)
-  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+Slack (MET) :             9.206ns  (requirement - actual skew)
+  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
-  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    3.844ns
-  Reference Relative Delay:   2.335ns
-  Relative CRPR:              0.821ns
-  Actual Bus Skew:            0.687ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+  Endpoint Relative Delay:    3.793ns
+  Reference Relative Delay:   2.417ns
+  Relative CRPR:              0.582ns
+  Actual Bus Skew:            0.794ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -285,14 +279,14 @@ Endpoint path:
     L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
                          net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
     L14                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           2.036     3.528    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.101     3.629 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.662     5.291    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X25Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=1, routed)           1.905     3.397    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.498 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.663     5.161    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X16Y56         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X25Y34         FDRE (Prop_fdre_C_Q)         0.419     5.710 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.598     6.308    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
-    SLICE_X24Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X16Y56         FDRE (Prop_fdre_C_Q)         0.478     5.639 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.619     6.258    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
+    SLICE_X16Y58         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -300,15 +294,15 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.489     2.681    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X24Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         net (fo=2747, routed)        1.489     2.681    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X16Y58         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
                          clock pessimism              0.000     2.681    
-    SLICE_X24Y34         FDRE (Setup_fdre_C_D)       -0.217     2.464    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+    SLICE_X16Y58         FDRE (Setup_fdre_C_D)       -0.216     2.465    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           6.308    
-                         clock arrival                          2.464    
+                         data arrival                           6.258    
+                         clock arrival                          2.465    
   -------------------------------------------------------------------
-                         relative delay                         3.844    
+                         relative delay                         3.793    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -318,14 +312,14 @@ Reference path:
     L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
                          net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
     L14                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           1.757     3.178    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091     3.269 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.489     4.759    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X25Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=1, routed)           1.648     3.069    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.160 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.488     4.648    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X21Y57         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X25Y34         FDRE (Prop_fdre_C_Q)         0.367     5.126 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.410     5.536    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
-    SLICE_X24Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X21Y57         FDRE (Prop_fdre_C_Q)         0.367     5.015 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.536     5.551    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X22Y57         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -333,15 +327,15 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.662     2.970    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X24Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     2.970    
-    SLICE_X24Y34         FDRE (Hold_fdre_C_D)         0.231     3.201    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=2747, routed)        1.657     2.965    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X22Y57         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     2.965    
+    SLICE_X22Y57         FDRE (Hold_fdre_C_D)         0.169     3.134    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           5.536    
-                         clock arrival                          3.201    
+                         data arrival                           5.551    
+                         clock arrival                          3.134    
   -------------------------------------------------------------------
-                         relative delay                         2.335    
+                         relative delay                         2.417    
 
 
 
@@ -352,26 +346,26 @@ Endpoints: 4
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-clk_fpga_0            ETH_MII_tx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                                                            Slow         0.808      9.192
+clk_fpga_0            ETH_MII_tx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.603      9.397
 
 
-Slack (MET) :             9.192ns  (requirement - actual skew)
-  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+Slack (MET) :             9.397ns  (requirement - actual skew)
+  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:   -0.427ns
-  Reference Relative Delay:  -1.975ns
-  Relative CRPR:              0.740ns
-  Actual Bus Skew:            0.808ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+  Endpoint Relative Delay:   -0.399ns
+  Reference Relative Delay:  -1.804ns
+  Relative CRPR:              0.802ns
+  Actual Bus Skew:            0.603ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -381,12 +375,12 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.669     2.977    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X28Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=2747, routed)        1.665     2.973    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X15Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y35         FDRE (Prop_fdre_C_Q)         0.518     3.495 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.747     4.242    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
-    SLICE_X29Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X15Y55         FDRE (Prop_fdre_C_Q)         0.419     3.392 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.593     3.985    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
+    SLICE_X14Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ETH_MII_tx_clk rise edge)
@@ -394,17 +388,17 @@ Endpoint path:
     L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
                          net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
     L14                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           1.757     3.178    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091     3.269 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.494     4.764    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X29Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000     4.764    
-    SLICE_X29Y35         FDRE (Setup_fdre_C_D)       -0.095     4.669    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=1, routed)           1.648     3.069    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.160 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.491     4.651    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X14Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     4.651    
+    SLICE_X14Y55         FDRE (Setup_fdre_C_D)       -0.267     4.384    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           4.242    
-                         clock arrival                          4.669    
+                         data arrival                           3.985    
+                         clock arrival                          4.384    
   -------------------------------------------------------------------
-                         relative delay                        -0.427    
+                         relative delay                        -0.399    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -414,12 +408,12 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.494     2.686    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X27Y36         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                         net (fo=2747, routed)        1.491     2.683    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X15Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X27Y36         FDRE (Prop_fdre_C_Q)         0.367     3.053 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.500     3.553    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
-    SLICE_X28Y36         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+    SLICE_X15Y55         FDRE (Prop_fdre_C_Q)         0.367     3.050 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.479     3.529    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X14Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ETH_MII_tx_clk rise edge)
@@ -427,17 +421,17 @@ Reference path:
     L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
                          net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
     L14                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           2.036     3.528    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.101     3.629 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.669     5.298    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X28Y36         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     5.298    
-    SLICE_X28Y36         FDRE (Hold_fdre_C_D)         0.230     5.528    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+                         net (fo=1, routed)           1.905     3.397    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.498 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.665     5.163    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X14Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     5.163    
+    SLICE_X14Y55         FDRE (Hold_fdre_C_D)         0.170     5.333    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           3.553    
-                         clock arrival                          5.528    
+                         data arrival                           3.529    
+                         clock arrival                          5.333    
   -------------------------------------------------------------------
-                         relative delay                        -1.975    
+                         relative delay                        -1.804    
 
 
 
@@ -448,314 +442,26 @@ Endpoints: 5
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-clk_fpga_0            ETH_MII_rx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                                                            Slow         0.700      9.300
+clk_fpga_0            ETH_MII_rx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         0.873      9.127
 
 
-Slack (MET) :             9.300ns  (requirement - actual skew)
-  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
+Slack (MET) :             9.127ns  (requirement - actual skew)
+  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
                             (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
-  Path Type:              Bus Skew (Max at Slow Process Corner)
-  Requirement:            10.000ns
-  Endpoint Relative Delay:   -0.638ns
-  Reference Relative Delay:  -1.959ns
-  Relative CRPR:              0.622ns
-  Actual Bus Skew:            0.700ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
-
-Endpoint path:
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.669     2.977    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
-    SLICE_X25Y43         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X25Y43         FDRE (Prop_fdre_C_Q)         0.419     3.396 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.593     3.989    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[3]
-    SLICE_X25Y44         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ETH_MII_rx_clk rise edge)
-                                                      0.000     0.000 r  
-    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
-                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
-    K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
-                         net (fo=1, routed)           1.880     3.301    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.392 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.498     4.891    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
-    SLICE_X25Y44         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     4.891    
-    SLICE_X25Y44         FDRE (Setup_fdre_C_D)       -0.264     4.627    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]
-  -------------------------------------------------------------------
-                         data arrival                           3.989    
-                         clock arrival                          4.627    
-  -------------------------------------------------------------------
-                         relative delay                        -0.638    
-
-Reference path:
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.499     2.691    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
-    SLICE_X26Y44         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X26Y44         FDRE (Prop_fdre_C_Q)         0.367     3.058 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.496     3.555    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[4]
-    SLICE_X26Y45         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock ETH_MII_rx_clk rise edge)
-                                                      0.000     0.000 r  
-    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
-                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
-    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
-                         net (fo=1, routed)           2.076     3.568    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.669 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.676     5.345    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
-    SLICE_X26Y45         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism              0.000     5.345    
-    SLICE_X26Y45         FDRE (Hold_fdre_C_D)         0.169     5.514    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]
-  -------------------------------------------------------------------
-                         data arrival                           3.555    
-                         clock arrival                          5.514    
-  -------------------------------------------------------------------
-                         relative delay                        -1.959    
-
-
-
-Id: 6
-set_bus_skew -from [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]] 10.000
-Requirement: 10.000ns
-Endpoints: 5
-
-From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
---------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-ETH_MII_rx_clk        clk_fpga_0            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                                                            Slow         0.858      9.142
-
-
-Slack (MET) :             9.142ns  (requirement - actual skew)
-  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
-  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
-                            (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Path Type:              Bus Skew (Max at Slow Process Corner)
-  Requirement:            10.000ns
-  Endpoint Relative Delay:    4.163ns
-  Reference Relative Delay:   2.588ns
-  Relative CRPR:              0.717ns
-  Actual Bus Skew:            0.858ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
-
-Endpoint path:
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ETH_MII_rx_clk rise edge)
-                                                      0.000     0.000 r  
-    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
-                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
-    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
-                         net (fo=1, routed)           2.076     3.568    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.669 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.676     5.345    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
-    SLICE_X29Y41         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X29Y41         FDRE (Prop_fdre_C_Q)         0.419     5.764 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.821     6.585    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[3]
-    SLICE_X29Y40         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.497     2.689    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
-    SLICE_X29Y40         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     2.689    
-    SLICE_X29Y40         FDRE (Setup_fdre_C_D)       -0.267     2.422    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]
-  -------------------------------------------------------------------
-                         data arrival                           6.585    
-                         clock arrival                          2.422    
-  -------------------------------------------------------------------
-                         relative delay                         4.163    
-
-Reference path:
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ETH_MII_rx_clk rise edge)
-                                                      0.000     0.000 r  
-    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
-                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
-    K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
-                         net (fo=1, routed)           1.880     3.301    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.392 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
-                         net (fo=97, routed)          1.501     4.893    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
-    SLICE_X29Y42         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X29Y42         FDRE (Prop_fdre_C_Q)         0.337     5.230 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.367     5.597    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[1]
-    SLICE_X29Y40         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.672     2.980    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
-    SLICE_X29Y40         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000     2.980    
-    SLICE_X29Y40         FDRE (Hold_fdre_C_D)         0.029     3.009    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]
-  -------------------------------------------------------------------
-                         data arrival                           5.597    
-                         clock arrival                          3.009    
-  -------------------------------------------------------------------
-                         relative delay                         2.588    
-
-
-
-Id: 7
-set_bus_skew -from [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]] 10.000
-Requirement: 10.000ns
-Endpoints: 5
-
-From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
---------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-ETH_MII_tx_clk        clk_fpga_0            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.846      9.154
-
-
-Slack (MET) :             9.154ns  (requirement - actual skew)
-  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
-  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Path Type:              Bus Skew (Max at Slow Process Corner)
-  Requirement:            10.000ns
-  Endpoint Relative Delay:    4.062ns
-  Reference Relative Delay:   2.393ns
-  Relative CRPR:              0.823ns
-  Actual Bus Skew:            0.846ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
-
-Endpoint path:
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ETH_MII_tx_clk rise edge)
-                                                      0.000     0.000 r  
-    L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
-                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
-    L14                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           2.036     3.528    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.101     3.629 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.668     5.297    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
-    SLICE_X26Y36         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X26Y36         FDRE (Prop_fdre_C_Q)         0.419     5.716 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]/Q
-                         net (fo=1, routed)           0.768     6.484    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[3]
-    SLICE_X26Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.495     2.688    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
-    SLICE_X26Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/C
-                         clock pessimism              0.000     2.688    
-    SLICE_X26Y37         FDRE (Setup_fdre_C_D)       -0.265     2.423    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]
-  -------------------------------------------------------------------
-                         data arrival                           6.484    
-                         clock arrival                          2.422    
-  -------------------------------------------------------------------
-                         relative delay                         4.062    
-
-Reference path:
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock ETH_MII_tx_clk rise edge)
-                                                      0.000     0.000 r  
-    L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
-                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
-    L14                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           1.757     3.178    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091     3.269 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.494     4.764    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
-    SLICE_X26Y36         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X26Y36         FDRE (Prop_fdre_C_Q)         0.367     5.131 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.409     5.540    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[2]
-    SLICE_X26Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_fpga_0 rise edge)
-                                                      0.000     0.000 r  
-    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
-                         net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.669     2.977    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
-    SLICE_X26Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     2.977    
-    SLICE_X26Y37         FDRE (Hold_fdre_C_D)         0.170     3.147    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]
-  -------------------------------------------------------------------
-                         data arrival                           5.540    
-                         clock arrival                          3.147    
-  -------------------------------------------------------------------
-                         relative delay                         2.393    
-
-
-
-Id: 8
-set_bus_skew -from [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]] 10.000
-Requirement: 10.000ns
-Endpoints: 5
-
-From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
---------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
-clk_fpga_0            ETH_MII_tx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         0.740      9.260
-
-
-Slack (MET) :             9.260ns  (requirement - actual skew)
-  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
-                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
-  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
-                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
   Endpoint Relative Delay:   -0.529ns
-  Reference Relative Delay:  -2.008ns
-  Relative CRPR:              0.740ns
-  Actual Bus Skew:            0.740ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+  Reference Relative Delay:  -1.981ns
+  Relative CRPR:              0.579ns
+  Actual Bus Skew:            0.873ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -765,28 +471,28 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.670     2.978    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
-    SLICE_X31Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+                         net (fo=2747, routed)        1.666     2.974    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X20Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y37         FDRE (Prop_fdre_C_Q)         0.456     3.434 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.758     4.192    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[4]
-    SLICE_X32Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X20Y34         FDRE (Prop_fdre_C_Q)         0.478     3.452 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.638     4.090    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[4]
+    SLICE_X22Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
   -------------------------------------------------------------------    -------------------
 
-                         (clock ETH_MII_tx_clk rise edge)
+                         (clock ETH_MII_rx_clk rise edge)
                                                       0.000     0.000 r  
-    L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
-                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
-    L14                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           1.757     3.178    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091     3.269 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.496     4.766    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
-    SLICE_X32Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism              0.000     4.766    
-    SLICE_X32Y37         FDRE (Setup_fdre_C_D)       -0.045     4.721    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]
+    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
+                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
+                         net (fo=1, routed)           1.880     3.301    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.392 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
+                         net (fo=97, routed)          1.493     4.885    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X22Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism              0.000     4.885    
+    SLICE_X22Y35         FDRE (Setup_fdre_C_D)       -0.267     4.618    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]
   -------------------------------------------------------------------
-                         data arrival                           4.192    
-                         clock arrival                          4.721    
+                         data arrival                           4.090    
+                         clock arrival                          4.619    
   -------------------------------------------------------------------
                          relative delay                        -0.529    
 
@@ -798,12 +504,300 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=2798, routed)        1.495     2.688    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
-    SLICE_X28Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
+                         net (fo=2747, routed)        1.493     2.685    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X20Y34         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y37         FDRE (Prop_fdre_C_Q)         0.418     3.105 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.415     3.521    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[2]
-    SLICE_X30Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X20Y34         FDRE (Prop_fdre_C_Q)         0.385     3.070 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.378     3.448    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[1]
+    SLICE_X20Y33         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ETH_MII_rx_clk rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
+                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
+                         net (fo=1, routed)           2.076     3.568    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.669 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
+                         net (fo=97, routed)          1.668     5.337    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X20Y33         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     5.337    
+    SLICE_X20Y33         FDRE (Hold_fdre_C_D)         0.092     5.429    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           3.448    
+                         clock arrival                          5.429    
+  -------------------------------------------------------------------
+                         relative delay                        -1.981    
+
+
+
+Id: 6
+set_bus_skew -from [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 5
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+ETH_MII_rx_clk        clk_fpga_0            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.890      9.110
+
+
+Slack (MET) :             9.110ns  (requirement - actual skew)
+  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
+  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ETH_MII_rx_clk)
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    4.136ns
+  Reference Relative Delay:   2.591ns
+  Relative CRPR:              0.656ns
+  Actual Bus Skew:            0.890ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ETH_MII_rx_clk rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
+                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
+                         net (fo=1, routed)           2.076     3.568    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.669 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
+                         net (fo=97, routed)          1.672     5.341    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X20Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y37         FDRE (Prop_fdre_C_Q)         0.518     5.859 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.871     6.729    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[0]
+    SLICE_X19Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2747, routed)        1.496     2.688    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X19Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     2.688    
+    SLICE_X19Y37         FDRE (Setup_fdre_C_D)       -0.095     2.593    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           6.729    
+                         clock arrival                          2.593    
+  -------------------------------------------------------------------
+                         relative delay                         4.136    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ETH_MII_rx_clk rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  ETH_MII_rx_clk (IN)
+                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_rx_clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O
+                         net (fo=1, routed)           1.880     3.301    minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     3.392 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O
+                         net (fo=97, routed)          1.498     4.891    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X18Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y35         FDRE (Prop_fdre_C_Q)         0.367     5.258 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.479     5.737    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[2]
+    SLICE_X19Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2747, routed)        1.669     2.977    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X19Y35         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     2.977    
+    SLICE_X19Y35         FDRE (Hold_fdre_C_D)         0.169     3.146    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           5.737    
+                         clock arrival                          3.146    
+  -------------------------------------------------------------------
+                         relative delay                         2.591    
+
+
+
+Id: 7
+set_bus_skew -from [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 5
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+ETH_MII_tx_clk        clk_fpga_0            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.715      9.285
+
+
+Slack (MET) :             9.285ns  (requirement - actual skew)
+  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
+  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    3.820ns
+  Reference Relative Delay:   2.389ns
+  Relative CRPR:              0.716ns
+  Actual Bus Skew:            0.715ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ETH_MII_tx_clk rise edge)
+                                                      0.000     0.000 r  
+    L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
+                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
+    L14                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
+                         net (fo=1, routed)           1.905     3.397    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.498 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.663     5.161    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X16Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y55         FDRE (Prop_fdre_C_Q)         0.478     5.639 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.598     6.237    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[1]
+    SLICE_X15Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2747, routed)        1.491     2.683    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X15Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     2.683    
+    SLICE_X15Y55         FDRE (Setup_fdre_C_D)       -0.266     2.417    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           6.237    
+                         clock arrival                          2.417    
+  -------------------------------------------------------------------
+                         relative delay                         3.820    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ETH_MII_tx_clk rise edge)
+                                                      0.000     0.000 r  
+    L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
+                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
+    L14                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
+                         net (fo=1, routed)           1.648     3.069    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.160 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.489     4.649    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_clk
+    SLICE_X16Y57         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y57         FDRE (Prop_fdre_C_Q)         0.418     5.067 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.522     5.589    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/async_path[2]
+    SLICE_X16Y58         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2747, routed)        1.662     2.970    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_clk
+    SLICE_X16Y58         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     2.970    
+    SLICE_X16Y58         FDRE (Hold_fdre_C_D)         0.230     3.200    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           5.589    
+                         clock arrival                          3.200    
+  -------------------------------------------------------------------
+                         relative delay                         2.389    
+
+
+
+Id: 8
+set_bus_skew -from [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 5
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_fpga_0            ETH_MII_tx_clk        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.679      9.321
+
+
+Slack (MET) :             9.321ns  (requirement - actual skew)
+  Endpoint Source:        minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Endpoint Destination:   minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
+  Reference Source:       minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Destination:  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by ETH_MII_tx_clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:   -0.439ns
+  Reference Relative Delay:  -1.834ns
+  Relative CRPR:              0.716ns
+  Actual Bus Skew:            0.679ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2747, routed)        1.665     2.973    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X15Y56         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y56         FDRE (Prop_fdre_C_Q)         0.419     3.392 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.599     3.991    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[3]
+    SLICE_X16Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ETH_MII_tx_clk rise edge)
+                                                      0.000     0.000 r  
+    L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
+                         net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
+    L14                  IBUF (Prop_ibuf_I_O)         1.421     1.421 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
+                         net (fo=1, routed)           1.648     3.069    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.160 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.490     4.650    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X16Y55         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     4.650    
+    SLICE_X16Y55         FDRE (Setup_fdre_C_D)       -0.220     4.430    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           3.991    
+                         clock arrival                          4.430    
+  -------------------------------------------------------------------
+                         relative delay                        -0.439    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101     1.101    minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.192 r  minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2747, routed)        1.489     2.681    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X17Y57         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y57         FDRE (Prop_fdre_C_Q)         0.367     3.048 r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.511     3.559    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[4]
+    SLICE_X16Y57         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ETH_MII_tx_clk rise edge)
@@ -811,31 +805,17 @@ Reference path:
     L14                                               0.000     0.000 r  ETH_MII_tx_clk (IN)
                          net (fo=0)                   0.000     0.000    minimal_i/axi_ethernetlite_0/U0/phy_tx_clk
     L14                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O
-                         net (fo=1, routed)           2.036     3.528    minimal_i/axi_ethernetlite_0/U0/o
-    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.101     3.629 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
-                         net (fo=96, routed)          1.670     5.299    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
-    SLICE_X30Y37         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     5.299    
-    SLICE_X30Y37         FDRE (Hold_fdre_C_D)         0.230     5.529    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=1, routed)           1.905     3.397    minimal_i/axi_ethernetlite_0/U0/o
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.498 r  minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O
+                         net (fo=96, routed)          1.662     5.160    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X16Y57         FDRE                                         r  minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism              0.000     5.160    
+    SLICE_X16Y57         FDRE (Hold_fdre_C_D)         0.233     5.393    minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]
   -------------------------------------------------------------------
-                         data arrival                           3.521    
-                         clock arrival                          5.529    
+                         data arrival                           3.559    
+                         clock arrival                          5.393    
   -------------------------------------------------------------------
-                         relative delay                        -2.008    
+                         relative delay                        -1.834    
 
-
-
-Id: 9
-set_bus_skew -from [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 10.000
-Requirement: 10.000ns
-Endpoints: 0
-No bus skew paths found.
-
-
-Id: 10
-set_bus_skew -from [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {minimal_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 10.000
-Requirement: 10.000ns
-Endpoints: 0
-No bus skew paths found.
 
 

@@ -1,64 +1,61 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.02652",
-   "Default View_TopLeft":"313,62",
+   "Default View_ScaleFactor":"1.03322",
+   "Default View_TopLeft":"383,384",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 6 -x 1880 -y 220 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 6 -x 1880 -y 250 -defaultsOSRD
-preplace port ETH_MDIO -pg 1 -lvl 6 -x 1880 -y 90 -defaultsOSRD
-preplace port ETH_MII -pg 1 -lvl 6 -x 1880 -y 60 -defaultsOSRD
-preplace port port-id_TFT_DC -pg 1 -lvl 6 -x 1880 -y 890 -defaultsOSRD
-preplace port port-id_TFT_CS -pg 1 -lvl 6 -x 1880 -y 980 -defaultsOSRD
-preplace port port-id_TFT_RST -pg 1 -lvl 6 -x 1880 -y 950 -defaultsOSRD
-preplace port port-id_TFT_SDA -pg 1 -lvl 6 -x 1880 -y 860 -defaultsOSRD
-preplace port port-id_TFT_CLK -pg 1 -lvl 6 -x 1880 -y 830 -defaultsOSRD
-preplace port port-id_PL_CLK_50M -pg 1 -lvl 0 -x 0 -y 840 -defaultsOSRD
-preplace port port-id_TFT_LED -pg 1 -lvl 6 -x 1880 -y 920 -defaultsOSRD
-preplace portBus PL_LED_1 -pg 1 -lvl 6 -x 1880 -y 550 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1630 -y 270 -defaultsOSRD
-preplace inst axi_ethernetlite_0 -pg 1 -lvl 5 -x 1630 -y 90 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 2 -x 540 -y 330 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 210 -y 350 -defaultsOSRD
-preplace inst ilconcat_0 -pg 1 -lvl 4 -x 1230 -y 240 -defaultsOSRD
-preplace inst ilslice_0 -pg 1 -lvl 5 -x 1630 -y 550 -defaultsOSRD
-preplace inst c_counter_binary_0 -pg 1 -lvl 4 -x 1230 -y 550 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -x 870 -y 420 -defaultsOSRD
-preplace inst axi_smc1 -pg 1 -lvl 4 -x 1230 -y 420 -defaultsOSRD -resize 240 136
-preplace inst axis_data_fifo_0 -pg 1 -lvl 4 -x 1230 -y 730 -defaultsOSRD
-preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 5 -x 1630 -y 900 -defaultsOSRD
-preplace inst ilconstant_0 -pg 1 -lvl 4 -x 1230 -y 900 -defaultsOSRD
-preplace inst ilslice_1 -pg 1 -lvl 4 -x 1230 -y 1000 -defaultsOSRD
-preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 3 3 1080 10 NJ 10 1840
-preplace netloc c_counter_binary_0_Q 1 4 1 NJ 550
-preplace netloc ilconcat_0_dout 1 4 1 1410J 240n
-preplace netloc ilslice_0_Dout 1 5 1 NJ 550
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 30 450 390 410 690 510 1060 320 1420 370 1860
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 460 NJ 460 700J 330 NJ 330 1380J 380 1840
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 4 400 420 680 520 1050 310 1390
-preplace netloc tft_ili9341_wrapper_0_tft_sck 1 5 1 1860J 830n
-preplace netloc tft_ili9341_wrapper_0_tft_cs 1 5 1 1850J 930n
-preplace netloc tft_ili9341_wrapper_0_tft_reset 1 5 1 1860 910n
-preplace netloc tft_ili9341_wrapper_0_tft_dc 1 5 1 NJ 890
-preplace netloc tft_ili9341_wrapper_0_tft_sdi 1 5 1 1860J 860n
-preplace netloc tft_ili9341_wrapper_0_fbclk 1 3 3 1070 610 NJ 610 1840
-preplace netloc ilconstant_0_dout 1 4 1 NJ 900
-preplace netloc axis_data_fifo_0_m_axis_tdata 1 3 2 1080 620 1380
-preplace netloc ilslice_1_Dout 1 4 1 1380J 920n
-preplace netloc clk_0_1 1 0 5 NJ 840 NJ 840 NJ 840 NJ 840 1420J
-preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 N 390
-preplace netloc axi_ethernetlite_0_MDIO 1 5 1 NJ 90
-preplace netloc axi_ethernetlite_0_MII 1 5 1 1860J 60n
-preplace netloc axi_smc1_M00_AXI 1 4 1 1400 250n
-preplace netloc axi_smc_M00_AXI 1 2 3 700J 160 NJ 160 1380
-preplace netloc processing_system7_0_DDR 1 5 1 1860J 220n
-preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 250
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 400 170 NJ 170 NJ 170 NJ 170 1840
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 1 1040 410n
-preplace netloc axi_smc_M01_AXI 1 2 1 690 340n
-levelinfo -pg 1 0 210 540 870 1230 1630 1880
-pagesize -pg 1 -db -bbox -sgen -140 0 2030 1070
+preplace port DDR -pg 1 -lvl 6 -x 1940 -y 430 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1940 -y 460 -defaultsOSRD
+preplace port ETH_MDIO -pg 1 -lvl 6 -x 1940 -y 130 -defaultsOSRD
+preplace port ETH_MII -pg 1 -lvl 6 -x 1940 -y 100 -defaultsOSRD
+preplace port port-id_TFT_DC -pg 1 -lvl 6 -x 1940 -y 830 -defaultsOSRD
+preplace port port-id_TFT_CS -pg 1 -lvl 6 -x 1940 -y 920 -defaultsOSRD
+preplace port port-id_TFT_RST -pg 1 -lvl 6 -x 1940 -y 890 -defaultsOSRD
+preplace port port-id_TFT_SDA -pg 1 -lvl 6 -x 1940 -y 800 -defaultsOSRD
+preplace port port-id_TFT_CLK -pg 1 -lvl 6 -x 1940 -y 770 -defaultsOSRD
+preplace port port-id_TFT_LED -pg 1 -lvl 6 -x 1940 -y 860 -defaultsOSRD
+preplace portBus PL_LED_1 -pg 1 -lvl 6 -x 1940 -y 650 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1670 -y 480 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 5 -x 1670 -y 130 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 540 -y 550 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 150 -y 450 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 4 -x 1260 -y 80 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 1 -x 150 -y 820 -defaultsOSRD
+preplace inst axi_smc1 -pg 1 -lvl 4 -x 1260 -y 260 -defaultsOSRD -resize 240 163
+preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 5 -x 1670 -y 850 -defaultsOSRD
+preplace inst c_counter_binary_1 -pg 1 -lvl 5 -x 1670 -y 650 -defaultsOSRD -resize 120 88
+preplace inst axi_stream_to_ili_93_0 -pg 1 -lvl 4 -x 1260 -y 850 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 2 -x 540 -y 830 -defaultsOSRD
+preplace netloc axi_dma_0_mm2s_introut 1 1 3 330 90 N 90 N
+preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 3 3 1110 10 NJ 10 1880
+preplace netloc c_counter_binary_1_Q 1 5 1 NJ 650
+preplace netloc ilconcat_0_dout 1 4 1 1420 80n
+preplace netloc ilslice_0_Dout 1 4 1 N 840
+preplace netloc ilvector_logic_0_Res 1 4 1 N 860
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -40 550 390 740 N 740 1110 370 1460 580 1890
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 -30 730 NJ 730 NJ 730 N 730 NJ 730 1880
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 5 -40 920 370 920 N 920 1090 160 1430J
+preplace netloc tft_ili9341_wrapper_0_pixel_clock 1 3 3 1100 980 NJ 980 1890
+preplace netloc tft_ili9341_wrapper_0_pixel_sync 1 3 3 1110 950 1460 970 1880
+preplace netloc tft_ili9341_wrapper_0_tft_cs 1 5 1 1900J 870n
+preplace netloc tft_ili9341_wrapper_0_tft_dc 1 5 1 NJ 830
+preplace netloc tft_ili9341_wrapper_0_tft_reset 1 5 1 1920 850n
+preplace netloc tft_ili9341_wrapper_0_tft_sck 1 5 1 1910J 770n
+preplace netloc tft_ili9341_wrapper_0_tft_sda 1 5 1 1890J 800n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 1 3 380 470 N 470 940
+preplace netloc axi_ethernetlite_0_MDIO 1 5 1 NJ 130
+preplace netloc axi_ethernetlite_0_MII 1 5 1 1910J 100n
+preplace netloc axi_smc1_M00_AXI 1 4 1 1410 260n
+preplace netloc axi_smc_M00_AXI 1 2 3 680J 460 930 150 1410
+preplace netloc axi_smc_M01_AXI 1 0 3 -30 910 N 910 680
+preplace netloc processing_system7_0_DDR 1 5 1 1910J 430n
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 460
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 400 720 NJ 720 N 720 NJ 720 1910
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 1 N 810
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 2 2 NJ 830 1100
+levelinfo -pg 1 -80 150 540 910 1260 1670 1940
+pagesize -pg 1 -db -bbox -sgen -80 -70 2150 1030
 "
 }
 {

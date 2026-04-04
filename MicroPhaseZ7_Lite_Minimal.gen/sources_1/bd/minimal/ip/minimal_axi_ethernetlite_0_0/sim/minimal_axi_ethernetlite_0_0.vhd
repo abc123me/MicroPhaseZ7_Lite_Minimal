@@ -192,7 +192,7 @@ ARCHITECTURE minimal_axi_ethernetlite_0_0_arch OF minimal_axi_ethernetlite_0_0 I
   ATTRIBUTE X_INTERFACE_INFO OF phy_tx_en: SIGNAL IS "xilinx.com:interface:mii:1.0 MII TX_EN";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 s_axi_aclk CLK";
   ATTRIBUTE X_INTERFACE_MODE OF s_axi_aclk: SIGNAL IS "slave s_axi_aclk";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aclk: SIGNAL IS "XIL_INTERFACENAME s_axi_aclk, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aclk: SIGNAL IS "XIL_INTERFACENAME s_axi_aclk, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0, PortWidth 1";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_araddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 s_axi_aresetn RST";
   ATTRIBUTE X_INTERFACE_MODE OF s_axi_aresetn: SIGNAL IS "slave s_axi_aresetn";
@@ -222,7 +222,7 @@ BEGIN
       C_FAMILY => "zynq",
       C_SELECT_XPM => 1,
       C_INSTANCE => "axi_ethernetlite_inst",
-      C_S_AXI_ACLK_PERIOD_PS => 10000,
+      C_S_AXI_ACLK_PERIOD_PS => 20000,
       C_S_AXI_ADDR_WIDTH => 13,
       C_S_AXI_DATA_WIDTH => 32,
       C_S_AXI_ID_WIDTH => 1,

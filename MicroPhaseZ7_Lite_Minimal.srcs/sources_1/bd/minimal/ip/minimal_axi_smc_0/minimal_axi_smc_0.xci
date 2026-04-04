@@ -139,6 +139,7 @@
             "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
             "ASSOCIATED_RESET": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ],
+            "PortWidth": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
             "ASSOCIATED_CLKEN": [ { "value": "s_sc_aclken", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ]
           },
           "port_maps": {
@@ -263,7 +264,7 @@
             "SUPPORTS_NARROW_BURST": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
             "NUM_READ_OUTSTANDING": [ { "value": "8", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
             "NUM_WRITE_OUTSTANDING": [ { "value": "8", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
-            "MAX_BURST_LENGTH": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "MAX_BURST_LENGTH": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
             "NUM_READ_THREADS": [ { "value": "1", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
@@ -322,7 +323,7 @@
             "SUPPORTS_NARROW_BURST": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
             "NUM_READ_OUTSTANDING": [ { "value": "8", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
             "NUM_WRITE_OUTSTANDING": [ { "value": "8", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
-            "MAX_BURST_LENGTH": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "MAX_BURST_LENGTH": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "minimal_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
             "NUM_READ_THREADS": [ { "value": "1", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
@@ -356,5 +357,5 @@
       }
     }
   },
-  "checksum": "bea75bf7"
+  "checksum": "363bc74b"
 }

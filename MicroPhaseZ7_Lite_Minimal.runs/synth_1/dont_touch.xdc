@@ -138,9 +138,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_rst_ps7_0_50M_0 || ORIG_REF_NAME==minimal_rst_ps7_0_50M_0} -quiet] -quiet
 
-# IP: bd/minimal/ip/minimal_c_counter_binary_0_0/minimal_c_counter_binary_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_c_counter_binary_0_0 || ORIG_REF_NAME==minimal_c_counter_binary_0_0} -quiet] -quiet
-
 # IP: bd/minimal/ip/minimal_axi_dma_0_1/minimal_axi_dma_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_dma_0_1 || ORIG_REF_NAME==minimal_axi_dma_0_1} -quiet] -quiet
 
@@ -177,11 +174,17 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_9/bd_ddcf_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: bd/minimal/ip/minimal_axis_data_fifo_0_0/minimal_axis_data_fifo_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axis_data_fifo_0_0 || ORIG_REF_NAME==minimal_axis_data_fifo_0_0} -quiet] -quiet
-
 # IP: bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0/minimal_tft_ili9341_wrapper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft_ili9341_wrapper_0_0 || ORIG_REF_NAME==minimal_tft_ili9341_wrapper_0_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_c_counter_binary_0_1/minimal_c_counter_binary_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_c_counter_binary_0_1 || ORIG_REF_NAME==minimal_c_counter_binary_0_1} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_axi_stream_to_ili_93_0_0/minimal_axi_stream_to_ili_93_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_stream_to_ili_93_0_0 || ORIG_REF_NAME==minimal_axi_stream_to_ili_93_0_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_axis_dwidth_converter_0_0/minimal_axis_dwidth_converter_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axis_dwidth_converter_0_0 || ORIG_REF_NAME==minimal_axis_dwidth_converter_0_0} -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_processing_system7_0_0 || ORIG_REF_NAME==minimal_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

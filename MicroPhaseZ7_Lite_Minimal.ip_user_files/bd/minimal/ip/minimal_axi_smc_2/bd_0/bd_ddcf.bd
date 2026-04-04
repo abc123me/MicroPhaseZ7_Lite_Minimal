@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xBC72B2956ABB3E3E",
+      "boundary_crc": "0xBC72B2951B8B982C",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_ddcf",
@@ -341,6 +341,10 @@
           "PHASE": {
             "value": "0.0",
             "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
           }
         }
       },
@@ -538,7 +542,7 @@
                 "value": "READ_ONLY"
               },
               "SEG000_BASE_ADDR": {
-                "value": "0x000000001FC00000"
+                "value": "0x0000000000000000"
               },
               "SEG000_SECURE_READ": {
                 "value": "0"
@@ -550,7 +554,7 @@
                 "value": "0b0000000000000000000000000000000000000000000000000000000000000000"
               },
               "SEG000_SIZE": {
-                "value": "22"
+                "value": "29"
               },
               "SEG000_SUPPORTS_READ": {
                 "value": "1"

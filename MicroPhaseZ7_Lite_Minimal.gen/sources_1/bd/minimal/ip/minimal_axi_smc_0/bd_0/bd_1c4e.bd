@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5F4E4CADFB0001C",
+      "boundary_crc": "0x5F4E4CA4F03FF08",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_1c4e",
@@ -298,7 +298,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -430,7 +430,7 @@
           },
           "MAX_BURST_LENGTH": {
             "value": "1",
-            "value_src": "default_prop"
+            "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
             "value": "8"
@@ -515,6 +515,10 @@
           "PHASE": {
             "value": "0.0",
             "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
           }
         }
       },

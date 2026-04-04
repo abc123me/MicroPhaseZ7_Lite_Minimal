@@ -1369,6 +1369,15 @@
             </xilinx:parameterInfo>
           </spirit:vendorExtensions>
         </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PortWidth</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.PortWidth">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
@@ -1427,7 +1436,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:760d294f</spirit:value>
+            <spirit:value>9:e8c7e057</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1446,11 +1455,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 01 03:17:36 UTC 2026</spirit:value>
+            <spirit:value>Sat Apr 04 06:53:59 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b011f8b5</spirit:value>
+            <spirit:value>9:7b547f30</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1466,11 +1475,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 01 03:17:37 UTC 2026</spirit:value>
+            <spirit:value>Sat Apr 04 06:54:01 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b011f8b5</spirit:value>
+            <spirit:value>9:7b547f30</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1489,11 +1498,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 01 03:17:36 UTC 2026</spirit:value>
+            <spirit:value>Sat Apr 04 06:53:59 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:760d294f</spirit:value>
+            <spirit:value>9:e8c7e057</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1509,11 +1518,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 01 03:17:37 UTC 2026</spirit:value>
+            <spirit:value>Sat Apr 04 06:54:01 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:760d294f</spirit:value>
+            <spirit:value>9:e8c7e057</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3668,12 +3677,12 @@
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_BASE_ADDR_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_BASE_ADDR_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_BASE_ADDR_ARRAY" spirit:bitStringLength="64">0x000000001fc00000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_BASE_ADDR_ARRAY" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SIZE_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SIZE_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SIZE_ARRAY" spirit:bitStringLength="32">0x00000016</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SIZE_ARRAY" spirit:bitStringLength="32">0x0000001d</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SEP_ROUTE_ARRAY</spirit:name>
@@ -4080,12 +4089,12 @@
     <spirit:parameter>
       <spirit:name>SEG000_BASE_ADDR</spirit:name>
       <spirit:displayName>SEG000_BASE_ADDR</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG000_BASE_ADDR" spirit:bitStringLength="64">0x000000001FC00000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG000_BASE_ADDR" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG000_SIZE</spirit:name>
       <spirit:displayName>SEG000_SIZE</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG000_SIZE">22</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG000_SIZE">29</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG000_SEP_ROUTE</spirit:name>
@@ -14338,6 +14347,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PortWidth" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ADDR_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ARUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.AWUSER_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>

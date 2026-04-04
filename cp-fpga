@@ -1,5 +1,19 @@
 #!/usr/bin/sh
 
-ls -la MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.c MicroPhaseZ7_Lite_Minimal.runs/impl_1/minimal_wrapper.bit
-cp -v MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.* /opt/bsp/jlbsp/board/z7lite
-cp -v MicroPhaseZ7_Lite_Minimal.runs/impl_1/minimal_wrapper.bit  /opt/bsp/jlbsp/board/z7lite/fpga.bit
+VIVADO_PROJECT="MicroPhaseZ7_Lite_Minimal"
+BOARD_NAME="z7lite-dev"
+BSP_DIR="/opt/bsp/jlbsp/board/${BOARD_NAME}/fpga"
+
+ls -la "${VIVADO_PROJECT}.runs/impl_1/minimal_wrapper.bit" "${VIVADO_PROJECT}.runs/impl_1/minimal_wrapper.ltx" \
+	"${VIVADO_PROJECT}.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.c" \
+	"${VIVADO_PROJECT}.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.h"
+
+cp -v "${VIVADO_PROJECT}.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.c" "${BSP_DIR}"
+cp -v "${VIVADO_PROJECT}.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.h" "${BSP_DIR}"
+cp -v "${VIVADO_PROJECT}.runs/impl_1/minimal_wrapper.bit" "${BSP_DIR}/fpga.bit"
+ltx="${VIVADO_PROJECT}.runs/impl_1/minimal_wrapper.ltx"
+if [ -f "$ltx" ]; then
+	cp -v "$ltx" "${BSP_DIR}/fpga.ltx"
+else
+	rm -fv "${BSP_DIR}/fpga.ltx"
+fi
