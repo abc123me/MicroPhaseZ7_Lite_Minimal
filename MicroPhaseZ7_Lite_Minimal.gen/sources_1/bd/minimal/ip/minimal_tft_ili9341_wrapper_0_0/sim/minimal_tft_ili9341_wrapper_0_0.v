@@ -60,37 +60,48 @@ module minimal_tft_ili9341_wrapper_0_0 (
   tft_dc,
   tft_nrst,
   tft_cs,
-  pixel_clock,
-  pixel_sync,
+  tft_led,
   pixel_data,
-  core_clk
+  core_clk,
+  pixel_clock,
+  pixel_sync
 );
 
-output wire tft_sck;
-output wire tft_sda;
-output wire tft_dc;
-output wire tft_nrst;
-output wire tft_cs;
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 pixel_clock CLK" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi scl" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pixel_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_tft_ili9341_wrapper_0_0_pixel_clock, INSERT_VIP 0" *)
-output wire pixel_clock;
-output wire pixel_sync;
-input wire [15 : 0] pixel_data;
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 core_clk CLK" *)
+output wire tft_sck;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi sda" *)
+output wire tft_sda;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi dc" *)
+output wire tft_dc;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi nrst" *)
+output wire tft_nrst;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi cs" *)
+output wire tft_cs;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi led" *)
+output wire tft_led;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_data" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME core_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *)
+input wire [15 : 0] pixel_data;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream core_clock" *)
 input wire core_clk;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_clock" *)
+output wire pixel_clock;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_sync" *)
+output wire pixel_sync;
 
-  tft_ili9341_wrapper inst (
+  tft_ili9341_wrapper #(
+    .INPUT_CLK_MHZ(100)
+  ) inst (
     .tft_sck(tft_sck),
     .tft_sda(tft_sda),
     .tft_dc(tft_dc),
     .tft_nrst(tft_nrst),
     .tft_cs(tft_cs),
-    .pixel_clock(pixel_clock),
-    .pixel_sync(pixel_sync),
+    .tft_led(tft_led),
     .pixel_data(pixel_data),
-    .core_clk(core_clk)
+    .core_clk(core_clk),
+    .pixel_clock(pixel_clock),
+    .pixel_sync(pixel_sync)
   );
 endmodule

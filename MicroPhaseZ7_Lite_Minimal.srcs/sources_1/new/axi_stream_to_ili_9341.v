@@ -22,19 +22,19 @@
 module axi_stream_to_ili_9341 # (
         // parameter FREQ_HZ = 100000000
     ) (
-        // AXI4 Stream IO
-        input wire axis_tlast,
-        input wire axis_tvalid,
-        input wire [15:0] axis_tdata,
-        output reg axis_tready,
-        input wire axis_clock,
-        input wire axis_aresetn,
+        // AXI4 Stream in
+        input wire s_axis_tlast,
+        input wire s_axis_tvalid,
+        input wire [15:0] s_axis_tdata,
+        output reg s_axis_tready,
+        input wire s_axis_clock,
+        input wire s_axis_aresetn,
         
-        // Framebuffer driver IO
-		input wire pixel_clock,
-		input wire pixel_sync,
-		output wire [15:0] pixel_data,
-		output wire core_clk_out
+        // Pixel stream out
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_clock" *) input wire pixel_clock,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_sync" *)  input wire pixel_sync,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_data" *)  output wire [15:0] pixel_data,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream core_clock" *)  output wire core_clk_out
     );
     
     // Register to enable/disable pixel data zeroization
@@ -42,22 +42,22 @@ module axi_stream_to_ili_9341 # (
     // Asserted upon initialization or during incomplete DMA transfers
     reg pixel_data_zeroize;
     initial pixel_data_zeroize = 1'b1;
-    assign pixel_data = pixel_data_zeroize ? 16'b0 : axis_tdata;
+    assign pixel_data = pixel_data_zeroize ? 16'b0 : s_axis_tdata;
     
     reg out_clk_enable;
     initial out_clk_enable = 1'b1;
-    assign core_clk_out = axis_clock && out_clk_enable;
+    assign core_clk_out = s_axis_clock && out_clk_enable;
 
     reg pixels_changed;
     initial pixels_changed = 1'b0;
 
     wire frame_needs_cleared;
-    assign frame_needs_cleared = axis_tlast && pixels_changed && !pixel_sync;
+    assign frame_needs_cleared = s_axis_tlast && pixels_changed && !pixel_sync;
 
     reg axis_tready_oneshot;
     
     initial axis_tready_oneshot = 1'b1;
-    initial axis_tready = 1'b0;
+    initial s_axis_tready = 1'b0;
     
     reg [0:1] state;
     localparam STATE_INIT_FIRST_PIXEL = 2'b00;
@@ -65,7 +65,7 @@ module axi_stream_to_ili_9341 # (
     localparam STATE_HANDLE_TRANSFER  = 2'b10;
     initial state = STATE_INIT_FIRST_PIXEL;
     
-    always @(posedge axis_clock) begin
+    always @(posedge s_axis_clock) begin
         case (state)
             STATE_INIT_FIRST_PIXEL: begin
                 // This is the primary init state, once clocks are
@@ -78,7 +78,7 @@ module axi_stream_to_ili_9341 # (
                 // Once the first pixel is drawn the pixel_sync flag will be de-asserted and
                 // we will keep drawing until it is re-asserted, now handle normal operations
                 if (pixel_sync) begin
-                    axis_tready <= 1'b1;
+                    s_axis_tready <= 1'b1;
                     out_clk_enable <= 0;
                     pixel_data_zeroize <= 1'b0;
                     state <= STATE_HANDLE_TRANSFER;
@@ -90,13 +90,13 @@ module axi_stream_to_ili_9341 # (
                 if (pixel_clock) begin
                     pixels_changed <= 1'b1;
                     if (axis_tready_oneshot) begin
-                        axis_tready <= 1'b1;
+                        s_axis_tready <= 1'b1;
                         axis_tready_oneshot <= 1'b0;
                     end else begin
-                        axis_tready <= 1'b0;
+                        s_axis_tready <= 1'b0;
                     end
                 end else begin
-                    axis_tready <= 1'b0;
+                    s_axis_tready <= 1'b0;
                     axis_tready_oneshot <= 1'b1;
                 end
                 
@@ -105,13 +105,13 @@ module axi_stream_to_ili_9341 # (
                 if (frame_needs_cleared) begin
                     pixel_data_zeroize <= 1'b1;
                     out_clk_enable <= 1'b1;
-                    axis_tready <= 1'b0;
+                    s_axis_tready <= 1'b0;
                     state <= STATE_INIT_NEXT_PIXELS;
                 end else begin
                     // Enable the output clock based on the TVALID line, this will
                     // start updating the pixel data whenever valid data is present
                     // on the AXI bus
-                    out_clk_enable <= axis_tvalid;
+                    out_clk_enable <= s_axis_tvalid;
                 end
             end
         endcase

@@ -3,8 +3,8 @@
 # set_property -dict {PACKAGE_PIN N18 IOSTANDARD LVCMOS33} [get_ports PL_CLK_50M]
 # set_property -dict {PACKAGE_PIN P16 IOSTANDARD LVCMOS33} [get_ports PL_KEY_1]
 # set_property -dict {PACKAGE_PIN T12 IOSTANDARD LVCMOS33} [get_ports PL_KEY_2]
-set_property -dict {PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports PL_LED_1]
-set_property -dict {PACKAGE_PIN U12 IOSTANDARD LVCMOS33} [get_ports PL_LED_2]
+# set_property -dict {PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports PL_LED_1]
+# set_property -dict {PACKAGE_PIN U12 IOSTANDARD LVCMOS33} [get_ports PL_LED_2]
 
 # Vivado told me to do it, otherwise fails to implement
 ###################################################################
@@ -33,12 +33,12 @@ set_property -dict {PACKAGE_PIN G14 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdc
 
 # ILI9341 display
 ###################################################################
-set_property -dict {PACKAGE_PIN L20 IOSTANDARD LVCMOS33} [get_ports TFT_CLK]
-set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports TFT_RST]
-set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports TFT_LED]
-set_property -dict {PACKAGE_PIN L19 IOSTANDARD LVCMOS33} [get_ports TFT_SDA]
-set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports TFT_CS]
-set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS33} [get_ports TFT_DC]
+set_property -dict {PACKAGE_PIN L20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_scl]
+set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_nrst]
+set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_led]
+set_property -dict {PACKAGE_PIN L19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_sda]
+set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_cs]
+set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_dc]
 
 #revert back to original instance
 current_instance -quiet

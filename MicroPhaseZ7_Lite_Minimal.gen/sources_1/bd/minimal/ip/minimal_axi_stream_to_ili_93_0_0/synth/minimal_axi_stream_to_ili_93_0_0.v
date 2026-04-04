@@ -56,51 +56,53 @@
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module minimal_axi_stream_to_ili_93_0_0 (
-  axis_tlast,
-  axis_tvalid,
-  axis_tdata,
-  axis_tready,
-  axis_clock,
-  axis_aresetn,
+  s_axis_tlast,
+  s_axis_tvalid,
+  s_axis_tdata,
+  s_axis_tready,
+  s_axis_clock,
+  s_axis_aresetn,
   pixel_clock,
   pixel_sync,
   pixel_data,
   core_clk_out
 );
 
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TLAST" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TLAST" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-input wire axis_tlast;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TVALID" *)
-input wire axis_tvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TDATA" *)
-input wire [15 : 0] axis_tdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TREADY" *)
-output wire axis_tready;
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 axis_clock CLK" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire s_axis_tlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TVALID" *)
+input wire s_axis_tvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TDATA" *)
+input wire [15 : 0] s_axis_tdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TREADY" *)
+output wire s_axis_tready;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 s_axis_clock CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis_clock, ASSOCIATED_BUSIF axis, ASSOCIATED_RESET axis_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0, PortWidth 1" *)
-input wire axis_clock;
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 axis_aresetn RST" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_clock, ASSOCIATED_BUSIF s_axis, ASSOCIATED_RESET s_axis_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0, PortWidth 1" *)
+input wire s_axis_clock;
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 s_axis_aresetn RST" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
-input wire axis_aresetn;
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 pixel_clock CLK" *)
-(* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pixel_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_tft_ili9341_wrapper_0_0_pixel_clock, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+input wire s_axis_aresetn;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_clock" *)
+(* X_INTERFACE_MODE = "master" *)
 input wire pixel_clock;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_sync" *)
 input wire pixel_sync;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_data" *)
 output wire [15 : 0] pixel_data;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream core_clock" *)
 output wire core_clk_out;
 
   axi_stream_to_ili_9341 inst (
-    .axis_tlast(axis_tlast),
-    .axis_tvalid(axis_tvalid),
-    .axis_tdata(axis_tdata),
-    .axis_tready(axis_tready),
-    .axis_clock(axis_clock),
-    .axis_aresetn(axis_aresetn),
+    .s_axis_tlast(s_axis_tlast),
+    .s_axis_tvalid(s_axis_tvalid),
+    .s_axis_tdata(s_axis_tdata),
+    .s_axis_tready(s_axis_tready),
+    .s_axis_clock(s_axis_clock),
+    .s_axis_aresetn(s_axis_aresetn),
     .pixel_clock(pixel_clock),
     .pixel_sync(pixel_sync),
     .pixel_data(pixel_data),

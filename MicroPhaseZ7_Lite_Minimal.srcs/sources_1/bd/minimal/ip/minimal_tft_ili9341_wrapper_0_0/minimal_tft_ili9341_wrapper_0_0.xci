@@ -8,7 +8,11 @@
     "gen_directory": "../../../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0",
     "parameters": {
       "component_parameters": {
+        "INPUT_CLK_MHZ": [ { "value": "100", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "minimal_tft_ili9341_wrapper_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "INPUT_CLK_MHZ": [ { "value": "100", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
@@ -41,50 +45,39 @@
         "tft_dc": [ { "direction": "out" } ],
         "tft_nrst": [ { "direction": "out" } ],
         "tft_cs": [ { "direction": "out" } ],
-        "pixel_clock": [ { "direction": "out" } ],
-        "pixel_sync": [ { "direction": "out" } ],
+        "tft_led": [ { "direction": "out" } ],
         "pixel_data": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
-        "core_clk": [ { "direction": "in" } ]
+        "core_clk": [ { "direction": "in" } ],
+        "pixel_clock": [ { "direction": "out" } ],
+        "pixel_sync": [ { "direction": "out" } ]
       },
       "interfaces": {
-        "core_clk": {
-          "vlnv": "xilinx.com:signal:clock:1.0",
-          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
-          "mode": "slave",
-          "parameters": {
-            "FREQ_HZ": [ { "value": "100000000", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "PHASE": [ { "value": "0.0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
-            "CLK_DOMAIN": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_BUSIF": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_RESET": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
-          },
+        "m_ilispi": {
+          "vlnv": "kn4hji.ddns.net:interfaces:ilispi:1.0",
+          "abstraction_type": "kn4hji.ddns.net:interfaces:ilispi_rtl:1.0",
+          "mode": "master",
           "port_maps": {
-            "CLK": [ { "physical_name": "core_clk" } ]
+            "sda": [ { "physical_name": "tft_sda" } ],
+            "scl": [ { "physical_name": "tft_sck" } ],
+            "cs": [ { "physical_name": "tft_cs" } ],
+            "dc": [ { "physical_name": "tft_dc" } ],
+            "nrst": [ { "physical_name": "tft_nrst" } ],
+            "led": [ { "physical_name": "tft_led" } ]
           }
         },
-        "pixel_clock": {
-          "vlnv": "xilinx.com:signal:clock:1.0",
-          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
-          "mode": "master",
-          "parameters": {
-            "FREQ_HZ": [ { "value": "100000000", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "PHASE": [ { "value": "0.0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
-            "CLK_DOMAIN": [ { "value": "minimal_tft_ili9341_wrapper_0_0_pixel_clock", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_BUSIF": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_RESET": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
-          },
+        "s_pixel_stream": {
+          "vlnv": "kn4hji.ddns.net:interfaces:pixel_stream:1.0",
+          "abstraction_type": "kn4hji.ddns.net:interfaces:pixel_stream_rtl:1.0",
+          "mode": "slave",
           "port_maps": {
-            "CLK": [ { "physical_name": "pixel_clock" } ]
+            "pixel_clock": [ { "physical_name": "pixel_clock" } ],
+            "pixel_data": [ { "physical_name": "pixel_data" } ],
+            "pixel_sync": [ { "physical_name": "pixel_sync" } ],
+            "core_clock": [ { "physical_name": "core_clk" } ]
           }
         }
       }
     }
   },
-  "checksum": "a1d0fcc3"
+  "checksum": "6758eedc"
 }

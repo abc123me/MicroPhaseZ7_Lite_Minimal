@@ -19,17 +19,26 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module tft_ili9341_wrapper (
-		output wire tft_sck,
-		output wire tft_sda,
-		output wire tft_dc,
-		output wire tft_nrst,
-		output wire tft_cs,
-		output wire pixel_clock,
-		output wire pixel_sync,
-		input  wire [15:0] pixel_data,
-		input  wire core_clk
+module tft_ili9341_wrapper # (
+        parameter INPUT_CLK_MHZ = 50
+    ) (
+        // Display data out
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi scl" *)  output wire tft_sck,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi sda" *)  output wire tft_sda,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi dc" *)   output wire tft_dc,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi nrst" *) output wire tft_nrst,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi cs" *)   output wire tft_cs,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi led" *)  output reg  tft_led,
+		
+		// Pixel stream in
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_data" *)  input  wire [15:0] pixel_data,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream core_clock" *)  input  wire core_clk,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_clock" *) output wire pixel_clock,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_sync" *)  output wire pixel_sync
 	);
+	
+    // Backlight is turned on after first frame is drawn
+	initial tft_led <= 0;
 	
 	// Counter for outputting a pixel sync bit
 	reg [16:0] pixel_counter;
@@ -39,6 +48,7 @@ module tft_ili9341_wrapper (
 	       pixel_counter <= pixel_counter + 1'b1;
 	   end else begin
 	       pixel_counter <= 0;
+	       tft_led <= 1;
 	   end
 	end
 	// The "pixel sync" is high whenever on the 0th pixel
@@ -54,7 +64,9 @@ module tft_ili9341_wrapper (
 	
 	// ILI9341 driver IP, thanks to "thekroko" for making this!
 	// https://github.com/thekroko/ili9341_fpga/tree/master
-	tft_ili9341(
+	tft_ili9341 # (
+        .INPUT_CLK_MHZ(INPUT_CLK_MHZ) 
+    ) (
 	   .clk(core_clk),
 	   .tft_sdo(tft_sdo),
 	   .tft_sck(tft_sck),

@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat Apr  4 01:54:03 2026
-# Process ID         : 619000
+# Start of session at: Sat Apr  4 07:22:18 2026
+# Process ID         : 3646303
 # Current directory  : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1
 # Command line       : vivado -log minimal_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minimal_wrapper.tcl
 # Log file           : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 9 7950X3D 16-Core Processor
-# CPU Frequency      : 4981.650 MHz
+# CPU Frequency      : 2985.835 MHz
 # CPU Physical cores : 16
 # CPU Logical cores  : 32
 # Host memory        : 66310 MB
 # Swap memory        : 25741 MB
 # Total Virtual      : 92051 MB
-# Available Virtual  : 62805 MB
+# Available Virtual  : 77493 MB
 #-----------------------------------------------------------
 source minimal_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -37,11 +37,11 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 619927
+INFO: [Synth 8-7075] Helper process launched with PID 3647084
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2273.250 ; gain = 484.844 ; free physical = 4669 ; free virtual = 58298
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2270.590 ; gain = 485.125 ; free physical = 33084 ; free virtual = 72533
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'tft_rst', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:63]
+INFO: [Synth 8-11241] undeclared symbol 'tft_rst', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:75]
 WARNING: [Synth 8-9397] empty parameter declaration is only allowed in SystemVerilog mode [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_stream_to_ili_9341.v:24]
 INFO: [Synth 8-6157] synthesizing module 'minimal_wrapper' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
@@ -69,7 +69,7 @@ INFO: [Synth 8-638] synthesizing module 'minimal_axi_dma_0_1' [/home/jeremiah/Pr
 	Parameter C_MM2S_BURST_SIZE bound to: 16 - type: integer 
 	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
@@ -202,9 +202,10 @@ INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (0#1
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
 INFO: [Synth 8-256] done synthesizing module 'axi_dma' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21979]
 INFO: [Synth 8-256] done synthesizing module 'minimal_axi_dma_0_1' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_1/synth/minimal_axi_dma_0_1.vhd:104]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:261]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:261]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'minimal_axi_dma_0_1' has 40 connections declared, but only 38 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:261]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:253]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:253]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:253]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'minimal_axi_dma_0_1' has 40 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:253]
 INFO: [Synth 8-638] synthesizing module 'minimal_axi_ethernetlite_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/synth/minimal_axi_ethernetlite_0_0.vhd:98]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SELECT_XPM bound to: 1 - type: integer 
@@ -689,12 +690,12 @@ INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_woutsw_0' (0#1) [/home/je
 INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1BBON5D' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3248]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_smc_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/synth/minimal_axi_smc_0.v:53]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:335]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:335]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:335]
-WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:335]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:335]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'minimal_axi_smc_0' has 78 connections declared, but only 73 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:335]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:326]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:326]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:326]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:326]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:326]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'minimal_axi_smc_0' has 78 connections declared, but only 73 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:326]
 INFO: [Synth 8-6157] synthesizing module 'minimal_axi_smc_2' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/synth/minimal_axi_smc_2.v:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_ddcf' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:10]
 INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_G4XXAZ' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:336]
@@ -724,32 +725,6 @@ INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instan
 WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_ddcf_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:731]
 WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_ddcf_s00tr_0' has 38 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:731]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_stream_to_ili_9341.v:69]
-WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'minimal_axis_dwidth_converter_0_0' is unconnected for instance 'axis_dwidth_converter_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:453]
-WARNING: [Synth 8-7023] instance 'axis_dwidth_converter_0' of module 'minimal_axis_dwidth_converter_0_0' has 12 connections declared, but only 11 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:453]
-INFO: [Synth 8-638] synthesizing module 'minimal_c_counter_binary_0_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_c_counter_binary_0_1/synth/minimal_c_counter_binary_0_1.vhd:66]
-	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_WIDTH bound to: 1 - type: integer 
-	Parameter C_HAS_CE bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_RESTRICT_COUNT bound to: 0 - type: integer 
-	Parameter C_COUNT_TO bound to: 1 - type: string 
-	Parameter C_COUNT_BY bound to: 1 - type: string 
-	Parameter C_COUNT_MODE bound to: 0 - type: integer 
-	Parameter C_THRESH0_VALUE bound to: 1 - type: string 
-	Parameter C_CE_OVERRIDES_SYNC bound to: 0 - type: integer 
-	Parameter C_HAS_THRESH0 bound to: 0 - type: integer 
-	Parameter C_HAS_LOAD bound to: 0 - type: integer 
-	Parameter C_LOAD_LOW bound to: 0 - type: integer 
-	Parameter C_LATENCY bound to: 1 - type: integer 
-	Parameter C_FB_LATENCY bound to: 0 - type: integer 
-	Parameter C_AINIT_VAL bound to: 0 - type: string 
-	Parameter C_SINIT_VAL bound to: 0 - type: string 
-	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
-	Parameter C_HAS_SSET bound to: 0 - type: integer 
-	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'minimal_c_counter_binary_0_1' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_c_counter_binary_0_1/synth/minimal_c_counter_binary_0_1.vhd:66]
 INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
@@ -764,17 +739,17 @@ INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_process
 INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'minimal_processing_system7_0_0' has 108 connections declared, but only 98 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:469]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'minimal_processing_system7_0_0' has 108 connections declared, but only 98 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:445]
 INFO: [Synth 8-638] synthesizing module 'minimal_rst_ps7_0_50M_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -808,11 +783,13 @@ INFO: [Synth 8-638] synthesizing module 'lpf__parameterized0' [/home/jeremiah/Pr
 INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized2' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
 INFO: [Synth 8-256] done synthesizing module 'minimal_rst_ps7_0_50M_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:568]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:568]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:568]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:568]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:568]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:544]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:544]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:544]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:544]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:544]
+	Parameter INPUT_CLK_MHZ bound to: 100 - type: integer 
+	Parameter INPUT_CLK_MHZ bound to: 100 - type: integer 
 INFO: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2133]
 INFO: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2135]
 INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2288]
@@ -864,8 +841,7 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_r
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
-WARNING: [Synth 8-3848] Net tft_reset in module/entity tft_ili9341_wrapper does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:50]
+WARNING: [Synth 8-3848] Net tft_reset in module/entity tft_ili9341_wrapper does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:60]
 WARNING: [Synth 8-7129] Port tft_sdo in module tft_ili9341 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized4 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -947,39 +923,39 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv is either unconnected or has no load
-WARNING: [Synth 8-7129] Port N_TC in module fabric_counter is either unconnected or has no load
-WARNING: [Synth 8-7129] Port UP in module fabric_counter is either unconnected or has no load
-WARNING: [Synth 8-7129] Port L[0] in module fabric_counter is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CE in module xbip_counter is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_counter is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LOAD in module xbip_counter is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSET in module c_counter_binary_v12_0_22_viv is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SINIT in module c_counter_binary_v12_0_22_viv is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module axis_register_slice_v1_1_35_axisc_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK2X in module axis_register_slice_v1_1_35_axisc_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESET in module axis_register_slice_v1_1_35_axisc_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_aresetn in module axi_stream_to_ili_9341 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[68] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[67] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[66] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[65] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[64] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[63] in module xpm_memory_base__parameterized3 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2708.211 ; gain = 919.805 ; free physical = 4247 ; free virtual = 57909
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2695.520 ; gain = 910.055 ; free physical = 32626 ; free virtual = 72083
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2711.180 ; gain = 922.773 ; free physical = 4254 ; free virtual = 57917
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2695.520 ; gain = 910.055 ; free physical = 32626 ; free virtual = 72083
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2711.180 ; gain = 922.773 ; free physical = 4254 ; free virtual = 57917
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2695.520 ; gain = 910.055 ; free physical = 32626 ; free virtual = 72083
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.91 . Memory (MB): peak = 2730.023 ; gain = 0.000 ; free physical = 4306 ; free virtual = 57967
+Netlist sorting complete. Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.76 . Memory (MB): peak = 2727.340 ; gain = 0.000 ; free physical = 32615 ; free virtual = 72072
 INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1009,9 +985,7 @@ Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_L
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/smartconnect.xdc] for cell 'minimal_i/axi_smc1/inst'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/smartconnect.xdc] for cell 'minimal_i/axi_smc1/inst'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]
-WARNING: [Vivado 12-584] No ports matched 'PL_LED_2'. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc:7]
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/minimal_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/dont_touch.xdc]
@@ -1039,7 +1013,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrap
 INFO: [Project 1-1714] 95 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3009.199 ; gain = 0.000 ; free physical = 4094 ; free virtual = 57755
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.547 ; gain = 0.000 ; free physical = 32485 ; free virtual = 71941
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 93 instances were transformed.
   FDR => FDRE: 55 instances
@@ -1049,24 +1023,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1S => RAM32X1S (RAMS32): 4 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3009.234 ; gain = 0.000 ; free physical = 4056 ; free virtual = 57717
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3006.582 ; gain = 0.000 ; free physical = 32485 ; free virtual = 71941
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3009.234 ; gain = 1220.828 ; free physical = 3878 ; free virtual = 57540
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3006.582 ; gain = 1221.117 ; free physical = 32457 ; free virtual = 71914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3017.203 ; gain = 1228.797 ; free physical = 3877 ; free virtual = 57540
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3014.551 ; gain = 1229.086 ; free physical = 32457 ; free virtual = 71914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3017.203 ; gain = 1228.797 ; free physical = 3907 ; free virtual = 57570
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3014.551 ; gain = 1229.086 ; free physical = 32473 ; free virtual = 71930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
@@ -1096,8 +1070,6 @@ INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' i
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_stream_to_ili_9341'
-INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1273,7 +1245,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_stream_to_ili_9341'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3017.203 ; gain = 1228.797 ; free physical = 3824 ; free virtual = 57512
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3014.551 ; gain = 1229.086 ; free physical = 32406 ; free virtual = 71869
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
@@ -1334,7 +1306,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized2.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 3017.203 ; gain = 1228.797 ; free physical = 3711 ; free virtual = 57460
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3014.551 ; gain = 1229.086 ; free physical = 32417 ; free virtual = 71941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1342,7 +1314,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 3017.203 ; gain = 1228.797 ; free physical = 3707 ; free virtual = 57455
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 3014.551 ; gain = 1229.086 ; free physical = 32413 ; free virtual = 71937
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1350,7 +1322,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3017.203 ; gain = 1228.797 ; free physical = 3735 ; free virtual = 57488
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3014.551 ; gain = 1229.086 ; free physical = 32385 ; free virtual = 71909
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -1368,7 +1340,7 @@ INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0
 INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 3017.203 ; gain = 1228.797 ; free physical = 3741 ; free virtual = 57493
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 3014.551 ; gain = 1229.086 ; free physical = 32391 ; free virtual = 71915
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1386,37 +1358,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 3139.016 ; gain = 1350.609 ; free physical = 3865 ; free virtual = 57595
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 3136.363 ; gain = 1350.898 ; free physical = 32268 ; free virtual = 71793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 3139.016 ; gain = 1350.609 ; free physical = 3865 ; free virtual = 57595
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 3136.363 ; gain = 1350.898 ; free physical = 32268 ; free virtual = 71793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3139.016 ; gain = 1350.609 ; free physical = 3860 ; free virtual = 57588
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3136.363 ; gain = 1350.898 ; free physical = 32268 ; free virtual = 71793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3139.016 ; gain = 1350.609 ; free physical = 3860 ; free virtual = 57589
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3136.363 ; gain = 1350.898 ; free physical = 32268 ; free virtual = 71793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3145.953 ; gain = 1357.547 ; free physical = 3859 ; free virtual = 57587
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3143.301 ; gain = 1357.836 ; free physical = 32264 ; free virtual = 71788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3145.953 ; gain = 1357.547 ; free physical = 3860 ; free virtual = 57588
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3143.301 ; gain = 1357.836 ; free physical = 32264 ; free virtual = 71788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1435,12 +1407,12 @@ Report Cell Usage:
 |1     |BIBUF    |   130|
 |2     |BUFG     |     3|
 |3     |CARRY4   |    63|
-|4     |LUT1     |   266|
-|5     |LUT2     |   371|
-|6     |LUT3     |   551|
-|7     |LUT4     |   475|
-|8     |LUT5     |   460|
-|9     |LUT6     |   740|
+|4     |LUT1     |   264|
+|5     |LUT2     |   369|
+|6     |LUT3     |   514|
+|7     |LUT4     |   469|
+|8     |LUT5     |   467|
+|9     |LUT6     |   743|
 |10    |MULT_AND |    17|
 |11    |MUXCY    |    25|
 |12    |MUXF7    |     2|
@@ -1450,30 +1422,30 @@ Report Cell Usage:
 |16    |RAMB18E1 |     8|
 |17    |RAMB36E1 |     1|
 |18    |SRL16    |     3|
-|19    |SRL16E   |    59|
+|19    |SRL16E   |    60|
 |20    |XORCY    |    20|
 |21    |FDCE     |   159|
 |22    |FDR      |    48|
-|23    |FDRE     |  2504|
+|23    |FDRE     |  2411|
 |24    |FDS      |     2|
-|25    |FDSE     |   155|
+|25    |FDSE     |   156|
 |26    |IBUF     |    10|
 |27    |IOBUF    |     1|
-|28    |OBUF     |    14|
+|28    |OBUF     |    13|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3145.953 ; gain = 1357.547 ; free physical = 3860 ; free virtual = 57588
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3143.301 ; gain = 1357.836 ; free physical = 32264 ; free virtual = 71788
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 3145.953 ; gain = 1059.492 ; free physical = 3837 ; free virtual = 57565
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 3145.961 ; gain = 1357.547 ; free physical = 3837 ; free virtual = 57565
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 3143.301 ; gain = 1046.773 ; free physical = 32260 ; free virtual = 71785
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3143.309 ; gain = 1357.836 ; free physical = 32268 ; free virtual = 71792
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3148.922 ; gain = 0.000 ; free physical = 4014 ; free virtual = 57745
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3146.270 ; gain = 0.000 ; free physical = 32420 ; free virtual = 71944
 INFO: [Netlist 29-17] Analyzing 214 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3217.824 ; gain = 0.000 ; free physical = 4010 ; free virtual = 57741
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3215.172 ; gain = 0.000 ; free physical = 32423 ; free virtual = 71949
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 104 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 9 instances
@@ -1485,14 +1457,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 20 instances
   SRL16 => SRL16E: 3 instances
 
-Synth Design complete | Checksum: 5b804451
+Synth Design complete | Checksum: 760fb96f
 INFO: [Common 17-83] Releasing license: Synthesis
-646 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+641 Infos, 164 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 3217.859 ; gain = 1601.836 ; free physical = 4013 ; free virtual = 57745
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2459.962; main = 2368.046; forked = 313.834
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4005.504; main = 3217.828; forked = 988.297
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3241.836 ; gain = 0.000 ; free physical = 4018 ; free virtual = 57748
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 3215.207 ; gain = 1599.188 ; free physical = 32423 ; free virtual = 71949
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2444.342; main = 2390.645; forked = 324.069
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4002.852; main = 3215.176; forked = 988.297
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 3239.184 ; gain = 0.000 ; free physical = 32423 ; free virtual = 71949
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 01:55:01 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 07:23:06 2026...

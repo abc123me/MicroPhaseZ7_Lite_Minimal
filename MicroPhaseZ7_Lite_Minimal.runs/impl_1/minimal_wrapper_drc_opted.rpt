@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sat Apr  4 01:55:15 2026
+| Date         : Sat Apr  4 07:23:19 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_drc -file minimal_wrapper_drc_opted.rpt -pb minimal_wrapper_drc_opted.pb -rpx minimal_wrapper_drc_opted.rpx
 | Design       : minimal_wrapper
@@ -24,14 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 3
-+-------------+----------+-------------------------------------------------------------+--------+
-| Rule        | Severity | Description                                                 | Checks |
-+-------------+----------+-------------------------------------------------------------+--------+
-| PLCK-12     | Warning  | Clock Placer Checks                                         | 1      |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1      |
-| REQP-181    | Advisory | writefirst                                                  | 1      |
-+-------------+----------+-------------------------------------------------------------+--------+
+             Checks found: 2
++----------+----------+---------------------+--------+
+| Rule     | Severity | Description         | Checks |
++----------+----------+---------------------+--------+
+| PLCK-12  | Warning  | Clock Placer Checks | 1      |
+| REQP-181 | Advisory | writefirst          | 1      |
++----------+----------+---------------------+--------+
 
 2. REPORT DETAILS
 -----------------
@@ -44,12 +43,6 @@ Resolution: Poor placement of an IO pin and a BUFG has resulted in the router us
 	minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST (IBUF.O) is locked to L14
 	minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX (BUFG.I) cannot be placed
 
-Related violations: <none>
-
-PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT minimal_i/tft_ili9341_wrapper_0/inst/pixel_sync_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
-minimal_i/c_counter_binary_1/U0/i_synth/i_baseip.i_xbip_counter/i_fabric.i_fab/i_seg[1].i_sum_reg/opt_has_pipe.first_q_reg[0]
 Related violations: <none>
 
 REQP-181#1 Advisory
