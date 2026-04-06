@@ -27,11 +27,12 @@ set_property -dict {PACKAGE_PIN L15 IOSTANDARD LVCMOS33} [get_ports {ETH_MII_txd
 set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports {ETH_MII_txd[0]}]
 set_property -dict {PACKAGE_PIN L14 IOSTANDARD LVCMOS33} [get_ports ETH_MII_tx_clk]
 set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports ETH_MII_tx_en]
-set_property -dict {PACKAGE_PIN H20 IOSTANDARD LVCMOS33} [get_ports ETH_MII_rst_n]
+set_property -dict {PACKAGE_PIN H20 IOSTANDARD LVCMOS33 PULLDOWN true} [get_ports ETH_MII_rst_n]
 set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdio_io]
 set_property -dict {PACKAGE_PIN G14 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdc]
+set_property -dict {PULLDOWN true} [get_ports ETH_MII_rst_n]
 
-# ILI9341 display
+# ILI9341 display 0
 ###################################################################
 set_property -dict {PACKAGE_PIN L20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_scl]
 set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_nrst]
@@ -39,6 +40,15 @@ set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_l
 set_property -dict {PACKAGE_PIN L19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_sda]
 set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_cs]
 set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_dc]
+
+# ILI9341 display 1
+###################################################################
+set_property -dict {PACKAGE_PIN W15 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_scl]
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_nrst]
+set_property -dict {PACKAGE_PIN U15 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_led]
+set_property -dict {PACKAGE_PIN V15 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_sda]
+set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_cs]
+set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_dc]
 
 #revert back to original instance
 current_instance -quiet

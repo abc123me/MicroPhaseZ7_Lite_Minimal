@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1775305336" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ios.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1775462582" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ios.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="minimal_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="minimal_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="minimal_wrapper_utilization_synth.pb"/>
@@ -32,7 +32,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/axi_stream_to_ili_9341.v">
+    <File Path="$PSRCDIR/sources_1/new/axi_stream_to_pixels.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axi_line_fifo.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

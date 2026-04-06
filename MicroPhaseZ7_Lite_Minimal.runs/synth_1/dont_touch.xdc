@@ -177,8 +177,20 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0/minimal_tft_ili9341_wrapper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft_ili9341_wrapper_0_0 || ORIG_REF_NAME==minimal_tft_ili9341_wrapper_0_0} -quiet] -quiet
 
-# IP: bd/minimal/ip/minimal_axi_stream_to_ili_93_0_0/minimal_axi_stream_to_ili_93_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_stream_to_ili_93_0_0 || ORIG_REF_NAME==minimal_axi_stream_to_ili_93_0_0} -quiet] -quiet
+# IP: bd/minimal/ip/minimal_axi_stream_to_pixels_0_0/minimal_axi_stream_to_pixels_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_stream_to_pixels_0_0 || ORIG_REF_NAME==minimal_axi_stream_to_pixels_0_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_tft_ili9341_wrapper_0_1/minimal_tft_ili9341_wrapper_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft_ili9341_wrapper_0_1 || ORIG_REF_NAME==minimal_tft_ili9341_wrapper_0_1} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_axi_stream_to_pixels_0_1/minimal_axi_stream_to_pixels_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_stream_to_pixels_0_1 || ORIG_REF_NAME==minimal_axi_stream_to_pixels_0_1} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_axi_line_fifo_0_0/minimal_axi_line_fifo_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_line_fifo_0_0 || ORIG_REF_NAME==minimal_axi_line_fifo_0_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_ila_1_0/minimal_ila_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_ila_1_0 || ORIG_REF_NAME==minimal_ila_1_0} -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_processing_system7_0_0 || ORIG_REF_NAME==minimal_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -292,5 +304,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/smartconnect.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_axi_smc_2 || ORIG_REF_NAME==minimal_axi_smc_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila_impl.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_ila_1_0 || ORIG_REF_NAME==minimal_ila_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_ila_1_0 || ORIG_REF_NAME==minimal_ila_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/minimal_ila_1_0_ooc.xdc
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/minimal_ooc.xdc

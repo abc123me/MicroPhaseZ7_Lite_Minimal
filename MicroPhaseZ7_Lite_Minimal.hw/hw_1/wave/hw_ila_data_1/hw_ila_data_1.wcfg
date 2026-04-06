@@ -10,57 +10,131 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="4,097"></ZoomEndTime>
+      <ZoomEndTime time="16,385"></ZoomEndTime>
       <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
       <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="16" />
    <wave_markers>
    </wave_markers>
-   <wvobject type="logic" fp_name="minimal_i/axi_dma_0_m_axis_mm2s_tvalid">
+   <wvobject type="array" fp_name="minimal_i/dma_tdata">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/axi_dma_0_m_axis_mm2s_tvalid</obj_property>
-      <obj_property name="ObjectShortName">axi_dma_0_m_axis_mm2s_tvalid</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="minimal_i/clock_fucker_0_axi_tready">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/clock_fucker_0_axi_tready</obj_property>
-      <obj_property name="ObjectShortName">clock_fucker_0_axi_tready</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="minimal_i/ilslice_0_Dout">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/ilslice_0_Dout[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ilslice_0_Dout[15:0]</obj_property>
+      <obj_property name="ElementShortName">minimal_i/dma_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dma_tdata[15:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="minimal_i/ilvector_logic_0_Res">
+   <wvobject type="logic" fp_name="minimal_i/dma_tlast">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/ilvector_logic_0_Res[0:0]</obj_property>
-      <obj_property name="ObjectShortName">ilvector_logic_0_Res[0:0]</obj_property>
+      <obj_property name="ElementShortName">minimal_i/dma_tlast</obj_property>
+      <obj_property name="ObjectShortName">dma_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/dma_tready">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/dma_tready</obj_property>
+      <obj_property name="ObjectShortName">dma_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/dma_tvalid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/dma_tvalid</obj_property>
+      <obj_property name="ObjectShortName">dma_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/fifo_full">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_full</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/fifo_in_pos">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_in_pos[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_pos[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="minimal_i/tft_ili9341_wrapper_0_pixel_clock">
+   <wvobject type="array" fp_name="minimal_i/fifo_level">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/tft_ili9341_wrapper_0_pixel_clock</obj_property>
-      <obj_property name="ObjectShortName">tft_ili9341_wrapper_0_pixel_clock</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_level[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_level[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="minimal_i/tft_ili9341_wrapper_0_pixel_sync">
+   <wvobject type="array" fp_name="minimal_i/fifo_out_pos">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">minimal_i/tft_ili9341_wrapper_0_pixel_sync</obj_property>
-      <obj_property name="ObjectShortName">tft_ili9341_wrapper_0_pixel_sync</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_out_pos[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_pos[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/fifo_tdata">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_tdata[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/fifo_tlast">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_tlast</obj_property>
+      <obj_property name="ObjectShortName">fifo_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/fifo_tready">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_tready</obj_property>
+      <obj_property name="ObjectShortName">fifo_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/fifo_tvalid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/fifo_tvalid</obj_property>
+      <obj_property name="ObjectShortName">fifo_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/pixel_clock">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/pixel_clock</obj_property>
+      <obj_property name="ObjectShortName">pixel_clock</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="minimal_i/pixel_data">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/pixel_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/pixel_sync">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/pixel_sync</obj_property>
+      <obj_property name="ObjectShortName">pixel_sync</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="minimal_i/core_clk_enable">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">minimal_i/core_clk_enable</obj_property>
+      <obj_property name="ObjectShortName">core_clk_enable</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

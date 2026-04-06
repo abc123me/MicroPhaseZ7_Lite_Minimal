@@ -222,7 +222,7 @@ BEGIN
       C_FAMILY => "zynq",
       C_SELECT_XPM => 1,
       C_INSTANCE => "axi_ethernetlite_inst",
-      C_S_AXI_ACLK_PERIOD_PS => 20000,
+      C_S_AXI_ACLK_PERIOD_PS => 10000,
       C_S_AXI_ADDR_WIDTH => 13,
       C_S_AXI_DATA_WIDTH => 32,
       C_S_AXI_ID_WIDTH => 1,

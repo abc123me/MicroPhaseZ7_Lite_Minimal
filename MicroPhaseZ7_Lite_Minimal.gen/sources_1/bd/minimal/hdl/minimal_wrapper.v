@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sat Apr  4 07:22:07 2026
+//Date        : Mon Apr  6 03:02:52 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -49,7 +49,13 @@ module minimal_wrapper
     m_ilispi_0_led,
     m_ilispi_0_nrst,
     m_ilispi_0_scl,
-    m_ilispi_0_sda);
+    m_ilispi_0_sda,
+    m_ilispi_1_cs,
+    m_ilispi_1_dc,
+    m_ilispi_1_led,
+    m_ilispi_1_nrst,
+    m_ilispi_1_scl,
+    m_ilispi_1_sda);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -89,6 +95,12 @@ module minimal_wrapper
   output m_ilispi_0_nrst;
   output m_ilispi_0_scl;
   output m_ilispi_0_sda;
+  output m_ilispi_1_cs;
+  output m_ilispi_1_dc;
+  output m_ilispi_1_led;
+  output m_ilispi_1_nrst;
+  output m_ilispi_1_scl;
+  output m_ilispi_1_sda;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -132,6 +144,12 @@ module minimal_wrapper
   wire m_ilispi_0_nrst;
   wire m_ilispi_0_scl;
   wire m_ilispi_0_sda;
+  wire m_ilispi_1_cs;
+  wire m_ilispi_1_dc;
+  wire m_ilispi_1_led;
+  wire m_ilispi_1_nrst;
+  wire m_ilispi_1_scl;
+  wire m_ilispi_1_sda;
 
   IOBUF ETH_MDIO_mdio_iobuf
        (.I(ETH_MDIO_mdio_o),
@@ -179,5 +197,11 @@ module minimal_wrapper
         .m_ilispi_0_led(m_ilispi_0_led),
         .m_ilispi_0_nrst(m_ilispi_0_nrst),
         .m_ilispi_0_scl(m_ilispi_0_scl),
-        .m_ilispi_0_sda(m_ilispi_0_sda));
+        .m_ilispi_0_sda(m_ilispi_0_sda),
+        .m_ilispi_1_cs(m_ilispi_1_cs),
+        .m_ilispi_1_dc(m_ilispi_1_dc),
+        .m_ilispi_1_led(m_ilispi_1_led),
+        .m_ilispi_1_nrst(m_ilispi_1_nrst),
+        .m_ilispi_1_scl(m_ilispi_1_scl),
+        .m_ilispi_1_sda(m_ilispi_1_sda));
 endmodule

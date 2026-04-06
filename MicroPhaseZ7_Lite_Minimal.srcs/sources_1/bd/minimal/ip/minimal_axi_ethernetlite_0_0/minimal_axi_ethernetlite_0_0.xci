@@ -16,7 +16,7 @@
         "C_S_AXI_PROTOCOL": [ { "value": "AXI4LITE", "resolve_type": "user", "usage": "all" } ],
         "Component_Name": [ { "value": "minimal_axi_ethernetlite_0_0", "resolve_type": "user", "usage": "all" } ],
         "C_DUPLEX": [ { "value": "1", "resolve_type": "user", "usage": "all" } ],
-        "AXI_ACLK_FREQ_MHZ": [ { "value": "50", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "AXI_ACLK_FREQ_MHZ": [ { "value": "100", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "Enable_Constraints": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "USE_BOARD_FLOW": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "MII_BOARD_INTERFACE": [ { "value": "Custom", "resolve_type": "user", "usage": "all" } ],
@@ -29,7 +29,7 @@
         "C_FAMILY": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
         "C_SELECT_XPM": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_INSTANCE": [ { "value": "axi_ethernetlite_inst", "usage": "all" } ],
-        "C_S_AXI_ACLK_PERIOD_PS": [ { "value": "20000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S_AXI_ACLK_PERIOD_PS": [ { "value": "10000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXI_ADDR_WIDTH": [ { "value": "13", "format": "long", "usage": "all" } ],
         "C_S_AXI_DATA_WIDTH": [ { "value": "32", "format": "long", "usage": "all" } ],
         "C_S_AXI_ID_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -550,5 +550,5 @@
       }
     }
   },
-  "checksum": "2fa722e7"
+  "checksum": "27e9704d"
 }
