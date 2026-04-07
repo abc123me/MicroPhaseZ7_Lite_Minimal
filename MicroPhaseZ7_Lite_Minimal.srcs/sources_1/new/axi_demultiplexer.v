@@ -23,13 +23,18 @@ module axi_demultiplexer # (
 	input  wire s_axis_tvalid,
 	input  wire [DATA_WIDTH-1:0] s_axis_tdata,
 	output wire s_axis_tready,
-	// AXI4 Streams out
-	output wire m_axis_tlast [OUTPUTS-1:0],
-	output wire m_axis_tvalid [OUTPUTS-1:0],
-	output wire [DATA_WIDTH-1:0] m_axis_tdata [OUTPUTS-1:0],
-	input  wire m_axis_tready [OUTPUTS-1:0],
+	// AXI4 Stream 0 out
+	output wire m00_axis_tlast,
+	output wire m00_axis_tvalid,
+	output wire [DATA_WIDTH-1:0] m00_axis_tdata,
+	input  wire m00_axis_tready,
+	// AXI4 Stream 1 out
+	output wire m01_axis_tlast,
+	output wire m01_axis_tvalid,
+	output wire [DATA_WIDTH-1:0] m01_axis_tdata,
+	input  wire m01_axis_tready,
 	// Selector in
-	input  wire [$clog2(OUTPUTS)-1:0] selection,
+	input  wire selection,
 	input  wire axi_clock
 );
 	genvar i;
@@ -37,12 +42,13 @@ module axi_demultiplexer # (
 	wire [OUTPUTS-1:0] treadies_select;
 	assign s_axis_tready = |treadies_select;
 
-	generate
-		for (i = 0; i < $clog2(OUTPUTS); i = i + 1) begin
-			assign m_axis_tdata[i]    = s_axis_tdata     && (selection == i);
-			assign m_axis_tlast[i]    = s_axis_tlast     && (selection == i);
-			assign m_axis_tvalid[i]   = s_axis_tvalid    && (selection == i);
-			assign treadies_select[i] = m_axis_tready[i] && (selection == i);
-		end
-	endgenerate
+	assign m00_axis_tdata  = s_axis_tdata    && (selection == 0);
+	assign m00_axis_tlast  = s_axis_tlast    && (selection == 0);
+	assign m00_axis_tvalid = s_axis_tvalid   && (selection == 0);
+	assign treadies_select = m00_axis_tready && (selection == 0);
+	
+	assign m01_axis_tdata  = s_axis_tdata    && (selection == 1);
+	assign m01_axis_tlast  = s_axis_tlast    && (selection == 1);
+	assign m01_axis_tvalid = s_axis_tvalid   && (selection == 1);
+	assign treadies_select = m01_axis_tready && (selection == 1);
 endmodule

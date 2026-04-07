@@ -32,6 +32,7 @@ module axi_stream_to_pixels (
     // Register to enable/disable pixel data zeroization
     // When high, this should zeroize the pixel data
     // Asserted upon initialization or during incomplete DMA transfers
+    reg [15:0] pixel_data_buffer;
     reg pixel_data_zeroize;
     initial pixel_data_zeroize = 1'b1;
     assign pixel_data = pixel_data_zeroize ? 16'b0 : s_axis_tdata;

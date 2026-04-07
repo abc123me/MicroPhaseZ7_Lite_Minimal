@@ -34,18 +34,17 @@ module axi_line_fifo # (
 		input wire axis_aresetn,
 		
 		// Miscellaneous
-		output wire fifo_full,
-		input  wire fifo_restart,
+		output reg fifo_complete,
+		input  wire en_fifo_restart,
 		output reg [$clog2(FIFO_SIZE)-1:0] fifo_in_pos,
 		output reg [$clog2(FIFO_SIZE)-1:0] fifo_out_pos,
 		output wire [$clog2(FIFO_SIZE)-1:0] fifo_level
 	);
     
     // FIFO level
-    reg fifo_has_data;
+    wire fifo_has_data;
 	assign fifo_level = fifo_in_pos - fifo_out_pos;
-	assign fifo_full = fifo_level == 0 && fifo_out_pos > 0;
-	initial fifo_has_data = 0;
+	assign fifo_has_data = fifo_out_pos < fifo_in_pos;
 
 	// FIFO controls
 	reg [DATA_WIDTH-1:0] fifo [FIFO_SIZE:0];
@@ -57,27 +56,38 @@ module axi_line_fifo # (
 
 	// Output AXI signalling
 	initial m_axis_tvalid = 0;
-	assign m_axis_tlast = s_axis_tlast;
+	
+	initial fifo_complete = 0;
+	
+	reg got_tlast;
+	assign m_axis_tlast = got_tlast && fifo_complete;
+	initial got_tlast = 0;
 
 	always @(posedge axis_clock) begin
-		// Handle fifo restore
-		if (fifo_restart) begin
-		    fifo_in_pos <= 0;
-		    fifo_out_pos <= 0;
-		    fifo_has_data <= 0;
-		    s_axis_tready <= 1;
-		    m_axis_tvalid <= 0;
-		end else begin
+        // Clear the FIFO when full
+        if(fifo_complete && m_axis_tready && en_fifo_restart) begin
+            fifo_out_pos  <= 0;
+            fifo_in_pos   <= 0;
+            got_tlast     <= 0;
+            m_axis_tvalid <= 0;
+            s_axis_tready <= 1;
+            fifo_complete <= 0;
+        end else begin
             // Handle input data
             if (s_axis_tvalid) begin
                 if (s_axis_tready) begin
+                    // Fill the FIFO
                     fifo[fifo_in_pos] <= s_axis_tdata;
                     if (fifo_in_pos <= FIFO_SIZE - 1) begin
                         fifo_in_pos <= fifo_in_pos + 1;
-                        fifo_has_data <= 1;
                         s_axis_tready <= 1;
                     end else begin
                         s_axis_tready <= 0;
+                    end
+                    
+                    // Keep track of TLAST
+                    if (s_axis_tlast) begin
+                        got_tlast <= 1;
                     end
                 end
             end
@@ -85,17 +95,13 @@ module axi_line_fifo # (
             // Handle output data
             if (fifo_has_data) begin
                 m_axis_tdata <= fifo[fifo_out_pos];
-                
+                m_axis_tvalid <= 1;
                 if (m_axis_tready) begin
-                    if (fifo_out_pos <= FIFO_SIZE - 1) begin
-                        fifo_out_pos <= fifo_out_pos + 1;
-                    end
-                    if (fifo_level == 0) begin
-                        fifo_has_data <= 0;
-                    end
+                    fifo_out_pos <= fifo_out_pos + 1;
                 end
+            end else if (fifo_out_pos > 0) begin
+                fifo_complete <= 1;
             end
-            m_axis_tvalid <= fifo_has_data && !fifo_full;
-		end
+        end
     end
 endmodule

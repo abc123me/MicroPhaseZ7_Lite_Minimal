@@ -452,7 +452,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -613,7 +613,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SC_ACLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SC_ACLK.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -753,7 +753,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c63a4535</spirit:value>
+            <spirit:value>9:7042c336</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -772,11 +772,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 06 08:03:00 UTC 2026</spirit:value>
+            <spirit:value>Thu Apr 09 22:08:54 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0763343f</spirit:value>
+            <spirit:value>9:d5d0399f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -792,11 +792,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 06 08:03:01 UTC 2026</spirit:value>
+            <spirit:value>Fri Apr 10 02:34:02 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0763343f</spirit:value>
+            <spirit:value>9:d5d0399f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -815,11 +815,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 06 08:03:00 UTC 2026</spirit:value>
+            <spirit:value>Thu Apr 09 22:08:54 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c63a4535</spirit:value>
+            <spirit:value>9:7042c336</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -835,11 +835,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 06 08:03:01 UTC 2026</spirit:value>
+            <spirit:value>Fri Apr 10 02:34:02 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c63a4535</spirit:value>
+            <spirit:value>9:7042c336</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -902,7 +902,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) - 1)">1</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) - 1)">2</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -922,7 +922,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) * 1) - 1)">1</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) * 1) - 1)">2</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -942,7 +942,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) - 1)">1</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) - 1)">2</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -959,7 +959,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) - 1)">1</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_SI&apos;)) - 1)">2</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1304,7 +1304,7 @@
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_NUM_SI</spirit:name>
         <spirit:displayName>C_NUM_SI</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_SI" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_SI" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_NUM_MI</spirit:name>
@@ -1324,7 +1324,7 @@
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_S_NUM_BYTES_ARRAY</spirit:name>
         <spirit:displayName>C_S_NUM_BYTES_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_NUM_BYTES_ARRAY" spirit:bitStringLength="64">0x0000000400000004</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_NUM_BYTES_ARRAY" spirit:bitStringLength="96">0x000000040000000400000004</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_M_NUM_BYTES_ARRAY</spirit:name>
@@ -1334,7 +1334,7 @@
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_PRIORITY_ARB_ARRAY</spirit:name>
         <spirit:displayName>C_PRIORITY_ARB</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PRIORITY_ARB_ARRAY" spirit:bitStringLength="2">0b00</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PRIORITY_ARB_ARRAY" spirit:bitStringLength="3">0b000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_USER_BITS_PER_BYTE</spirit:name>
@@ -1586,7 +1586,7 @@
     <spirit:parameter>
       <spirit:name>NUM_SI</spirit:name>
       <spirit:displayName>NUM_SI</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_SI" spirit:order="9" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">2</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_SI" spirit:order="9" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">3</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>NUM_MI</spirit:name>

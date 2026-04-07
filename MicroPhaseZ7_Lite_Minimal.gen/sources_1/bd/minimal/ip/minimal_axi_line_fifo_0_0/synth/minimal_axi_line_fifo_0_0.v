@@ -66,8 +66,8 @@ module minimal_axi_line_fifo_0_0 (
   m_axis_tready,
   axis_clock,
   axis_aresetn,
-  fifo_full,
-  fifo_restart,
+  fifo_complete,
+  en_fifo_restart,
   fifo_in_pos,
   fifo_out_pos,
   fifo_level
@@ -75,7 +75,7 @@ module minimal_axi_line_fifo_0_0 (
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TLAST" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 input wire s_axis_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TVALID" *)
 input wire s_axis_tvalid;
@@ -85,7 +85,7 @@ input wire [15 : 0] s_axis_tdata;
 output wire s_axis_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis TLAST" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 output wire m_axis_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis TVALID" *)
 output wire m_axis_tvalid;
@@ -95,14 +95,14 @@ output wire [15 : 0] m_axis_tdata;
 input wire m_axis_tready;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 axis_clock CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis_clock, ASSOCIATED_BUSIF m_axis:s_axis, ASSOCIATED_RESET axis_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0, PortWidth 1" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis_clock, ASSOCIATED_BUSIF m_axis:s_axis, ASSOCIATED_RESET axis_aresetn, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN minimal_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0, PortWidth 1" *)
 input wire axis_clock;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 axis_aresetn RST" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 input wire axis_aresetn;
-output wire fifo_full;
-input wire fifo_restart;
+output wire fifo_complete;
+input wire en_fifo_restart;
 output wire [7 : 0] fifo_in_pos;
 output wire [7 : 0] fifo_out_pos;
 output wire [7 : 0] fifo_level;
@@ -121,8 +121,8 @@ output wire [7 : 0] fifo_level;
     .m_axis_tready(m_axis_tready),
     .axis_clock(axis_clock),
     .axis_aresetn(axis_aresetn),
-    .fifo_full(fifo_full),
-    .fifo_restart(fifo_restart),
+    .fifo_complete(fifo_complete),
+    .en_fifo_restart(en_fifo_restart),
     .fifo_in_pos(fifo_in_pos),
     .fifo_out_pos(fifo_out_pos),
     .fifo_level(fifo_level)

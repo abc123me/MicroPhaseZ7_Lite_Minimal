@@ -135,6 +135,27 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_39/bd_1c4e_m01e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_40/bd_1c4e_m02s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_41/bd_1c4e_m02arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_42/bd_1c4e_m02rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_43/bd_1c4e_m02awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_44/bd_1c4e_m02wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_45/bd_1c4e_m02bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_46/bd_1c4e_m02e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
 # IP: bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_rst_ps7_0_50M_0 || ORIG_REF_NAME==minimal_rst_ps7_0_50M_0} -quiet] -quiet
 
@@ -150,28 +171,67 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi
 # IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_1/bd_ddcf_psr_aclk_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_2/bd_ddcf_s00mmu_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_2/bd_ddcf_arsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_3/bd_ddcf_s00tr_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_3/bd_ddcf_rsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_4/bd_ddcf_s00sic_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_4/bd_ddcf_awsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_5/bd_ddcf_s00a2s_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_5/bd_ddcf_wsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_6/bd_ddcf_sarn_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_6/bd_ddcf_bsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_7/bd_ddcf_srn_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_7/bd_ddcf_s00mmu_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_8/bd_ddcf_m00s2a_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_8/bd_ddcf_s00tr_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_9/bd_ddcf_m00e_0.xci
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_9/bd_ddcf_s00sic_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_10/bd_ddcf_s00a2s_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_11/bd_ddcf_sarn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_12/bd_ddcf_srn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_13/bd_ddcf_s01mmu_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_14/bd_ddcf_s01tr_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_15/bd_ddcf_s01sic_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_16/bd_ddcf_s01a2s_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_17/bd_ddcf_sarn_1.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_18/bd_ddcf_srn_1.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_19/bd_ddcf_m00s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_20/bd_ddcf_m00arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_21/bd_ddcf_m00rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_22/bd_ddcf_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
 # IP: bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0/minimal_tft_ili9341_wrapper_0_0.xci
@@ -180,17 +240,20 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft
 # IP: bd/minimal/ip/minimal_axi_stream_to_pixels_0_0/minimal_axi_stream_to_pixels_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_stream_to_pixels_0_0 || ORIG_REF_NAME==minimal_axi_stream_to_pixels_0_0} -quiet] -quiet
 
-# IP: bd/minimal/ip/minimal_tft_ili9341_wrapper_0_1/minimal_tft_ili9341_wrapper_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft_ili9341_wrapper_0_1 || ORIG_REF_NAME==minimal_tft_ili9341_wrapper_0_1} -quiet] -quiet
-
-# IP: bd/minimal/ip/minimal_axi_stream_to_pixels_0_1/minimal_axi_stream_to_pixels_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_stream_to_pixels_0_1 || ORIG_REF_NAME==minimal_axi_stream_to_pixels_0_1} -quiet] -quiet
-
 # IP: bd/minimal/ip/minimal_axi_line_fifo_0_0/minimal_axi_line_fifo_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_line_fifo_0_0 || ORIG_REF_NAME==minimal_axi_line_fifo_0_0} -quiet] -quiet
 
 # IP: bd/minimal/ip/minimal_ila_1_0/minimal_ila_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_ila_1_0 || ORIG_REF_NAME==minimal_ila_1_0} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_tft_ili9341_wrapper_0_3/minimal_tft_ili9341_wrapper_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft_ili9341_wrapper_0_3 || ORIG_REF_NAME==minimal_tft_ili9341_wrapper_0_3} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_axi_stream_to_pixels_0_1/minimal_axi_stream_to_pixels_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_stream_to_pixels_0_1 || ORIG_REF_NAME==minimal_axi_stream_to_pixels_0_1} -quiet] -quiet
+
+# IP: bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_dma_0_2 || ORIG_REF_NAME==minimal_axi_dma_0_2} -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_processing_system7_0_0 || ORIG_REF_NAME==minimal_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -275,6 +338,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_38/bd_1c4e_m01bn_0_ooc.xdc
 
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_40/bd_1c4e_m02s2a_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_41/bd_1c4e_m02arn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_42/bd_1c4e_m02rn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_43/bd_1c4e_m02awn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_44/bd_1c4e_m02wn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_45/bd_1c4e_m02bn_0_ooc.xdc
+
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/ooc.xdc
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc
@@ -292,13 +367,33 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_1/bd_ddcf_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_5/bd_ddcf_s00a2s_0_ooc.xdc
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_2/bd_ddcf_arsw_0_ooc.xdc
 
-# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_6/bd_ddcf_sarn_0_ooc.xdc
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_3/bd_ddcf_rsw_0_ooc.xdc
 
-# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_7/bd_ddcf_srn_0_ooc.xdc
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_4/bd_ddcf_awsw_0_ooc.xdc
 
-# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_8/bd_ddcf_m00s2a_0_ooc.xdc
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_5/bd_ddcf_wsw_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_6/bd_ddcf_bsw_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_10/bd_ddcf_s00a2s_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_11/bd_ddcf_sarn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_12/bd_ddcf_srn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_16/bd_ddcf_s01a2s_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_17/bd_ddcf_sarn_1_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_18/bd_ddcf_srn_1_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_19/bd_ddcf_m00s2a_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_20/bd_ddcf_m00arn_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_21/bd_ddcf_m00rn_0_ooc.xdc
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/ooc.xdc
 
@@ -312,5 +407,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_ila_1_0 || ORIG_REF_NAME==minimal_ila_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/minimal_ila_1_0_ooc.xdc
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_axi_dma_0_2 || ORIG_REF_NAME==minimal_axi_dma_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_axi_dma_0_2 || ORIG_REF_NAME==minimal_axi_dma_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/minimal_ooc.xdc
