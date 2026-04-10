@@ -2160,15 +2160,15 @@
       "axi_stream_to_pixels_1_core_clk_out": {
         "ports": [
           "axi_stream_to_pixels_1/core_clk_out",
-          "tft_ili9341_wrapper_1/core_clk",
-          "ila_1/probe18"
+          "ila_1/probe18",
+          "tft_ili9341_wrapper_1/core_clk"
         ]
       },
       "axi_stream_to_pixels_1_pixel_data": {
         "ports": [
           "axi_stream_to_pixels_1/pixel_data",
-          "tft_ili9341_wrapper_1/pixel_data",
-          "ila_1/probe16"
+          "ila_1/probe16",
+          "tft_ili9341_wrapper_1/pixel_data"
         ]
       },
       "core_clk": {
@@ -2291,10 +2291,10 @@
           "ila_1/clk",
           "axi_dma_0/m_axi_mm2s_aclk",
           "axi_line_fifo_0/axis_clock",
-          "axi_stream_to_pixels_1/s_axis_clock",
           "axi_dma_1/s_axi_lite_aclk",
           "axi_dma_1/m_axi_mm2s_aclk",
-          "axi_stream_to_pixels_0/s_axis_clock"
+          "axi_stream_to_pixels_0/s_axis_clock",
+          "axi_stream_to_pixels_1/s_axis_clock"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2311,23 +2311,23 @@
           "axi_dma_0/axi_resetn",
           "axi_smc1/aresetn",
           "axi_line_fifo_0/axis_aresetn",
-          "axi_stream_to_pixels_1/s_axis_aresetn",
           "axi_dma_1/axi_resetn",
-          "axi_stream_to_pixels_0/s_axis_aresetn"
+          "axi_stream_to_pixels_0/s_axis_aresetn",
+          "axi_stream_to_pixels_1/s_axis_aresetn"
         ]
       },
       "tft_ili9341_wrapper_1_pixel_clock": {
         "ports": [
           "tft_ili9341_wrapper_1/pixel_clock",
-          "axi_stream_to_pixels_1/pixel_clock",
-          "ila_1/probe15"
+          "ila_1/probe15",
+          "axi_stream_to_pixels_1/pixel_clock"
         ]
       },
       "tft_ili9341_wrapper_1_pixel_sync": {
         "ports": [
           "tft_ili9341_wrapper_1/pixel_sync",
-          "axi_stream_to_pixels_1/pixel_sync",
-          "ila_1/probe17"
+          "ila_1/probe17",
+          "axi_stream_to_pixels_1/pixel_sync"
         ]
       }
     },

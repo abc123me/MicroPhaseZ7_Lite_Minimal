@@ -20,7 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module tft_ili9341_wrapper # (
-        parameter INPUT_CLK_MHZ = 50
+        parameter INPUT_CLK_MHZ = 50,
+        parameter WIDTH  = 320,
+        parameter HEIGHT = 240
     ) (
         // Display data out
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi scl" *)  output wire tft_sck,
@@ -37,14 +39,16 @@ module tft_ili9341_wrapper # (
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_sync" *)  output wire pixel_sync
 	);
 	
+	localparam LAST_PIXEL = WIDTH * HEIGHT - 1;
+	
     // Backlight is turned on after first frame is drawn
 	initial tft_led <= 0;
 	
 	// Counter for outputting a pixel sync bit
 	reg [16:0] pixel_counter;
 	initial pixel_counter = 0;
-	always @(posedge pixel_clock) begin
-	   if (pixel_counter < 76799) begin
+	always @(negedge pixel_clock) begin
+	   if (pixel_counter <= LAST_PIXEL) begin
 	       pixel_counter <= pixel_counter + 1'b1;
 	   end else begin
 	       pixel_counter <= 0;

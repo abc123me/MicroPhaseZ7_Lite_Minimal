@@ -25,7 +25,7 @@ module axi_stream_to_pixels (
         // Pixel stream out
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_clock" *) input wire pixel_clock,
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_sync" *)  input wire pixel_sync,
-        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_data" *)  output wire [15:0] pixel_data,
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_data" *)  output reg [15:0] pixel_data,
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream core_clock" *)  output wire core_clk_out
     );
     
@@ -33,9 +33,6 @@ module axi_stream_to_pixels (
     // When high, this should zeroize the pixel data
     // Asserted upon initialization or during incomplete DMA transfers
     reg [15:0] pixel_data_buffer;
-    reg pixel_data_zeroize;
-    initial pixel_data_zeroize = 1'b1;
-    assign pixel_data = pixel_data_zeroize ? 16'b0 : s_axis_tdata;
     
     // Clock control
     reg core_clk_enable;
@@ -62,6 +59,7 @@ module axi_stream_to_pixels (
     always @(posedge s_axis_clock) begin
         case (state)
             STATE_INIT_FIRST_PIXEL: begin
+                pixel_data <= 0;
                 // This is the primary init state, once clocks are
                 // stable draw the first pixel onto the display
                 if (pixel_clock && !pixel_sync) begin
@@ -73,12 +71,12 @@ module axi_stream_to_pixels (
                 // we will keep drawing until it is re-asserted, now handle normal operations
                 if (pixel_sync) begin
                     core_clk_enable <= 0;
-                    pixel_data_zeroize <= 1'b0;
-                    s_axis_tready <= 1'b1;
                     data_ready_oneshot <= 1'b1;
                     state <= STATE_HANDLE_TRANSFER;
+                    pixel_data <= 0;
                 end else begin
                     s_axis_tready <= 1'b0;
+                    pixel_data <= 0;
                 end
             end
             STATE_HANDLE_TRANSFER: begin
@@ -87,6 +85,7 @@ module axi_stream_to_pixels (
                 if (pixel_clock) begin
                     pixels_changed <= 1'b1;
                     if (s_axis_tvalid && data_ready_oneshot) begin
+                        pixel_data <= s_axis_tdata;
                         s_axis_tready <= 1'b1;
                         data_ready_oneshot <= 1'b0;
                     end else begin
@@ -100,7 +99,6 @@ module axi_stream_to_pixels (
                 // If TLAST has been received and we aren't back at the first pixel
                 // then we will just clear that portion of the display with black
                 if (frame_needs_cleared) begin
-                    pixel_data_zeroize <= 1'b1;
                     core_clk_enable <= 1'b1;
                     state <= STATE_INIT_NEXT_PIXELS;
                 end else begin

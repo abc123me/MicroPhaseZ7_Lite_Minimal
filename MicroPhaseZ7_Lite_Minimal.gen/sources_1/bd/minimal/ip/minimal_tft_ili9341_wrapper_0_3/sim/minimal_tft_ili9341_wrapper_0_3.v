@@ -91,7 +91,9 @@ output wire pixel_clock;
 output wire pixel_sync;
 
   tft_ili9341_wrapper #(
-    .INPUT_CLK_MHZ(100)
+    .INPUT_CLK_MHZ(100),
+    .WIDTH(320),
+    .HEIGHT(240)
   ) inst (
     .tft_sck(tft_sck),
     .tft_sda(tft_sda),

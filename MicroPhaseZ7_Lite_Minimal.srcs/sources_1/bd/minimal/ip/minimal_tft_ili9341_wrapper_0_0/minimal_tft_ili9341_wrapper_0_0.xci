@@ -9,10 +9,14 @@
     "parameters": {
       "component_parameters": {
         "INPUT_CLK_MHZ": [ { "value": "100", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "WIDTH": [ { "value": "320", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "HEIGHT": [ { "value": "240", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "minimal_tft_ili9341_wrapper_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "INPUT_CLK_MHZ": [ { "value": "100", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "INPUT_CLK_MHZ": [ { "value": "100", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "WIDTH": [ { "value": "320", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "HEIGHT": [ { "value": "240", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
@@ -79,5 +83,5 @@
       }
     }
   },
-  "checksum": "6758eedc"
+  "checksum": "2eca08c4"
 }

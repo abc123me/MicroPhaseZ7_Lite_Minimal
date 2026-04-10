@@ -1,16 +1,16 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.625003",
-   "Default View_TopLeft":"667,-803",
+   "Default View_ScaleFactor":"1.01532",
+   "Default View_TopLeft":"1136,-297",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 7 -x 2680 -y 670 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 7 -x 2680 -y 700 -defaultsOSRD
-preplace port ETH_MDIO -pg 1 -lvl 7 -x 2680 -y 980 -defaultsOSRD
-preplace port ETH_MII -pg 1 -lvl 7 -x 2680 -y 950 -defaultsOSRD
-preplace port m_ilispi_0 -pg 1 -lvl 7 -x 2680 -y 0 -defaultsOSRD
-preplace port m_ilispi_1 -pg 1 -lvl 7 -x 2680 -y 300 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2690 -y 670 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2690 -y 700 -defaultsOSRD
+preplace port ETH_MDIO -pg 1 -lvl 7 -x 2690 -y 980 -defaultsOSRD
+preplace port ETH_MII -pg 1 -lvl 7 -x 2690 -y 950 -defaultsOSRD
+preplace port m_ilispi_0 -pg 1 -lvl 7 -x 2690 -y 0 -defaultsOSRD
+preplace port m_ilispi_1 -pg 1 -lvl 7 -x 2690 -y 300 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 5 -x 2070 -y 720 -defaultsOSRD
 preplace inst axi_ethernetlite_0 -pg 1 -lvl 5 -x 2070 -y 980 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 2 -x 670 -y 970 -defaultsOSRD
@@ -18,12 +18,12 @@ preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 290 -y 710 -defaultsOSRD
 preplace inst ilconcat_0 -pg 1 -lvl 4 -x 1530 -y 880 -defaultsOSRD
 preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1050 -y 730 -defaultsOSRD
 preplace inst axi_smc1 -pg 1 -lvl 4 -x 1530 -y 700 -defaultsOSRD -resize 240 163
-preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 6 -x 2510 -y 0 -defaultsOSRD
+preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 6 -x 2520 -y 0 -defaultsOSRD
 preplace inst axi_stream_to_pixels_0 -pg 1 -lvl 5 -x 2070 -y 0 -defaultsOSRD
 preplace inst axi_line_fifo_0 -pg 1 -lvl 4 -x 1530 -y 20 -defaultsOSRD
-preplace inst ila_1 -pg 1 -lvl 6 -x 2510 -y -550 -defaultsOSRD
-preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 6 -x 2510 -y 300 -defaultsOSRD -resize 260 156
-preplace inst axi_stream_to_pixels_1 -pg 1 -lvl 5 -x 2070 -y 320 -defaultsOSRD -resize 320 196
+preplace inst ila_1 -pg 1 -lvl 6 -x 2520 -y -550 -defaultsOSRD
+preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 6 -x 2520 -y 300 -defaultsOSRD -resize 260 156
+preplace inst axi_stream_to_pixels_1 -pg 1 -lvl 5 -x 2070 -y 310 -defaultsOSRD -resize 320 196
 preplace inst axi_dma_1 -pg 1 -lvl 3 -x 1050 -y 410 -defaultsOSRD -resize 320 216
 preplace netloc axi_dma_0_mm2s_introut 1 3 1 1250 800n
 preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 3 3 1340 980 1760J 900 2280
@@ -44,30 +44,30 @@ preplace netloc ilconcat_0_dout 1 4 1 1720 760n
 preplace netloc pixel_clock 1 5 1 2340 -460n
 preplace netloc pixel_data 1 5 1 2330 -480n
 preplace netloc pixel_sync 1 5 1 2360 -440n
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 100 810 520 740 850 280 1300 170 1850 120 2300
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 100 810 520 740 850 280 1320 170 1850 120 2300
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 110 880 NJ 880 NJ 880 1240J 990 1740J 880 2280
 preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 4 510 750 870 540 1330 180 1860
 preplace netloc axi_dma_1_mm2s_introut 1 3 1 1270 480n
-preplace netloc tft_ili9341_wrapper_1_pixel_clock 1 5 1 2290 -420n
+preplace netloc tft_ili9341_wrapper_1_pixel_clock 1 5 1 2370 -420n
 preplace netloc axi_stream_to_pixels_1_pixel_data 1 5 1 2310 -400n
 preplace netloc tft_ili9341_wrapper_1_pixel_sync 1 5 1 2320 -380n
 preplace netloc axi_stream_to_pixels_1_core_clk_out 1 5 1 2350 -360n
 preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 N 660
 preplace netloc axi_ethernetlite_0_MDIO 1 5 2 NJ 980 NJ
-preplace netloc axi_ethernetlite_0_MII 1 5 2 2360J 950 NJ
+preplace netloc axi_ethernetlite_0_MII 1 5 2 2370J 950 NJ
 preplace netloc axi_smc1_M00_AXI 1 4 1 N 700
 preplace netloc axi_smc_M00_AXI 1 2 3 820 970 NJ 970 1770J
 preplace netloc axi_smc_M01_AXI 1 2 1 810 700n
-preplace netloc processing_system7_0_DDR 1 5 2 2360J 670 NJ
+preplace netloc processing_system7_0_DDR 1 5 2 2370J 670 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 5 2 NJ 700 NJ
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 530 890 NJ 890 1230J 960 1720J 890 2290
 preplace netloc tft_ili9341_wrapper_0_m_ilispi 1 6 1 NJ 0
 preplace netloc tft_ili9341_wrapper_1_m_ilispi 1 6 1 N 300
-preplace netloc axi_dma_1_M_AXI_MM2S 1 3 1 1320 340n
-preplace netloc axi_dma_1_M_AXIS_MM2S 1 3 2 1310 280 NJ
+preplace netloc axi_dma_1_M_AXI_MM2S 1 3 1 1310 340n
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 3 2 1300 270 NJ
 preplace netloc axi_smc_M02_AXI 1 2 1 860 340n
-levelinfo -pg 1 -100 290 670 1050 1530 2070 2510 2680
-pagesize -pg 1 -db -bbox -sgen -100 -880 2810 1280
+levelinfo -pg 1 -100 290 670 1050 1530 2070 2520 2690
+pagesize -pg 1 -db -bbox -sgen -100 -880 2820 1280
 "
 }
 {

@@ -109,7 +109,7 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_param tcl.collectionResultDisplayLimit 0
   set_param general.usePosixSpawnForFork 1
-  set_param runs.launchOptions { -jobs 16  }
+  set_param runs.launchOptions { -jobs 32  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
   set_property design_mode GateLvl [current_fileset]

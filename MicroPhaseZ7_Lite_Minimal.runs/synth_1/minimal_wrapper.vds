@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu Apr  9 21:34:06 2026
-# Process ID         : 1696535
+# Start of session at: Thu Apr  9 23:28:15 2026
+# Process ID         : 3542887
 # Current directory  : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1
 # Command line       : vivado -log minimal_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minimal_wrapper.tcl
 # Log file           : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 9 7950X3D 16-Core Processor
-# CPU Frequency      : 2985.835 MHz
+# CPU Frequency      : 4747.531 MHz
 # CPU Physical cores : 16
 # CPU Logical cores  : 32
 # Host memory        : 66310 MB
 # Swap memory        : 25741 MB
 # Total Virtual      : 92051 MB
-# Available Virtual  : 76173 MB
+# Available Virtual  : 75729 MB
 #-----------------------------------------------------------
 source minimal_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -37,11 +37,11 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1698499
+INFO: [Synth 8-7075] Helper process launched with PID 3544039
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2299.000 ; gain = 487.094 ; free physical = 25384 ; free virtual = 71360
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2297.121 ; gain = 485.156 ; free physical = 24495 ; free virtual = 70705
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'tft_rst', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:75]
+INFO: [Synth 8-11241] undeclared symbol 'tft_rst', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:79]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:30]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:32]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:69]
@@ -890,7 +890,7 @@ WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_HQ2ARX'
 WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
 WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
 WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_HQ2ARX' has 77 connections declared, but only 56 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_stream_to_pixels.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_stream_to_pixels.v:60]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:604]
 INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
 INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
@@ -963,6 +963,8 @@ WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'minimal_rst_ps7_0_50M
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:725]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:725]
 	Parameter INPUT_CLK_MHZ bound to: 100 - type: integer 
+	Parameter WIDTH bound to: 320 - type: integer 
+	Parameter HEIGHT bound to: 240 - type: integer 
 	Parameter INPUT_CLK_MHZ bound to: 100 - type: integer 
 INFO: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2133]
 INFO: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2135]
@@ -1018,7 +1020,7 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.stat
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
 INFO: [Synth 8-3848] Net sl_iport0 in module/entity minimal_ila_1_0 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:134]
-WARNING: [Synth 8-3848] Net tft_reset in module/entity tft_ili9341_wrapper does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:60]
+WARNING: [Synth 8-3848] Net tft_reset in module/entity tft_ili9341_wrapper does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:64]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_line_fifo_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:428]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:604]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_stream_to_pixels_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:582]
@@ -1128,18 +1130,18 @@ WARNING: [Synth 8-7129] Port DOUTA_I[84] in module blk_mem_gen_v8_4_12_blk_mem_o
 WARNING: [Synth 8-7129] Port DOUTA_I[83] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.602 ; gain = 1256.695 ; free physical = 24529 ; free virtual = 70588
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.723 ; gain = 1256.758 ; free physical = 23791 ; free virtual = 69707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.602 ; gain = 1256.695 ; free physical = 24528 ; free virtual = 70582
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.723 ; gain = 1256.758 ; free physical = 23720 ; free virtual = 69642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.602 ; gain = 1256.695 ; free physical = 24528 ; free virtual = 70582
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.723 ; gain = 1256.758 ; free physical = 23720 ; free virtual = 69642
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3131.945 ; gain = 0.000 ; free physical = 24534 ; free virtual = 70550
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3130.066 ; gain = 0.000 ; free physical = 23692 ; free virtual = 69533
 INFO: [Netlist 29-17] Analyzing 549 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1205,7 +1207,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrap
 INFO: [Project 1-1714] 130 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3502.184 ; gain = 0.000 ; free physical = 24171 ; free virtual = 70218
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3500.273 ; gain = 0.000 ; free physical = 23462 ; free virtual = 69752
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 363 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 228 instances
@@ -1217,24 +1219,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1S => RAM32X1S (RAMS32): 4 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3502.219 ; gain = 0.000 ; free physical = 24187 ; free virtual = 70248
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3500.309 ; gain = 0.000 ; free physical = 23463 ; free virtual = 69767
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 3502.219 ; gain = 1690.312 ; free physical = 24182 ; free virtual = 70308
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3500.309 ; gain = 1688.344 ; free physical = 23544 ; free virtual = 69819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24183 ; free virtual = 70308
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 23544 ; free virtual = 69819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24179 ; free virtual = 70299
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 23516 ; free virtual = 69749
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
@@ -1868,7 +1870,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ltlib_v1_0_3_generic_memrd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24216 ; free virtual = 70326
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 23544 ; free virtual = 69762
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1892,8 +1894,8 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM/GEN_CMD_BTT_LESS_23.cmnd_data_reg' and it is trimmed from '153' to '71' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:12014]
 INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM/GEN_CMD_BTT_LESS_23.cmnd_data_reg' and it is trimmed from '153' to '71' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:12014]
-WARNING: [Synth 8-6040] Register inst/nolabel_line69/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
-WARNING: [Synth 8-6040] Register inst/nolabel_line69/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register inst/nolabel_line73/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register inst/nolabel_line73/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
@@ -1935,7 +1937,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized2.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24141 ; free virtual = 70342
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22641 ; free virtual = 68970
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1945,7 +1947,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:42 ; elapsed = 00:01:45 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24143 ; free virtual = 70332
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22676 ; free virtual = 69067
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1955,7 +1957,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24139 ; free virtual = 70336
+Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22624 ; free virtual = 68929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -1984,7 +1986,7 @@ INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0
 INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_line_fifo_0/inst/fifo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24128 ; free virtual = 70291
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22706 ; free virtual = 69036
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2003,37 +2005,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341.sv:50]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:51 ; elapsed = 00:01:54 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24119 ; free virtual = 70259
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22639 ; free virtual = 68958
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:51 ; elapsed = 00:01:54 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24118 ; free virtual = 70258
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22636 ; free virtual = 68958
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24119 ; free virtual = 70252
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22565 ; free virtual = 68948
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24119 ; free virtual = 70253
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22529 ; free virtual = 68915
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24119 ; free virtual = 70253
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22483 ; free virtual = 68876
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24120 ; free virtual = 70252
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22504 ; free virtual = 68897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2053,12 +2055,12 @@ Report Cell Usage:
 |2     |BUFG     |     3|
 |3     |CARRY4   |   205|
 |4     |CFGLUT5  |   270|
-|5     |LUT1     |   461|
-|6     |LUT2     |   848|
-|7     |LUT3     |  1379|
-|8     |LUT4     |  1556|
-|9     |LUT5     |  1055|
-|10    |LUT6     |  1779|
+|5     |LUT1     |   463|
+|6     |LUT2     |   816|
+|7     |LUT3     |  1381|
+|8     |LUT4     |  1554|
+|9     |LUT5     |  1057|
+|10    |LUT6     |  1773|
 |11    |MULT_AND |    17|
 |12    |MUXCY    |    25|
 |13    |MUXF7    |   125|
@@ -2076,7 +2078,7 @@ Report Cell Usage:
 |28    |XORCY    |    20|
 |29    |FDCE     |   225|
 |30    |FDR      |    48|
-|31    |FDRE     |  7920|
+|31    |FDRE     |  7950|
 |32    |FDS      |     2|
 |33    |FDSE     |   250|
 |34    |IBUF     |    10|
@@ -2084,19 +2086,19 @@ Report Cell Usage:
 |36    |OBUF     |    19|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 3510.188 ; gain = 1698.281 ; free physical = 24120 ; free virtual = 70252
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22500 ; free virtual = 68895
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5214 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:38 . Memory (MB): peak = 3510.188 ; gain = 1264.664 ; free physical = 24117 ; free virtual = 70248
-Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 3510.195 ; gain = 1698.281 ; free physical = 24117 ; free virtual = 70248
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3508.277 ; gain = 1264.727 ; free physical = 22525 ; free virtual = 68919
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.285 ; gain = 1696.312 ; free physical = 22525 ; free virtual = 68920
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3510.195 ; gain = 0.000 ; free physical = 24258 ; free virtual = 70378
+Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3508.285 ; gain = 0.000 ; free physical = 22587 ; free virtual = 69002
 INFO: [Netlist 29-17] Analyzing 818 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: minimal_i/ila_1 UUID: 337fa110-9b55-591e-b89f-cd1d2d5b227a 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3566.215 ; gain = 0.000 ; free physical = 24261 ; free virtual = 70379
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3564.305 ; gain = 0.000 ; free physical = 22505 ; free virtual = 68913
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 417 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 9 instances
@@ -2111,14 +2113,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
   SRL16 => SRL16E: 3 instances
 
-Synth Design complete | Checksum: e55d47b8
+Synth Design complete | Checksum: 7ed61a6b
 INFO: [Common 17-83] Releasing license: Synthesis
 867 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:00 ; elapsed = 00:02:02 . Memory (MB): peak = 3566.250 ; gain = 1934.930 ; free physical = 24273 ; free virtual = 70391
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2930.162; main = 2702.030; forked = 313.982
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4498.488; main = 3566.219; forked = 988.297
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3590.227 ; gain = 0.000 ; free physical = 24263 ; free virtual = 70382
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:06 . Memory (MB): peak = 3564.340 ; gain = 1932.961 ; free physical = 22582 ; free virtual = 68967
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2931.219; main = 2694.936; forked = 314.095
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4496.578; main = 3564.309; forked = 988.297
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3588.316 ; gain = 0.000 ; free physical = 22577 ; free virtual = 68964
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 21:36:14 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 23:30:27 2026...
