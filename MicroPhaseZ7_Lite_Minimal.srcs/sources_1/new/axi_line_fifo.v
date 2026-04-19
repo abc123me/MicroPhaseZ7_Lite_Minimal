@@ -42,9 +42,9 @@ module axi_line_fifo # (
 	);
     
     // FIFO level
-    wire fifo_has_data;
+    reg fifo_has_data;
+    initial fifo_has_data = 0;
 	assign fifo_level = fifo_in_pos - fifo_out_pos;
-	assign fifo_has_data = fifo_out_pos < fifo_in_pos;
 
 	// FIFO controls
 	reg [DATA_WIDTH-1:0] fifo [FIFO_SIZE:0];
@@ -62,7 +62,7 @@ module axi_line_fifo # (
 	reg got_tlast;
 	assign m_axis_tlast = got_tlast && fifo_complete;
 	initial got_tlast = 0;
-
+	
 	always @(posedge axis_clock) begin
         // Clear the FIFO when full
         if(fifo_complete && m_axis_tready && en_fifo_restart) begin
@@ -70,13 +70,15 @@ module axi_line_fifo # (
             fifo_in_pos   <= 0;
             got_tlast     <= 0;
             m_axis_tvalid <= 0;
-            s_axis_tready <= 1;
             fifo_complete <= 0;
+            fifo_has_data <= 0;
+            s_axis_tready <= 1;
         end else begin
             // Handle input data
             if (s_axis_tvalid) begin
                 if (s_axis_tready) begin
                     // Fill the FIFO
+                    fifo_has_data <= 1;
                     fifo[fifo_in_pos] <= s_axis_tdata;
                     if (fifo_in_pos <= FIFO_SIZE - 1) begin
                         fifo_in_pos <= fifo_in_pos + 1;
@@ -93,14 +95,17 @@ module axi_line_fifo # (
             end
             
             // Handle output data
-            if (fifo_has_data) begin
+            if(fifo_has_data) begin
                 m_axis_tdata <= fifo[fifo_out_pos];
                 m_axis_tvalid <= 1;
                 if (m_axis_tready) begin
                     fifo_out_pos <= fifo_out_pos + 1;
                 end
-            end else if (fifo_out_pos > 0) begin
-                fifo_complete <= 1;
+            end else begin
+                if(fifo_out_pos > fifo_in_pos && fifo_in_pos >= (FIFO_SIZE - 1)) begin
+                    fifo_complete <= 1;
+                    fifo_has_data <= 0;
+                end
             end
         end
     end

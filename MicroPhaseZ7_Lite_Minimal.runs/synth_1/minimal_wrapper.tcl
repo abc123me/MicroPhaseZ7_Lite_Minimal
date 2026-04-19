@@ -60,6 +60,7 @@ set_param chipscope.maxJobs 8
 set_param xicom.use_bs_reader 1
 set_param tcl.collectionResultDisplayLimit 0
 set_param general.usePosixSpawnForFork 1
+set_param bd.open.in_stealth_mode 2
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
@@ -85,8 +86,7 @@ read_verilog -library xil_defaultlib -sv {
 }
 read_verilog -library xil_defaultlib {
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v
-  /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_stream_to_pixels.v
-  /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_line_fifo.v
+  /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_pixel_fifo.v
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v
 }
 add_files /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/bd/minimal/minimal.bd
@@ -129,12 +129,6 @@ set_property used_in_implementation false [get_files -all /home/jeremiah/Program
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_36/bd_1c4e_m01awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_37/bd_1c4e_m01wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_38/bd_1c4e_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_40/bd_1c4e_m02s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_41/bd_1c4e_m02arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_42/bd_1c4e_m02rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_43/bd_1c4e_m02awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_44/bd_1c4e_m02wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_45/bd_1c4e_m02bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/minimal_rst_ps7_0_50M_0_board.xdc]
@@ -149,20 +143,15 @@ set_property used_in_implementation false [get_files -all /home/jeremiah/Program
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_10/bd_ddcf_s00a2s_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_11/bd_ddcf_sarn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_12/bd_ddcf_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_16/bd_ddcf_s01a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_17/bd_ddcf_sarn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_18/bd_ddcf_srn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_19/bd_ddcf_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_20/bd_ddcf_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_21/bd_ddcf_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_13/bd_ddcf_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_14/bd_ddcf_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_15/bd_ddcf_m00rn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/smartconnect.xdc]
-set_property used_in_synthesis false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/minimal_ila_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2.xdc]
-set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2_clocks.xdc]
+set_property used_in_synthesis false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/minimal_ila_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/minimal_ooc.xdc]
 
 OPTRACE "Adding files" END { }

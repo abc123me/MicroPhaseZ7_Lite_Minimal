@@ -1,73 +1,68 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.01532",
-   "Default View_TopLeft":"1136,-297",
+   "Default View_ScaleFactor":"0.71793",
+   "Default View_TopLeft":"2238,-255",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 7 -x 2690 -y 670 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 7 -x 2690 -y 700 -defaultsOSRD
-preplace port ETH_MDIO -pg 1 -lvl 7 -x 2690 -y 980 -defaultsOSRD
-preplace port ETH_MII -pg 1 -lvl 7 -x 2690 -y 950 -defaultsOSRD
-preplace port m_ilispi_0 -pg 1 -lvl 7 -x 2690 -y 0 -defaultsOSRD
-preplace port m_ilispi_1 -pg 1 -lvl 7 -x 2690 -y 300 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -x 2070 -y 720 -defaultsOSRD
-preplace inst axi_ethernetlite_0 -pg 1 -lvl 5 -x 2070 -y 980 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 2 -x 670 -y 970 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 290 -y 710 -defaultsOSRD
-preplace inst ilconcat_0 -pg 1 -lvl 4 -x 1530 -y 880 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1050 -y 730 -defaultsOSRD
-preplace inst axi_smc1 -pg 1 -lvl 4 -x 1530 -y 700 -defaultsOSRD -resize 240 163
-preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 6 -x 2520 -y 0 -defaultsOSRD
-preplace inst axi_stream_to_pixels_0 -pg 1 -lvl 5 -x 2070 -y 0 -defaultsOSRD
-preplace inst axi_line_fifo_0 -pg 1 -lvl 4 -x 1530 -y 20 -defaultsOSRD
-preplace inst ila_1 -pg 1 -lvl 6 -x 2520 -y -550 -defaultsOSRD
-preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 6 -x 2520 -y 300 -defaultsOSRD -resize 260 156
-preplace inst axi_stream_to_pixels_1 -pg 1 -lvl 5 -x 2070 -y 310 -defaultsOSRD -resize 320 196
-preplace inst axi_dma_1 -pg 1 -lvl 3 -x 1050 -y 410 -defaultsOSRD -resize 320 216
-preplace netloc axi_dma_0_mm2s_introut 1 3 1 1250 800n
-preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 3 3 1340 980 1760J 900 2280
-preplace netloc axi_line_fifo_0_fifo_complete 1 3 3 1340 160 1760 -500 N
-preplace netloc core_clk 1 5 1 N 40
-preplace netloc dma_tdata 1 3 3 1250 -640 NJ -640 NJ
-preplace netloc dma_tlast 1 3 3 1260 -620 NJ -620 NJ
-preplace netloc dma_tready 1 3 3 1290 -580 NJ -580 NJ
-preplace netloc dma_tvalid 1 3 3 1280 -600 NJ -600 NJ
-preplace netloc fifo_in_pos 1 4 2 1720 -560 NJ
-preplace netloc fifo_level 1 4 2 1740 -520 NJ
-preplace netloc fifo_out_pos 1 4 2 1730 -540 NJ
-preplace netloc fifo_tdata 1 4 2 1750 -720 NJ
-preplace netloc fifo_tlast 1 4 2 1840 -700 NJ
-preplace netloc fifo_tready 1 4 2 1860 -660 NJ
-preplace netloc fifo_tvalid 1 4 2 1850 -680 NJ
-preplace netloc ilconcat_0_dout 1 4 1 1720 760n
-preplace netloc pixel_clock 1 5 1 2340 -460n
-preplace netloc pixel_data 1 5 1 2330 -480n
-preplace netloc pixel_sync 1 5 1 2360 -440n
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 100 810 520 740 850 280 1320 170 1850 120 2300
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 110 880 NJ 880 NJ 880 1240J 990 1740J 880 2280
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 4 510 750 870 540 1330 180 1860
-preplace netloc axi_dma_1_mm2s_introut 1 3 1 1270 480n
-preplace netloc tft_ili9341_wrapper_1_pixel_clock 1 5 1 2370 -420n
-preplace netloc axi_stream_to_pixels_1_pixel_data 1 5 1 2310 -400n
-preplace netloc tft_ili9341_wrapper_1_pixel_sync 1 5 1 2320 -380n
-preplace netloc axi_stream_to_pixels_1_core_clk_out 1 5 1 2350 -360n
-preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 N 660
-preplace netloc axi_ethernetlite_0_MDIO 1 5 2 NJ 980 NJ
-preplace netloc axi_ethernetlite_0_MII 1 5 2 2370J 950 NJ
-preplace netloc axi_smc1_M00_AXI 1 4 1 N 700
-preplace netloc axi_smc_M00_AXI 1 2 3 820 970 NJ 970 1770J
-preplace netloc axi_smc_M01_AXI 1 2 1 810 700n
-preplace netloc processing_system7_0_DDR 1 5 2 2370J 670 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 5 2 NJ 700 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 530 890 NJ 890 1230J 960 1720J 890 2290
-preplace netloc tft_ili9341_wrapper_0_m_ilispi 1 6 1 NJ 0
-preplace netloc tft_ili9341_wrapper_1_m_ilispi 1 6 1 N 300
-preplace netloc axi_dma_1_M_AXI_MM2S 1 3 1 1310 340n
-preplace netloc axi_dma_1_M_AXIS_MM2S 1 3 2 1300 270 NJ
-preplace netloc axi_smc_M02_AXI 1 2 1 860 340n
-levelinfo -pg 1 -100 290 670 1050 1530 2070 2520 2690
-pagesize -pg 1 -db -bbox -sgen -100 -880 2820 1280
+preplace port DDR -pg 1 -lvl 8 -x 3890 -y 670 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 3890 -y 700 -defaultsOSRD
+preplace port ETH_MDIO -pg 1 -lvl 8 -x 3890 -y 980 -defaultsOSRD
+preplace port ETH_MII -pg 1 -lvl 8 -x 3890 -y 950 -defaultsOSRD
+preplace port m_ilispi_0 -pg 1 -lvl 8 -x 3890 -y 50 -defaultsOSRD
+preplace port m_ilispi_1 -pg 1 -lvl 8 -x 3890 -y 480 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 3210 -y 1110 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 6 -x 3210 -y 1360 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 830 -y 970 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 450 -y 710 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 4 -x 2330 -y 1140 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1470 -y 800 -defaultsOSRD
+preplace inst axi_smc1 -pg 1 -lvl 4 -x 2330 -y 960 -defaultsOSRD -resize 240 163
+preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 7 -x 3710 -y 50 -defaultsOSRD
+preplace inst axi_pixel_fifo_0 -pg 1 -lvl 6 -x 3210 -y 80 -defaultsOSRD
+preplace inst axi_pixel_fifo_1 -pg 1 -lvl 6 -x 3210 -y 560 -defaultsOSRD
+preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 7 -x 3710 -y 480 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 7 -x 3710 -y -270 -defaultsOSRD
+preplace inst ilconstant_1 -pg 1 -lvl 5 -x 2850 -y 620 -defaultsOSRD -resize 120 88
+preplace inst ilconstant_0 -pg 1 -lvl 5 -x 2850 -y 150 -defaultsOSRD
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1670 870n
+preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 3 4 2190 1220 NJ 1220 N 1220 3430
+preplace netloc axi_pixel_fifo_0_core_clock_enable 1 6 1 3490 -220n
+preplace netloc axi_pixel_fifo_0_core_clock_out 1 6 1 3500 40n
+preplace netloc axi_pixel_fifo_0_fifo_in_pos 1 6 1 3510 -140n
+preplace netloc axi_pixel_fifo_0_fifo_out_pos 1 6 1 3520 -120n
+preplace netloc axi_pixel_fifo_0_fifo_read_complete 1 6 1 3440 -300n
+preplace netloc axi_pixel_fifo_0_fifo_rxbuf_full 1 6 1 3460 -260n
+preplace netloc axi_pixel_fifo_0_fifo_txbuf_full 1 6 1 3450 -280n
+preplace netloc axi_pixel_fifo_0_fifo_write_complete 1 6 1 3430 -320n
+preplace netloc axi_pixel_fifo_0_pixel_data 1 6 1 3540 -200n
+preplace netloc axi_pixel_fifo_0_s_axis_tready 1 3 4 1660 90 NJ 90 2990 -340 N
+preplace netloc axi_pixel_fifo_0_state 1 6 1 3470 -240n
+preplace netloc ilconcat_0_dout 1 4 2 NJ 1140 2930
+preplace netloc ilconstant_0_dout 1 5 1 NJ 150
+preplace netloc ilconstant_1_dout 1 5 1 N 620
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 270 810 670 810 1290 930 2190 860 NJ 860 2980 260 3480
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 260 610 NJ 610 NJ 610 NJ 610 2470J 700 N 700 3420
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 5 680 750 1280 670 2170 1230 NJ 1230 2990
+preplace netloc tdata 1 3 4 1650J 530 NJ 530 2960 -400 N
+preplace netloc tft_ili9341_wrapper_0_pixel_clock 1 6 1 3560 -180n
+preplace netloc tft_ili9341_wrapper_0_pixel_sync 1 6 1 3550 -160n
+preplace netloc tlast 1 3 4 1670J 540 NJ 540 2970 -380 N
+preplace netloc tvalid 1 3 4 2190J 550 NJ 550 3000 -360 N
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 2180 730n
+preplace netloc axi_ethernetlite_0_MDIO 1 6 2 3550J 980 NJ
+preplace netloc axi_ethernetlite_0_MII 1 6 2 3540J 950 NJ
+preplace netloc axi_pixel_fifo_1_m_pixel_stream 1 6 1 N 480
+preplace netloc axi_smc1_M00_AXI 1 4 2 NJ 960 2930
+preplace netloc axi_smc_M00_AXI 1 2 4 NJ 950 1650J 1240 NJ 1240 2930
+preplace netloc axi_smc_M01_AXI 1 2 1 970 770n
+preplace netloc processing_system7_0_DDR 1 6 2 3510J 670 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 6 2 3530J 700 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 690 420 NJ 420 NJ 420 NJ 420 N 420 3430
+preplace netloc tft_ili9341_wrapper_0_m_ilispi 1 7 1 NJ 50
+preplace netloc tft_ili9341_wrapper_1_m_ilispi 1 7 1 N 480
+levelinfo -pg 1 -100 450 830 1470 2330 2850 3210 3710 3890
+pagesize -pg 1 -db -bbox -sgen -100 -880 4020 1440
 "
 }
 {

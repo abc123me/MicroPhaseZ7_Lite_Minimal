@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu Apr  9 23:28:15 2026
-# Process ID         : 3542887
+# Start of session at: Sun Apr 19 12:45:41 2026
+# Process ID         : 3378283
 # Current directory  : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1
 # Command line       : vivado -log minimal_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minimal_wrapper.tcl
 # Log file           : /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 9 7950X3D 16-Core Processor
-# CPU Frequency      : 4747.531 MHz
+# CPU Frequency      : 4860.456 MHz
 # CPU Physical cores : 16
 # CPU Logical cores  : 32
 # Host memory        : 66310 MB
 # Swap memory        : 25741 MB
 # Total Virtual      : 92051 MB
-# Available Virtual  : 75729 MB
+# Available Virtual  : 72679 MB
 #-----------------------------------------------------------
 source minimal_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -37,11 +37,10 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3544039
+INFO: [Synth 8-7075] Helper process launched with PID 3379342
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2297.121 ; gain = 485.156 ; free physical = 24495 ; free virtual = 70705
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2290.457 ; gain = 484.844 ; free physical = 1529 ; free virtual = 67764
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'tft_rst', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:79]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:30]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:32]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:69]
@@ -141,6 +140,7 @@ INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:240]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:242]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:277]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6157] synthesizing module 'minimal_wrapper' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
@@ -301,49 +301,10 @@ INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (0#1
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
 INFO: [Synth 8-256] done synthesizing module 'axi_dma' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21979]
 INFO: [Synth 8-256] done synthesizing module 'minimal_axi_dma_0_1' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_1/synth/minimal_axi_dma_0_1.vhd:104]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:317]
-WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:317]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:317]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'minimal_axi_dma_0_1' has 40 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:317]
-INFO: [Synth 8-638] synthesizing module 'minimal_axi_dma_0_2' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/synth/minimal_axi_dma_0_2.vhd:104]
-	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
-	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
-	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
-	Parameter C_ENABLE_MULTI_CHANNEL bound to: 0 - type: integer 
-	Parameter C_NUM_MM2S_CHANNELS bound to: 1 - type: integer 
-	Parameter C_NUM_S2MM_CHANNELS bound to: 1 - type: integer 
-	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
-	Parameter C_SG_INCLUDE_STSCNTRL_STRM bound to: 0 - type: integer 
-	Parameter C_SG_USE_STSAPP_LENGTH bound to: 0 - type: integer 
-	Parameter C_SG_LENGTH_WIDTH bound to: 20 - type: integer 
-	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXIS_S2MM_STS_TDATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_MICRO_DMA bound to: 0 - type: integer 
-	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
-	Parameter C_INCLUDE_MM2S_SF bound to: 1 - type: integer 
-	Parameter C_MM2S_BURST_SIZE bound to: 16 - type: integer 
-	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 16 - type: integer 
-	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
-	Parameter C_INCLUDE_S2MM bound to: 0 - type: integer 
-	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
-	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
-	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
-	Parameter C_INCREASE_THROUGHPUT bound to: 0 - type: integer 
-	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-3491] module 'axi_dma' declared at '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:21634' bound to instance 'U0' of component 'axi_dma' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/synth/minimal_axi_dma_0_2.vhd:329]
-INFO: [Synth 8-256] done synthesizing module 'minimal_axi_dma_0_2' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/synth/minimal_axi_dma_0_2.vhd:104]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'minimal_axi_dma_0_2' is unconnected for instance 'axi_dma_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:355]
-WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'minimal_axi_dma_0_2' is unconnected for instance 'axi_dma_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:355]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'minimal_axi_dma_0_2' is unconnected for instance 'axi_dma_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:355]
-WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'minimal_axi_dma_0_2' has 40 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:355]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:285]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:285]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'minimal_axi_dma_0_1' is unconnected for instance 'axi_dma_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:285]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'minimal_axi_dma_0_1' has 40 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:285]
 INFO: [Synth 8-638] synthesizing module 'minimal_axi_ethernetlite_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/synth/minimal_axi_ethernetlite_0_0.vhd:98]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SELECT_XPM bound to: 1 - type: integer 
@@ -590,6 +551,7 @@ INFO: [Synth 8-638] synthesizing module 'tx_statemachine' [/home/jeremiah/Progra
 INFO: [Synth 8-638] synthesizing module 'cntr5bit' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2041]
 INFO: [Synth 8-256] done synthesizing module 'cntr5bit' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2041]
 INFO: [Synth 8-3491] module 'FDS' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49519' bound to instance 'STATE0A' of component 'FDS' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2694]
+INFO: [Synth 8-3491] module 'FDR' declared at '/opt/Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49383' bound to instance 'STATE5A' of component 'FDR' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2726]
 INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-256] done synthesizing module 'tx_statemachine' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:2365]
 INFO: [Synth 8-638] synthesizing module 'deferral' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:6182]
@@ -683,15 +645,27 @@ INFO: [Synth 8-638] synthesizing module 'axi_interface' [/home/jeremiah/Programm
 INFO: [Synth 8-256] done synthesizing module 'axi_interface' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:12259]
 INFO: [Synth 8-256] done synthesizing module 'axi_ethernetlite' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:13290]
 INFO: [Synth 8-256] done synthesizing module 'minimal_axi_ethernetlite_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/synth/minimal_axi_ethernetlite_0_0.vhd:98]
-INFO: [Synth 8-6157] synthesizing module 'minimal_axi_line_fifo_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_line_fifo_0_0/synth/minimal_axi_line_fifo_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'axi_line_fifo' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_line_fifo.v:16]
+INFO: [Synth 8-6157] synthesizing module 'minimal_axi_pixel_fifo_0_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_0_0/synth/minimal_axi_pixel_fifo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_pixel_fifo' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_pixel_fifo.v:23]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 	Parameter FIFO_SIZE bound to: 240 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_line_fifo' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_line_fifo.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_line_fifo_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_line_fifo_0_0/synth/minimal_axi_line_fifo_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'axi_pixel_fifo' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_pixel_fifo.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_pixel_fifo_0_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_0_0/synth/minimal_axi_pixel_fifo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'minimal_axi_pixel_fifo_1_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_1_0/synth/minimal_axi_pixel_fifo_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_pixel_fifo_1_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_pixel_fifo_1_0/synth/minimal_axi_pixel_fifo_1_0.v:53]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'fifo_write_complete' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'fifo_read_complete' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'state' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'fifo_rxbuf_full' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'fifo_txbuf_full' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'core_clock_enable' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'fifo_in_pos' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7071] port 'fifo_out_pos' of module 'minimal_axi_pixel_fifo_1_0' is unconnected for instance 'axi_pixel_fifo_1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+WARNING: [Synth 8-7023] instance 'axi_pixel_fifo_1' of module 'minimal_axi_pixel_fifo_1_0' has 19 connections declared, but only 10 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
 INFO: [Synth 8-6157] synthesizing module 'minimal_axi_smc_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/synth/minimal_axi_smc_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:10]
-INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1CMTIP3' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1528]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1CMTIP3' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1223]
 INFO: [Synth 8-638] synthesizing module 'bd_1c4e_psr_aclk_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_1/synth/bd_1c4e_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -731,19 +705,22 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/jeremiah/Pro
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
 INFO: [Synth 8-256] done synthesizing module 'bd_1c4e_psr_aclk_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_1/synth/bd_1c4e_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1571]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1571]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1571]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1571]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_1c4e_psr_aclk_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1571]
-INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1CMTIP3' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1528]
-INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_OE3J98' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1822]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1266]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1266]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1266]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_1c4e_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1266]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_1c4e_psr_aclk_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1266]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1CMTIP3' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1223]
+WARNING: [Synth 8-7071] port 'M02_ACLK' of module 'clk_map_imp_1CMTIP3' is unconnected for instance 'clk_map' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:559]
+WARNING: [Synth 8-7071] port 'M02_ARESETN' of module 'clk_map_imp_1CMTIP3' is unconnected for instance 'clk_map' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:559]
+WARNING: [Synth 8-7023] instance 'clk_map' of module 'clk_map_imp_1CMTIP3' has 13 connections declared, but only 11 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:559]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_OE3J98' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1517]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00e_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_32/synth/bd_1c4e_m00e_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m00e_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_32/synth/bd_1c4e_m00e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_OE3J98' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1822]
-INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_26KRO0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2064]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_OE3J98' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1517]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_26KRO0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1759]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00arn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_27/synth/bd_1c4e_m00arn_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m00arn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_27/synth/bd_1c4e_m00arn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00awn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_29/synth/bd_1c4e_m00awn_0.sv:53]
@@ -754,14 +731,14 @@ INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00rn_0' [/home/jeremiah/Progr
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m00rn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_28/synth/bd_1c4e_m00rn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00wn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_30/synth/bd_1c4e_m00wn_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m00wn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_30/synth/bd_1c4e_m00wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_26KRO0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2064]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_26KRO0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1759]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m00s2a_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_26/synth/bd_1c4e_m00s2a_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m00s2a_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_26/synth/bd_1c4e_m00s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_HYSVZW' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2306]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_HYSVZW' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2001]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m01e_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_39/synth/bd_1c4e_m01e_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m01e_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_39/synth/bd_1c4e_m01e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_HYSVZW' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2306]
-INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_16YGQXY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2548]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_HYSVZW' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2001]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_16YGQXY' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2243]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m01arn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_34/synth/bd_1c4e_m01arn_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m01arn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_34/synth/bd_1c4e_m01arn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m01awn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_36/synth/bd_1c4e_m01awn_0.sv:53]
@@ -772,38 +749,20 @@ INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m01rn_0' [/home/jeremiah/Progr
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m01rn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_35/synth/bd_1c4e_m01rn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m01wn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_37/synth/bd_1c4e_m01wn_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m01wn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_37/synth/bd_1c4e_m01wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_16YGQXY' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2548]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_16YGQXY' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2243]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m01s2a_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_33/synth/bd_1c4e_m01s2a_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m01s2a_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_33/synth/bd_1c4e_m01s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'm02_exit_pipeline_imp_XRU08S' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2790]
-INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m02e_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_46/synth/bd_1c4e_m02e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m02e_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_46/synth/bd_1c4e_m02e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm02_exit_pipeline_imp_XRU08S' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2790]
-INFO: [Synth 8-6157] synthesizing module 'm02_nodes_imp_1S0E5KT' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3032]
-INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m02arn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_41/synth/bd_1c4e_m02arn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m02arn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_41/synth/bd_1c4e_m02arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m02awn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_43/synth/bd_1c4e_m02awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m02awn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_43/synth/bd_1c4e_m02awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m02bn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_45/synth/bd_1c4e_m02bn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m02bn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_45/synth/bd_1c4e_m02bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m02rn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_42/synth/bd_1c4e_m02rn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m02rn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_42/synth/bd_1c4e_m02rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m02wn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_44/synth/bd_1c4e_m02wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m02wn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_44/synth/bd_1c4e_m02wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm02_nodes_imp_1S0E5KT' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3032]
-INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_m02s2a_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_40/synth/bd_1c4e_m02s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_m02s2a_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_40/synth/bd_1c4e_m02s2a_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00a2s_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_20/synth/bd_1c4e_s00a2s_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00a2s_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_20/synth/bd_1c4e_s00a2s_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1N15GZJ' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3274]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1N15GZJ' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2485]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00mmu_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_17/synth/bd_1c4e_s00mmu_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00mmu_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_17/synth/bd_1c4e_s00mmu_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00sic_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_19/synth/bd_1c4e_s00sic_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00sic_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_19/synth/bd_1c4e_s00sic_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_s00tr_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_18/synth/bd_1c4e_s00tr_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_s00tr_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_18/synth/bd_1c4e_s00tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1N15GZJ' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3274]
-INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1HOID5X' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3850]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1N15GZJ' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:2485]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1HOID5X' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3061]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_sarn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_21/synth/bd_1c4e_sarn_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_sarn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_21/synth/bd_1c4e_sarn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_sawn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_23/synth/bd_1c4e_sawn_0.sv:53]
@@ -814,8 +773,8 @@ INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_srn_0' [/home/jeremiah/Program
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_srn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_22/synth/bd_1c4e_srn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_swn_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_24/synth/bd_1c4e_swn_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_swn_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_24/synth/bd_1c4e_swn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1HOID5X' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3850]
-INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1BBON5D' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:4092]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1HOID5X' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3061]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1BBON5D' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3303]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_arinsw_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_2/synth/bd_1c4e_arinsw_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_arinsw_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_2/synth/bd_1c4e_arinsw_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_aroutsw_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_7/synth/bd_1c4e_aroutsw_0.sv:53]
@@ -828,26 +787,62 @@ INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_binsw_0' [/home/jeremiah/Progr
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_binsw_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_6/synth/bd_1c4e_binsw_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_boutsw_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_11/synth/bd_1c4e_boutsw_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_boutsw_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_11/synth/bd_1c4e_boutsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_UPCZK9' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1580]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_UPCZK9' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1275]
 INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_arni_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_12/synth/bd_1c4e_arni_0.sv:53]
-INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_arni_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_12/synth/bd_1c4e_arni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_awni_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_14/synth/bd_1c4e_awni_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_awni_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_14/synth/bd_1c4e_awni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_bni_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_16/synth/bd_1c4e_bni_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_bni_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_16/synth/bd_1c4e_bni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_rni_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_13/synth/bd_1c4e_rni_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_rni_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_13/synth/bd_1c4e_rni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_wni_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_15/synth/bd_1c4e_wni_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_wni_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_15/synth/bd_1c4e_wni_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_UPCZK9' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1580]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_UPCZK9' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1275]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_rinsw_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_3/synth/bd_1c4e_rinsw_0.sv:53]
 INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_rinsw_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_3/synth/bd_1c4e_rinsw_0.sv:53]
-INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'minimal_axi_smc_0' has 97 connections declared, but only 89 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:444]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_routsw_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_8/synth/bd_1c4e_routsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_routsw_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_8/synth/bd_1c4e_routsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_winsw_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_5/synth/bd_1c4e_winsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_winsw_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_5/synth/bd_1c4e_winsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_1c4e_woutsw_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_10/synth/bd_1c4e_woutsw_0.sv:53]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e_woutsw_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/ip/ip_10/synth/bd_1c4e_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1BBON5D' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:3303]
+WARNING: [Synth 8-7071] port 'M02_SC_AR_info' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_AR_payld' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_AR_req' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_AR_send' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_AW_info' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_AW_payld' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_AW_req' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_AW_send' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_W_info' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_W_payld' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_W_req' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'M02_SC_W_send' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'S02_SC_B_recv' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7071] port 'S02_SC_R_recv' of module 'switchboards_imp_1BBON5D' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1BBON5D' has 104 connections declared, but only 90 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1130]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1c4e' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'minimal_axi_smc_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/synth/minimal_axi_smc_0.v:53]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'minimal_axi_smc_0' is unconnected for instance 'axi_smc' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'minimal_axi_smc_0' has 97 connections declared, but only 81 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:389]
 INFO: [Synth 8-638] synthesizing module 'bd_ddcf_psr_aclk_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_1/synth/bd_ddcf_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -859,46 +854,60 @@ INFO: [Synth 8-638] synthesizing module 'bd_ddcf_psr_aclk_0' [/home/jeremiah/Pro
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'bd_ddcf_psr_aclk_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_1/synth/bd_ddcf_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:650]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:650]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:650]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:650]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_ddcf_psr_aclk_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:650]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_ddcf_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:1121]
-WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_ddcf_s00tr_0' has 38 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:1121]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_ddcf_s01tr_0' is unconnected for instance 's01_transaction_regulator' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:1481]
-WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_ddcf_s01tr_0' has 38 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:1481]
-WARNING: [Synth 8-7071] port 'M00_SC_AW_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_AW_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_AW_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_AW_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_B_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_B_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_B_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_B_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_W_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_W_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_W_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M00_SC_W_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M01_SC_B_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M01_SC_B_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M01_SC_B_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'M01_SC_B_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'S00_SC_AW_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'S00_SC_B_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_HQ2ARX' has 77 connections declared, but only 56 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:554]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_stream_to_pixels.v:60]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:604]
-INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
-INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
-INFO: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
-INFO: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
-INFO: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
-INFO: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
-INFO: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_19_ila' has 1033 connections declared, but only 1027 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:3245]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:500]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:500]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:500]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_ddcf_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:500]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_ddcf_psr_aclk_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:500]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_G4XXAZ' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:463]
+WARNING: [Synth 8-7071] port 'S01_ACLK' of module 'clk_map_imp_G4XXAZ' is unconnected for instance 'clk_map' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:221]
+WARNING: [Synth 8-7071] port 'S01_ARESETN' of module 'clk_map_imp_G4XXAZ' is unconnected for instance 'clk_map' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:221]
+WARNING: [Synth 8-7023] instance 'clk_map' of module 'clk_map_imp_G4XXAZ' has 11 connections declared, but only 9 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ddcf_m00e_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_16/synth/bd_ddcf_m00e_0.sv:53]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_ddcf_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:971]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_ddcf_s00tr_0' has 38 connections declared, but only 37 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:971]
+WARNING: [Synth 8-7071] port 'M00_SC_AW_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_AW_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_AW_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_AW_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_B_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_B_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_B_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_B_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_W_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_W_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_W_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M00_SC_W_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_B_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_B_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_B_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_B_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'S00_SC_AW_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'S00_SC_B_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_HQ2ARX' is unconnected for instance 'switchboards' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_HQ2ARX' has 77 connections declared, but only 51 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:409]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'minimal_axi_smc_2' is unconnected for instance 'axi_smc1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:471]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'minimal_axi_smc_2' is unconnected for instance 'axi_smc1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:471]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'minimal_axi_smc_2' is unconnected for instance 'axi_smc1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:471]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'minimal_axi_smc_2' is unconnected for instance 'axi_smc1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:471]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'minimal_axi_smc_2' is unconnected for instance 'axi_smc1' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:471]
+WARNING: [Synth 8-7023] instance 'axi_smc1' of module 'minimal_axi_smc_2' has 47 connections declared, but only 42 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:471]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:514]
+INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:3237]
+INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:3237]
+INFO: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:3237]
+INFO: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:3237]
+INFO: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:3237]
+INFO: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:3237]
+INFO: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_19_ila' has 1033 connections declared, but only 1027 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:3237]
 INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
@@ -907,23 +916,9 @@ INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5
 INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
 INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
-INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
-INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
-INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
-INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
-INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/synth/minimal_processing_system7_0_0.v:466]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'minimal_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'minimal_processing_system7_0_0' has 108 connections declared, but only 98 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:626]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'minimal_processing_system7_0_0' has 108 connections declared, but only 98 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:534]
 INFO: [Synth 8-638] synthesizing module 'minimal_rst_ps7_0_50M_0' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -957,15 +952,19 @@ INFO: [Synth 8-638] synthesizing module 'lpf__parameterized0' [/home/jeremiah/Pr
 INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized2' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
 INFO: [Synth 8-256] done synthesizing module 'minimal_rst_ps7_0_50M_0' (0#1) [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_rst_ps7_0_50M_0/synth/minimal_rst_ps7_0_50M_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:725]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:725]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:725]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'minimal_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:725]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:725]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'minimal_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:633]
 	Parameter INPUT_CLK_MHZ bound to: 100 - type: integer 
 	Parameter WIDTH bound to: 320 - type: integer 
 	Parameter HEIGHT bound to: 240 - type: integer 
+	Parameter PIXEL_WIDTH bound to: 16 - type: integer 
 	Parameter INPUT_CLK_MHZ bound to: 100 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341.sv:115]
+	Parameter INPUT_CLK_MHZ bound to: 50 - type: integer 
+	Parameter WIDTH bound to: 320 - type: integer 
+	Parameter HEIGHT bound to: 240 - type: integer 
+	Parameter PIXEL_WIDTH bound to: 16 - type: integer 
+	Parameter INPUT_CLK_MHZ bound to: 50 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341.sv:115]
 INFO: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2133]
 INFO: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2135]
 INFO: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:2288]
@@ -1009,8 +1008,20 @@ Info : Asymmetric Ram read pattern identified
 INFO: [Synth 8-6014] Unused sequential element reg_access_d1_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:11336]
 WARNING: [Synth 8-6014] Unused sequential element AXI4_LITE_IF_GEN.write_complete_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:12718]
 WARNING: [Synth 8-6014] Unused sequential element AXI4_LITE_IF_GEN.read_complete_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/35f3/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd:12874]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1CMTIP3 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1552]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_G4XXAZ does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:633]
+WARNING: [Synth 8-6014] Unused sequential element stop_xfer_oneshot_reg was removed.  [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_pixel_fifo.v:190]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1CMTIP3 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:1247]
+WARNING: [Synth 8-3848] Net M02_AXI_araddr in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:147]
+WARNING: [Synth 8-3848] Net M02_AXI_arprot in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:148]
+WARNING: [Synth 8-3848] Net M02_AXI_arvalid in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:150]
+WARNING: [Synth 8-3848] Net M02_AXI_awaddr in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:151]
+WARNING: [Synth 8-3848] Net M02_AXI_awprot in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:152]
+WARNING: [Synth 8-3848] Net M02_AXI_awvalid in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:154]
+WARNING: [Synth 8-3848] Net M02_AXI_bready in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:155]
+WARNING: [Synth 8-3848] Net M02_AXI_rready in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:159]
+WARNING: [Synth 8-3848] Net M02_AXI_wdata in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:162]
+WARNING: [Synth 8-3848] Net M02_AXI_wstrb in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:164]
+WARNING: [Synth 8-3848] Net M02_AXI_wvalid in module/entity bd_1c4e does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_0/bd_0/synth/bd_1c4e.v:165]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_G4XXAZ does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:483]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -1019,15 +1030,18 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_r
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
-INFO: [Synth 8-3848] Net sl_iport0 in module/entity minimal_ila_1_0 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/synth/minimal_ila_1_0.v:134]
-WARNING: [Synth 8-3848] Net tft_reset in module/entity tft_ili9341_wrapper does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v:64]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_line_fifo_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:428]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:604]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_stream_to_pixels_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:582]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:317]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tft_ili9341_wrapper_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:732]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tft_ili9341_wrapper_1'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:743]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_stream_to_pixels_1'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:593]
+WARNING: [Synth 8-3848] Net S01_AXI_arready in module/entity bd_ddcf does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:96]
+WARNING: [Synth 8-3848] Net S01_AXI_rdata in module/entity bd_ddcf does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:99]
+WARNING: [Synth 8-3848] Net S01_AXI_rlast in module/entity bd_ddcf does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:100]
+WARNING: [Synth 8-3848] Net S01_AXI_rresp in module/entity bd_ddcf does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:102]
+WARNING: [Synth 8-3848] Net S01_AXI_rvalid in module/entity bd_ddcf does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/synth/bd_ddcf.v:103]
+INFO: [Synth 8-3848] Net sl_iport0 in module/entity minimal_ila_0_1 does not have driver. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/synth/minimal_ila_0_1.v:126]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dma_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:285]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:514]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_1'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:378]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_pixel_fifo_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:358]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tft_ili9341_wrapper_0'. This will prevent further optimization [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/synth/minimal.v:640]
+WARNING: [Synth 8-7129] Port tft_sdo in module tft_ili9341__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port tft_sdo in module tft_ili9341 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized4 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -1110,39 +1124,38 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[100] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[99] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[98] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[97] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[96] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[95] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[94] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[93] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[92] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[91] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[90] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[89] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[88] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[87] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[86] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[85] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[84] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[83] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[61] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[60] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[59] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[58] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[57] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[56] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[55] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[54] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[53] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[52] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[51] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[50] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[49] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[48] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[47] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[46] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[45] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.723 ; gain = 1256.758 ; free physical = 23791 ; free virtual = 69707
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 3033.059 ; gain = 1227.445 ; free physical = 1618 ; free virtual = 67348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.723 ; gain = 1256.758 ; free physical = 23720 ; free virtual = 69642
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 3033.059 ; gain = 1227.445 ; free physical = 1823 ; free virtual = 67360
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3068.723 ; gain = 1256.758 ; free physical = 23720 ; free virtual = 69642
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 3033.059 ; gain = 1227.445 ; free physical = 1823 ; free virtual = 67361
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3130.066 ; gain = 0.000 ; free physical = 23692 ; free virtual = 69533
-INFO: [Netlist 29-17] Analyzing 549 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3033.059 ; gain = 0.000 ; free physical = 1695 ; free virtual = 67229
+INFO: [Netlist 29-17] Analyzing 348 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -1170,12 +1183,10 @@ Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minim
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/bd_0/ip/ip_1/bd_ddcf_psr_aclk_0_board.xdc] for cell 'minimal_i/axi_smc1/inst/clk_map/psr_aclk/U0'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/smartconnect.xdc] for cell 'minimal_i/axi_smc1/inst'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_smc_2/smartconnect.xdc] for cell 'minimal_i/axi_smc1/inst'
-Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'minimal_i/ila_1/inst'
-Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila.xdc] for cell 'minimal_i/ila_1/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
+Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'minimal_i/ila_0/inst'
+Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'minimal_i/ila_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2.xdc] for cell 'minimal_i/axi_dma_1/U0'
-Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2.xdc] for cell 'minimal_i/axi_dma_1/U0'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
@@ -1188,8 +1199,6 @@ Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minim
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0_clocks.xdc] for cell 'minimal_i/axi_ethernetlite_0/U0'
 Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_1/minimal_axi_dma_0_1_clocks.xdc] for cell 'minimal_i/axi_dma_0/U0'
 Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_1/minimal_axi_dma_0_1_clocks.xdc] for cell 'minimal_i/axi_dma_0/U0'
-Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2_clocks.xdc] for cell 'minimal_i/axi_dma_1/U0'
-Finished Parsing XDC File [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_dma_0_2/minimal_axi_dma_0_2_clocks.xdc] for cell 'minimal_i/axi_dma_1/U0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
@@ -1204,14 +1213,14 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/2025.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minimal_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/minimal_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-1714] 130 XPM XDC files have been applied to the design.
+INFO: [Project 1-1714] 105 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3500.273 ; gain = 0.000 ; free physical = 23462 ; free virtual = 69752
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3299.641 ; gain = 0.000 ; free physical = 1479 ; free virtual = 66998
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 363 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 228 instances
-  CFGLUT5 => SRLC32E: 42 instances
+  A total of 212 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 100 instances
+  CFGLUT5 => SRLC32E: 19 instances
   FDR => FDRE: 55 instances
   FDS => FDSE: 2 instances
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
@@ -1219,24 +1228,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1S => RAM32X1S (RAMS32): 4 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3500.309 ; gain = 0.000 ; free physical = 23463 ; free virtual = 69767
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3299.676 ; gain = 0.000 ; free physical = 1491 ; free virtual = 67021
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3500.309 ; gain = 1688.344 ; free physical = 23544 ; free virtual = 69819
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 3299.676 ; gain = 1494.062 ; free physical = 2064 ; free virtual = 66995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 23544 ; free virtual = 69819
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 3307.645 ; gain = 1502.031 ; free physical = 2064 ; free virtual = 66995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 23516 ; free virtual = 69749
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 3307.645 ; gain = 1502.031 ; free physical = 2080 ; free virtual = 67010
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
@@ -1246,6 +1255,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'thisState_reg' in module 'defer_state'
 INFO: [Synth 8-802] inferred FSM for state register 'mdio_state_reg' in module 'mdio_if'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_pixel_fifo'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_16_decerr_slave'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.w_state_reg' in module 'sc_mmu_v1_0_16_top'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_endpoint.r_state_reg' in module 'sc_mmu_v1_0_16_top'
@@ -1270,7 +1280,6 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_r
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_stream_to_pixels'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized1'
@@ -1288,31 +1297,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized13'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized14'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized15'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized16'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized17'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized18'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized19'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized20'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized21'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized22'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized23'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized24'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized25'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized26'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized27'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized28'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized29'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized30'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized31'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized32'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized33'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized34'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized35'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized36'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized37'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized38'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_3_generic_memrd'
 WARNING: [Synth 8-6040] Register initSeqCounter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tft_ili9341'
+WARNING: [Synth 8-6040] Register initSeqCounter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tft_ili9341__parameterized0'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1416,6 +1405,20 @@ INFO: [Synth 8-3354] encoded FSM with state register 'mdio_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
+  STATE_INIT_FIRST_PIXEL |                              000 |                              000
+  STATE_INIT_NEXT_PIXELS |                              001 |                              001
+    STATE_RESET_TRANSFER |                              011 |                              011
+    STATE_TRANSFER_READY |                              010 |                              010
+    STATE_TRANSFER_FIRST |                              110 |                              110
+  STATE_PERFORM_TRANSFER |                              101 |                              101
+     STATE_TRANSFER_LAST |                              111 |                              111
+   STATE_WAIT_PIXEL_SYNC |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'User encoding' in module 'axi_pixel_fifo'
+WARNING: [Synth 8-13157] FSM with state register 'state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
             P_WRITE_IDLE |                              001 |                               00
             P_WRITE_DATA |                              010 |                               01
             P_WRITE_RESP |                              100 |                               10
@@ -1488,15 +1491,6 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' 
                 R_DECERR |                               11 | 00000000000000000000000000000011
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_16_top__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-  STATE_INIT_FIRST_PIXEL |                               00 |                               00
-  STATE_INIT_NEXT_PIXELS |                               01 |                               01
-   STATE_HANDLE_TRANSFER |                               10 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_stream_to_pixels'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1653,213 +1647,6 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized16'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized17'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized18'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized19'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized20'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized21'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized22'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized23'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized24'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized25'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized26'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized27'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized28'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized29'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized30'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized31'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized32'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized33'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized34'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized35'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized36'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized37'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized38'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
               RESET_ADDR |                          0000001 |                          0000001
             REQUEST_READ |                          0000010 |                          0000010
            WAIT_READ_ACK |                          0000100 |                          0000100
@@ -1869,10 +1656,33 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
        INCREMENT_ADDRESS |                          1000000 |                          1000000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ltlib_v1_0_3_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                   START |                              000 |                              000
+              HOLD_RESET |                              001 |                              001
+        WAIT_FOR_POWERUP |                              010 |                              010
+           SEND_INIT_SEQ |                              011 |                              011
+              LOOP_DUMMY |                              100 |                              101
+                    LOOP |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tft_ili9341'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                   START |                              000 |                              000
+              HOLD_RESET |                              001 |                              001
+        WAIT_FOR_POWERUP |                              010 |                              010
+           SEND_INIT_SEQ |                              011 |                              011
+              LOOP_DUMMY |                              100 |                              101
+                    LOOP |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tft_ili9341__parameterized0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 23544 ; free virtual = 69762
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3307.645 ; gain = 1502.031 ; free physical = 2223 ; free virtual = 66958
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1893,9 +1703,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM/GEN_CMD_BTT_LESS_23.cmnd_data_reg' and it is trimmed from '153' to '71' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:12014]
-INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM/GEN_CMD_BTT_LESS_23.cmnd_data_reg' and it is trimmed from '153' to '71' bits. [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd:12014]
-WARNING: [Synth 8-6040] Register inst/nolabel_line73/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
-WARNING: [Synth 8-6040] Register inst/nolabel_line73/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register inst/nolabel_line84/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register inst/nolabel_line84/initSeqCounter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/TX_PING/xpm_mem_gen.xpm_memory_inst_2 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "minimal_i/axi_ethernetlite_0/U0/i_0/\XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst_1 /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
@@ -1910,24 +1719,11 @@ WARNING: [Synth 8-13161] RAM (minimal_i/axi_smc1/inst/i_0/\s00_nodes/s00_ar_node
 WARNING: [Synth 8-6014] Unused sequential element gen_wr_a.gen_word_narrow.mem_reg was removed. 
 WARNING: [Synth 8-13161] RAM (minimal_i/axi_smc1/inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst/i_0) is optimized away because it doesn't have any load.
 WARNING: [Synth 8-6014] Unused sequential element gen_wr_a.gen_word_narrow.mem_reg was removed. 
-WARNING: [Synth 8-13161] RAM (minimal_i/axi_smc1/inst/i_0/\s01_nodes/s01_ar_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst/i_0) is optimized away because it doesn't have any load.
-WARNING: [Synth 8-6014] Unused sequential element gen_wr_a.gen_word_narrow.mem_reg was removed. 
-WARNING: [Synth 8-13161] RAM (minimal_i/axi_smc1/inst/i_0/\s01_nodes/s01_r_node/inst /\inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst/i_0) is optimized away because it doesn't have any load.
-WARNING: [Synth 8-6014] Unused sequential element gen_wr_a.gen_word_narrow.mem_reg was removed. 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5784] Optimized 1 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 39 bits, new ram width 38 bits.
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5784] Optimized 1 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 39 bits, new ram width 38 bits.
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1937,36 +1733,27 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized2.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22641 ; free virtual = 68970
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 3307.645 ; gain = 1502.031 ; free physical = 2052 ; free virtual = 66861
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22676 ; free virtual = 69067
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 3307.645 ; gain = 1502.031 ; free physical = 2078 ; free virtual = 66847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22624 ; free virtual = 68929
+Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 3307.645 ; gain = 1502.031 ; free physical = 2048 ; free virtual = 66824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[2]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0__1.
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0__1.
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0__1.
-INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[1]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0__1.
-INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[0]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0__1.
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[2]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0.
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0.
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_16_top__parameterized0.
@@ -1984,9 +1771,8 @@ INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0
 INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PONG_GEN.TX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_1/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst_2/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance minimal_i/axi_line_fifo_0/inst/fifo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22706 ; free virtual = 69036
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:01:40 . Memory (MB): peak = 3307.645 ; gain = 1502.031 ; free physical = 2062 ; free virtual = 66860
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2003,39 +1789,38 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341.sv:50]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22639 ; free virtual = 68958
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:42 . Memory (MB): peak = 3339.457 ; gain = 1533.844 ; free physical = 2051 ; free virtual = 66803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22636 ; free virtual = 68958
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:42 . Memory (MB): peak = 3339.457 ; gain = 1533.844 ; free physical = 2037 ; free virtual = 66791
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22565 ; free virtual = 68948
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 3339.457 ; gain = 1533.844 ; free physical = 2074 ; free virtual = 66844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22529 ; free virtual = 68915
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 3339.457 ; gain = 1533.844 ; free physical = 2071 ; free virtual = 66844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22483 ; free virtual = 68876
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 3339.457 ; gain = 1533.844 ; free physical = 2070 ; free virtual = 66848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22504 ; free virtual = 68897
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 3339.457 ; gain = 1533.844 ; free physical = 2070 ; free virtual = 66855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2053,74 +1838,77 @@ Report Cell Usage:
 +------+---------+------+
 |1     |BIBUF    |   130|
 |2     |BUFG     |     3|
-|3     |CARRY4   |   205|
-|4     |CFGLUT5  |   270|
-|5     |LUT1     |   463|
-|6     |LUT2     |   816|
-|7     |LUT3     |  1381|
-|8     |LUT4     |  1554|
-|9     |LUT5     |  1057|
-|10    |LUT6     |  1773|
+|3     |CARRY4   |   131|
+|4     |CFGLUT5  |   119|
+|5     |LUT1     |   315|
+|6     |LUT2     |   572|
+|7     |LUT3     |   850|
+|8     |LUT4     |  1004|
+|9     |LUT5     |   773|
+|10    |LUT6     |  1372|
 |11    |MULT_AND |    17|
 |12    |MUXCY    |    25|
-|13    |MUXF7    |   125|
-|14    |MUXF8    |     1|
-|15    |PS7      |     1|
-|16    |RAM16X1S |     4|
-|17    |RAM32M   |    59|
-|18    |RAM32X1D |     4|
-|19    |RAMB18E1 |    10|
-|22    |RAMB36E1 |    24|
-|24    |SRL16    |     3|
-|25    |SRL16E   |   221|
-|26    |SRLC16E  |     2|
-|27    |SRLC32E  |    17|
-|28    |XORCY    |    20|
-|29    |FDCE     |   225|
-|30    |FDR      |    48|
-|31    |FDRE     |  7950|
-|32    |FDS      |     2|
-|33    |FDSE     |   250|
-|34    |IBUF     |    10|
-|35    |IOBUF    |     1|
-|36    |OBUF     |    19|
+|13    |MUXF7    |    20|
+|14    |PS7      |     1|
+|15    |RAM16X1S |     4|
+|16    |RAM32M   |    39|
+|17    |RAM32X1D |     4|
+|18    |RAM64M   |    20|
+|19    |RAM64X1D |     4|
+|20    |RAMB18E1 |     8|
+|21    |RAMB36E1 |    29|
+|23    |SRL16    |     3|
+|24    |SRL16E   |   126|
+|25    |SRLC16E  |     2|
+|26    |SRLC32E  |    17|
+|27    |XORCY    |    20|
+|28    |FDCE     |   171|
+|29    |FDR      |    48|
+|30    |FDRE     |  5385|
+|31    |FDS      |     2|
+|32    |FDSE     |   218|
+|33    |IBUF     |    10|
+|34    |IOBUF    |     1|
+|35    |OBUF     |    19|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.277 ; gain = 1696.312 ; free physical = 22500 ; free virtual = 68895
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 3339.457 ; gain = 1533.844 ; free physical = 2070 ; free virtual = 66856
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5214 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 3508.277 ; gain = 1264.727 ; free physical = 22525 ; free virtual = 68919
-Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 3508.285 ; gain = 1696.312 ; free physical = 22525 ; free virtual = 68920
+Synthesis finished with 0 errors, 0 critical warnings and 5415 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 3339.457 ; gain = 1267.227 ; free physical = 2070 ; free virtual = 66861
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:43 . Memory (MB): peak = 3339.465 ; gain = 1533.844 ; free physical = 2070 ; free virtual = 66861
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3508.285 ; gain = 0.000 ; free physical = 22587 ; free virtual = 69002
-INFO: [Netlist 29-17] Analyzing 818 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3354.332 ; gain = 0.000 ; free physical = 2229 ; free virtual = 67070
+INFO: [Netlist 29-17] Analyzing 494 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Chipscope 16-324] Core: minimal_i/ila_1 UUID: 337fa110-9b55-591e-b89f-cd1d2d5b227a 
+INFO: [Chipscope 16-324] Core: minimal_i/ila_0 UUID: e67c3ab4-a05a-5340-a57d-f8a13d95076e 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3564.305 ; gain = 0.000 ; free physical = 22505 ; free virtual = 68913
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3419.266 ; gain = 0.000 ; free physical = 2196 ; free virtual = 66977
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 417 instances were transformed.
+  A total of 270 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 9 instances
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 228 instances
-  CFGLUT5 => SRLC32E: 42 instances
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 100 instances
+  CFGLUT5 => SRLC32E: 19 instances
   FDR => FDRE: 48 instances
   FDS => FDSE: 2 instances
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
   MULT_AND => LUT2: 17 instances
   RAM16X1S => RAM32X1S (RAMS32): 4 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 59 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 39 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances
   SRL16 => SRL16E: 3 instances
 
-Synth Design complete | Checksum: 7ed61a6b
+Synth Design complete | Checksum: e362b92c
 INFO: [Common 17-83] Releasing license: Synthesis
-867 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+797 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:06 . Memory (MB): peak = 3564.340 ; gain = 1932.961 ; free physical = 22582 ; free virtual = 68967
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2931.219; main = 2694.936; forked = 314.095
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4496.578; main = 3564.309; forked = 988.297
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3588.316 ; gain = 0.000 ; free physical = 22577 ; free virtual = 68964
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:50 . Memory (MB): peak = 3419.301 ; gain = 1794.273 ; free physical = 2196 ; free virtual = 66969
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2746.654; main = 2580.153; forked = 314.009
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4295.945; main = 3419.270; forked = 988.297
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3443.277 ; gain = 0.000 ; free physical = 2199 ; free virtual = 66975
 INFO: [Common 17-1381] The checkpoint '/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.runs/synth_1/minimal_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  9 23:30:27 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 12:47:35 2026...

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Thu Apr  9 23:31:31 2026
+| Date         : Sun Apr 19 12:48:32 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_methodology -file minimal_wrapper_methodology_drc_routed.rpt -pb minimal_wrapper_methodology_drc_routed.pb -rpx minimal_wrapper_methodology_drc_routed.rpx
 | Design       : minimal_wrapper
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 67
+             Checks found: 103
 +-----------+------------------+---------------------------------------------+--------+
 | Rule      | Severity         | Description                                 | Checks |
 +-----------+------------------+---------------------------------------------+--------+
 | TIMING-14 | Critical Warning | LUT on the clock tree                       | 2      |
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                 | 36     |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                 | 70     |
 | LUTAR-1   | Warning          | LUT drives async reset alert                | 4      |
-| TIMING-18 | Warning          | Missing input or output delay               | 22     |
+| TIMING-18 | Warning          | Missing input or output delay               | 24     |
 | ULMTCS-1  | Warning          | Control Sets use limits recommend reduction | 1      |
 | XDCB-5    | Warning          | Runtime inefficient way to find pin objects | 2      |
 +-----------+------------------+---------------------------------------------+--------+
@@ -39,12 +39,12 @@ Table of Contents
 -----------------
 TIMING-14#1 Critical Warning
 LUT on the clock tree  
-The LUT minimal_i/axi_stream_to_pixels_0/inst/core_clk_out_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+The LUT minimal_i/axi_pixel_fifo_0/inst/core_clock_out_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
 Related violations: <none>
 
 TIMING-14#2 Critical Warning
 LUT on the clock tree  
-The LUT minimal_i/axi_stream_to_pixels_1/inst/core_clk_out_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+The LUT minimal_i/axi_pixel_fifo_1/inst/core_clock_out_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
 Related violations: <none>
 
 TIMING-17#1 Critical Warning
@@ -134,95 +134,265 @@ Related violations: <none>
 
 TIMING-17#18 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_0/inst/tft_led_reg/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[0]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[10]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[11]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[12]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[13]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[14]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[15]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[16]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[1]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[2]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[3]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[4]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[5]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[6]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[7]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_data_buffer_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[8]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/pixel_sync_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Critical Warning
 Non-clocked sequential cell  
-The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[9]/C is not reached by a timing clock
+The clock pin minimal_i/tft_ili9341_wrapper_0/inst/tft_led_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_counter_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_data_buffer_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Critical Warning
+Non-clocked sequential cell  
+The clock pin minimal_i/tft_ili9341_wrapper_1/inst/pixel_sync_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Critical Warning
 Non-clocked sequential cell  
 The clock pin minimal_i/tft_ili9341_wrapper_1/inst/tft_led_reg/C is not reached by a timing clock
 Related violations: <none>
@@ -337,49 +507,59 @@ Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on m_ilispi_0_scl relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on m_ilispi_0_nrst relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on m_ilispi_0_sda relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on m_ilispi_0_scl relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on m_ilispi_1_cs relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on m_ilispi_0_sda relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on m_ilispi_1_dc relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on m_ilispi_1_cs relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on m_ilispi_1_scl relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on m_ilispi_1_dc relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on m_ilispi_1_nrst relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on m_ilispi_1_scl relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#24 Warning
 Missing input or output delay  
 An output delay is missing on m_ilispi_1_sda relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 ULMTCS-1#1 Warning
 Control Sets use limits recommend reduction  
-This design uses 505 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+This design uses 389 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_3_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '47' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Current XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
 XDCB-5#2 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '47' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_1_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Current XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc (Line: 72)
 Related violations: <none>
 
 

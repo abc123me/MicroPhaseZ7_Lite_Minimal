@@ -14,41 +14,54 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module axi_demultiplexer # (
-	parameter OUTPUTS = 2,
-	parameter DATA_WIDTH = 16
-) (
-	// AXI4 Stream in
-	input  wire s_axis_tlast,
-	input  wire s_axis_tvalid,
-	input  wire [DATA_WIDTH-1:0] s_axis_tdata,
-	output wire s_axis_tready,
-	// AXI4 Stream 0 out
-	output wire m00_axis_tlast,
-	output wire m00_axis_tvalid,
-	output wire [DATA_WIDTH-1:0] m00_axis_tdata,
-	input  wire m00_axis_tready,
-	// AXI4 Stream 1 out
-	output wire m01_axis_tlast,
-	output wire m01_axis_tvalid,
-	output wire [DATA_WIDTH-1:0] m01_axis_tdata,
-	input  wire m01_axis_tready,
-	// Selector in
-	input  wire selection,
-	input  wire axi_clock
+module axi_demultiplexer (
+	input  wire tready_in0,
+	input  wire fifo_write_complete0,
+	input  wire fifo_read_complete0,
+	output reg  fifo_read_enable0,
+	
+	input  wire tready_in1,
+	input  wire fifo_write_complete1,
+	input  wire fifo_read_complete1,
+	output reg  fifo_read_enable1,
+	
+    output reg [1:0] state,
+	output reg tready_out,
+	input  wire axis_clock
 );
-	genvar i;
-	
-	wire [OUTPUTS-1:0] treadies_select;
-	assign s_axis_tready = |treadies_select;
 
-	assign m00_axis_tdata  = s_axis_tdata    && (selection == 0);
-	assign m00_axis_tlast  = s_axis_tlast    && (selection == 0);
-	assign m00_axis_tvalid = s_axis_tvalid   && (selection == 0);
-	assign treadies_select = m00_axis_tready && (selection == 0);
-	
-	assign m01_axis_tdata  = s_axis_tdata    && (selection == 1);
-	assign m01_axis_tlast  = s_axis_tlast    && (selection == 1);
-	assign m01_axis_tvalid = s_axis_tvalid   && (selection == 1);
-	assign treadies_select = m01_axis_tready && (selection == 1);
+initial fifo_read_enable0 = 0;
+initial fifo_read_enable1 = 0;
+
+initial tready_out = 0;
+
+localparam STATE_FILL_DISPLAY_0 = 3'b000;
+localparam STATE_FILL_DISPLAY_1 = 3'b001;
+localparam STATE_WAIT_DISPLAY_0 = 3'b010;
+localparam STATE_WAIT_DISPLAY_1 = 3'b011;
+localparam STATE_READ_DISPLAY_0 = 3'b100;
+localparam STATE_READ_DISPLAY_1 = 3'b101;
+initial state = STATE_FILL_DISPLAY_0;
+
+always @(negedge axis_clock) begin
+    case (state)
+        STATE_FILL_DISPLAY_0: begin
+            tready_out <= tready_in0;
+            fifo_read_enable0 <= !fifo_read_complete0;
+            if (fifo_read_complete0) begin
+                tready_out <= 0;
+                state <= STATE_FILL_DISPLAY_1;
+            end
+        end
+        STATE_FILL_DISPLAY_1: begin
+            tready_out <= tready_in1;
+            fifo_read_enable1 <= !fifo_read_complete1;
+            if (fifo_read_complete1) begin
+                tready_out <= 0;
+                state <= STATE_FILL_DISPLAY_0;
+            end
+        end
+    endcase
+end
+    
 endmodule

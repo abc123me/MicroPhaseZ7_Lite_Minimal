@@ -26,18 +26,13 @@ module axi_stream_to_pixels (
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_clock" *) input wire pixel_clock,
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_sync" *)  input wire pixel_sync,
         (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream pixel_data" *)  output reg [15:0] pixel_data,
-        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream core_clock" *)  output wire core_clk_out
+        (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 m_pixel_stream core_clock" *)  output wire core_clock_out
     );
     
-    // Register to enable/disable pixel data zeroization
-    // When high, this should zeroize the pixel data
-    // Asserted upon initialization or during incomplete DMA transfers
-    reg [15:0] pixel_data_buffer;
-    
     // Clock control
-    reg core_clk_enable;
-    initial core_clk_enable = 1'b1;
-    assign core_clk_out = s_axis_clock && core_clk_enable;
+    reg core_clock_enable;
+    initial core_clock_enable = 1'b0;
+    assign core_clock_out = s_axis_clock && core_clock_enable;
 
     // Display cleanup
     reg pixels_changed;
@@ -53,36 +48,34 @@ module axi_stream_to_pixels (
     reg [1:0] state;
     localparam STATE_INIT_FIRST_PIXEL = 2'b00;
     localparam STATE_INIT_NEXT_PIXELS = 2'b01;
-    localparam STATE_HANDLE_TRANSFER  = 2'b10;
+    localparam STATE_WRITE_PIXEL_DATA = 2'b10;
+    localparam STATE_WAIT_CLEAR_FRAME = 2'b11;
     initial state = STATE_INIT_FIRST_PIXEL;
     
     always @(posedge s_axis_clock) begin
         case (state)
             STATE_INIT_FIRST_PIXEL: begin
                 pixel_data <= 0;
-                // This is the primary init state, once clocks are
-                // stable draw the first pixel onto the display
-                if (pixel_clock && !pixel_sync) begin
+                core_clock_enable <= 1;
+                if(pixel_clock && !pixel_sync) begin
                     state <= STATE_INIT_NEXT_PIXELS;
                 end
             end
             STATE_INIT_NEXT_PIXELS: begin
                 // Once the first pixel is drawn the pixel_sync flag will be de-asserted and
                 // we will keep drawing until it is re-asserted, now handle normal operations
-                if (pixel_sync) begin
-                    core_clk_enable <= 0;
+                if (pixel_sync && !pixel_clock) begin
+                    core_clock_enable <= 0;
                     data_ready_oneshot <= 1'b1;
-                    state <= STATE_HANDLE_TRANSFER;
-                    pixel_data <= 0;
+                    state <= STATE_WRITE_PIXEL_DATA;
                 end else begin
                     s_axis_tready <= 1'b0;
-                    pixel_data <= 0;
                 end
             end
-            STATE_HANDLE_TRANSFER: begin
-                // If there is a pixel clock asserted, assert a TREADY pulse
+            STATE_WRITE_PIXEL_DATA: begin
+                // If there isn't a pixel clock asserted, assert a TREADY pulse
                 // onto the AXI data bus, this begins the next transaction
-                if (pixel_clock) begin
+                if (!pixel_clock) begin
                     pixels_changed <= 1'b1;
                     if (s_axis_tvalid && data_ready_oneshot) begin
                         pixel_data <= s_axis_tdata;
@@ -99,13 +92,19 @@ module axi_stream_to_pixels (
                 // If TLAST has been received and we aren't back at the first pixel
                 // then we will just clear that portion of the display with black
                 if (frame_needs_cleared) begin
-                    core_clk_enable <= 1'b1;
-                    state <= STATE_INIT_NEXT_PIXELS;
+                    state <= STATE_WAIT_CLEAR_FRAME;
                 end else begin
                     // Enable the output clock based on the TVALID line, this will
                     // start updating the pixel data whenever valid data is present
                     // on the AXI bus
-                    core_clk_enable <= s_axis_tvalid;
+                    core_clock_enable <= s_axis_tvalid;
+                end
+            end
+            STATE_WAIT_CLEAR_FRAME: begin
+                if(!pixel_clock) begin
+                    pixel_data <= 0;
+                    core_clock_enable <= 1'b1;
+                    state <= STATE_INIT_NEXT_PIXELS;
                 end
             end
         endcase

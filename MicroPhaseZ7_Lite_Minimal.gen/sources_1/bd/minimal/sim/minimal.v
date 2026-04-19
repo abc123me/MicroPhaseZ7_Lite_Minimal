@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Thu Apr  9 23:28:11 2026
+//Date        : Sun Apr 19 12:45:37 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal.bd
 //Design      : minimal
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
+(* CORE_GENERATION_INFO = "minimal,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=minimal,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "minimal.hwdef" *) 
 module minimal
    (DDR_addr,
     DDR_ba,
@@ -156,26 +156,22 @@ module minimal
   wire [1:0]axi_dma_0_M_AXI_MM2S_RRESP;
   wire axi_dma_0_M_AXI_MM2S_RVALID;
   wire axi_dma_0_mm2s_introut;
-  wire [15:0]axi_dma_1_M_AXIS_MM2S_TDATA;
-  wire axi_dma_1_M_AXIS_MM2S_TLAST;
-  wire axi_dma_1_M_AXIS_MM2S_TREADY;
-  wire axi_dma_1_M_AXIS_MM2S_TVALID;
-  wire [31:0]axi_dma_1_M_AXI_MM2S_ARADDR;
-  wire [1:0]axi_dma_1_M_AXI_MM2S_ARBURST;
-  wire [3:0]axi_dma_1_M_AXI_MM2S_ARCACHE;
-  wire [7:0]axi_dma_1_M_AXI_MM2S_ARLEN;
-  wire [2:0]axi_dma_1_M_AXI_MM2S_ARPROT;
-  wire axi_dma_1_M_AXI_MM2S_ARREADY;
-  wire [2:0]axi_dma_1_M_AXI_MM2S_ARSIZE;
-  wire axi_dma_1_M_AXI_MM2S_ARVALID;
-  wire [31:0]axi_dma_1_M_AXI_MM2S_RDATA;
-  wire axi_dma_1_M_AXI_MM2S_RLAST;
-  wire axi_dma_1_M_AXI_MM2S_RREADY;
-  wire [1:0]axi_dma_1_M_AXI_MM2S_RRESP;
-  wire axi_dma_1_M_AXI_MM2S_RVALID;
-  wire axi_dma_1_mm2s_introut;
   wire axi_ethernetlite_0_ip2intc_irpt;
-  wire axi_line_fifo_0_fifo_complete;
+  wire axi_pixel_fifo_0_core_clock_enable;
+  wire axi_pixel_fifo_0_core_clock_out;
+  wire [7:0]axi_pixel_fifo_0_fifo_in_pos;
+  wire [7:0]axi_pixel_fifo_0_fifo_out_pos;
+  wire axi_pixel_fifo_0_fifo_read_complete;
+  wire axi_pixel_fifo_0_fifo_rxbuf_full;
+  wire axi_pixel_fifo_0_fifo_txbuf_full;
+  wire axi_pixel_fifo_0_fifo_write_complete;
+  wire [15:0]axi_pixel_fifo_0_pixel_data;
+  wire axi_pixel_fifo_0_s_axis_tready;
+  wire [2:0]axi_pixel_fifo_0_state;
+  wire axi_pixel_fifo_1_m_pixel_stream_core_clock;
+  wire axi_pixel_fifo_1_m_pixel_stream_pixel_clock;
+  wire [15:0]axi_pixel_fifo_1_m_pixel_stream_pixel_data;
+  wire axi_pixel_fifo_1_m_pixel_stream_pixel_sync;
   wire [31:0]axi_smc1_M00_AXI_ARADDR;
   wire [1:0]axi_smc1_M00_AXI_ARBURST;
   wire [3:0]axi_smc1_M00_AXI_ARCACHE;
@@ -224,37 +220,9 @@ module minimal
   wire [31:0]axi_smc_M01_AXI_WDATA;
   wire axi_smc_M01_AXI_WREADY;
   wire axi_smc_M01_AXI_WVALID;
-  wire [9:0]axi_smc_M02_AXI_ARADDR;
-  wire axi_smc_M02_AXI_ARREADY;
-  wire axi_smc_M02_AXI_ARVALID;
-  wire [9:0]axi_smc_M02_AXI_AWADDR;
-  wire axi_smc_M02_AXI_AWREADY;
-  wire axi_smc_M02_AXI_AWVALID;
-  wire axi_smc_M02_AXI_BREADY;
-  wire [1:0]axi_smc_M02_AXI_BRESP;
-  wire axi_smc_M02_AXI_BVALID;
-  wire [31:0]axi_smc_M02_AXI_RDATA;
-  wire axi_smc_M02_AXI_RREADY;
-  wire [1:0]axi_smc_M02_AXI_RRESP;
-  wire axi_smc_M02_AXI_RVALID;
-  wire [31:0]axi_smc_M02_AXI_WDATA;
-  wire axi_smc_M02_AXI_WREADY;
-  wire axi_smc_M02_AXI_WVALID;
-  wire axi_stream_to_pixels_1_core_clk_out;
-  wire [15:0]axi_stream_to_pixels_1_pixel_data;
-  wire core_clk;
-  wire [15:0]dma_tdata;
-  wire dma_tlast;
-  wire dma_tready;
-  wire dma_tvalid;
-  wire [7:0]fifo_in_pos;
-  wire [7:0]fifo_level;
-  wire [7:0]fifo_out_pos;
-  wire [15:0]fifo_tdata;
-  wire fifo_tlast;
-  wire fifo_tready;
-  wire fifo_tvalid;
   wire [2:0]ilconcat_0_dout;
+  wire [0:0]ilconstant_0_dout;
+  wire [0:0]ilconstant_1_dout;
   wire m_ilispi_0_cs;
   wire m_ilispi_0_dc;
   wire m_ilispi_0_led;
@@ -267,9 +235,6 @@ module minimal
   wire m_ilispi_1_nrst;
   wire m_ilispi_1_scl;
   wire m_ilispi_1_sda;
-  wire pixel_clock;
-  wire [15:0]pixel_data;
-  wire pixel_sync;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
@@ -311,8 +276,11 @@ module minimal
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
-  wire tft_ili9341_wrapper_1_pixel_clock;
-  wire tft_ili9341_wrapper_1_pixel_sync;
+  wire [15:0]tdata;
+  wire tft_ili9341_wrapper_0_pixel_clock;
+  wire tft_ili9341_wrapper_0_pixel_sync;
+  wire tlast;
+  wire tvalid;
 
   minimal_axi_dma_0_1 axi_dma_0
        (.axi_resetn(rst_ps7_0_50M_peripheral_aresetn),
@@ -330,10 +298,10 @@ module minimal
         .m_axi_mm2s_rready(axi_dma_0_M_AXI_MM2S_RREADY),
         .m_axi_mm2s_rresp(axi_dma_0_M_AXI_MM2S_RRESP),
         .m_axi_mm2s_rvalid(axi_dma_0_M_AXI_MM2S_RVALID),
-        .m_axis_mm2s_tdata(dma_tdata),
-        .m_axis_mm2s_tlast(dma_tlast),
-        .m_axis_mm2s_tready(dma_tready),
-        .m_axis_mm2s_tvalid(dma_tvalid),
+        .m_axis_mm2s_tdata(tdata),
+        .m_axis_mm2s_tlast(tlast),
+        .m_axis_mm2s_tready(axi_pixel_fifo_0_s_axis_tready),
+        .m_axis_mm2s_tvalid(tvalid),
         .mm2s_introut(axi_dma_0_mm2s_introut),
         .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_lite_araddr(axi_smc_M01_AXI_ARADDR),
@@ -352,44 +320,6 @@ module minimal
         .s_axi_lite_wdata(axi_smc_M01_AXI_WDATA),
         .s_axi_lite_wready(axi_smc_M01_AXI_WREADY),
         .s_axi_lite_wvalid(axi_smc_M01_AXI_WVALID));
-  minimal_axi_dma_0_2 axi_dma_1
-       (.axi_resetn(rst_ps7_0_50M_peripheral_aresetn),
-        .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
-        .m_axi_mm2s_araddr(axi_dma_1_M_AXI_MM2S_ARADDR),
-        .m_axi_mm2s_arburst(axi_dma_1_M_AXI_MM2S_ARBURST),
-        .m_axi_mm2s_arcache(axi_dma_1_M_AXI_MM2S_ARCACHE),
-        .m_axi_mm2s_arlen(axi_dma_1_M_AXI_MM2S_ARLEN),
-        .m_axi_mm2s_arprot(axi_dma_1_M_AXI_MM2S_ARPROT),
-        .m_axi_mm2s_arready(axi_dma_1_M_AXI_MM2S_ARREADY),
-        .m_axi_mm2s_arsize(axi_dma_1_M_AXI_MM2S_ARSIZE),
-        .m_axi_mm2s_arvalid(axi_dma_1_M_AXI_MM2S_ARVALID),
-        .m_axi_mm2s_rdata(axi_dma_1_M_AXI_MM2S_RDATA),
-        .m_axi_mm2s_rlast(axi_dma_1_M_AXI_MM2S_RLAST),
-        .m_axi_mm2s_rready(axi_dma_1_M_AXI_MM2S_RREADY),
-        .m_axi_mm2s_rresp(axi_dma_1_M_AXI_MM2S_RRESP),
-        .m_axi_mm2s_rvalid(axi_dma_1_M_AXI_MM2S_RVALID),
-        .m_axis_mm2s_tdata(axi_dma_1_M_AXIS_MM2S_TDATA),
-        .m_axis_mm2s_tlast(axi_dma_1_M_AXIS_MM2S_TLAST),
-        .m_axis_mm2s_tready(axi_dma_1_M_AXIS_MM2S_TREADY),
-        .m_axis_mm2s_tvalid(axi_dma_1_M_AXIS_MM2S_TVALID),
-        .mm2s_introut(axi_dma_1_mm2s_introut),
-        .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_lite_araddr(axi_smc_M02_AXI_ARADDR),
-        .s_axi_lite_arready(axi_smc_M02_AXI_ARREADY),
-        .s_axi_lite_arvalid(axi_smc_M02_AXI_ARVALID),
-        .s_axi_lite_awaddr(axi_smc_M02_AXI_AWADDR),
-        .s_axi_lite_awready(axi_smc_M02_AXI_AWREADY),
-        .s_axi_lite_awvalid(axi_smc_M02_AXI_AWVALID),
-        .s_axi_lite_bready(axi_smc_M02_AXI_BREADY),
-        .s_axi_lite_bresp(axi_smc_M02_AXI_BRESP),
-        .s_axi_lite_bvalid(axi_smc_M02_AXI_BVALID),
-        .s_axi_lite_rdata(axi_smc_M02_AXI_RDATA),
-        .s_axi_lite_rready(axi_smc_M02_AXI_RREADY),
-        .s_axi_lite_rresp(axi_smc_M02_AXI_RRESP),
-        .s_axi_lite_rvalid(axi_smc_M02_AXI_RVALID),
-        .s_axi_lite_wdata(axi_smc_M02_AXI_WDATA),
-        .s_axi_lite_wready(axi_smc_M02_AXI_WREADY),
-        .s_axi_lite_wvalid(axi_smc_M02_AXI_WVALID));
   minimal_axi_ethernetlite_0_0 axi_ethernetlite_0
        (.ip2intc_irpt(axi_ethernetlite_0_ip2intc_irpt),
         .phy_col(ETH_MII_col),
@@ -425,22 +355,37 @@ module minimal
         .s_axi_wready(axi_smc_M00_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M00_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M00_AXI_WVALID));
-  minimal_axi_line_fifo_0_0 axi_line_fifo_0
-       (.axis_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .axis_clock(processing_system7_0_FCLK_CLK0),
-        .en_fifo_restart(axi_line_fifo_0_fifo_complete),
-        .fifo_complete(axi_line_fifo_0_fifo_complete),
-        .fifo_in_pos(fifo_in_pos),
-        .fifo_level(fifo_level),
-        .fifo_out_pos(fifo_out_pos),
-        .m_axis_tdata(fifo_tdata),
-        .m_axis_tlast(fifo_tlast),
-        .m_axis_tready(fifo_tready),
-        .m_axis_tvalid(fifo_tvalid),
-        .s_axis_tdata(dma_tdata),
-        .s_axis_tlast(dma_tlast),
-        .s_axis_tready(dma_tready),
-        .s_axis_tvalid(dma_tvalid));
+  minimal_axi_pixel_fifo_0_0 axi_pixel_fifo_0
+       (.core_clock_enable(axi_pixel_fifo_0_core_clock_enable),
+        .core_clock_out(axi_pixel_fifo_0_core_clock_out),
+        .fifo_in_pos(axi_pixel_fifo_0_fifo_in_pos),
+        .fifo_out_pos(axi_pixel_fifo_0_fifo_out_pos),
+        .fifo_read_complete(axi_pixel_fifo_0_fifo_read_complete),
+        .fifo_read_enable(ilconstant_0_dout),
+        .fifo_rxbuf_full(axi_pixel_fifo_0_fifo_rxbuf_full),
+        .fifo_txbuf_full(axi_pixel_fifo_0_fifo_txbuf_full),
+        .fifo_write_complete(axi_pixel_fifo_0_fifo_write_complete),
+        .pixel_clock(tft_ili9341_wrapper_0_pixel_clock),
+        .pixel_data(axi_pixel_fifo_0_pixel_data),
+        .pixel_sync(tft_ili9341_wrapper_0_pixel_sync),
+        .s_axis_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axis_clock(processing_system7_0_FCLK_CLK0),
+        .s_axis_tdata(tdata),
+        .s_axis_tlast(tlast),
+        .s_axis_tready(axi_pixel_fifo_0_s_axis_tready),
+        .s_axis_tvalid(tvalid),
+        .state(axi_pixel_fifo_0_state));
+  minimal_axi_pixel_fifo_1_0 axi_pixel_fifo_1
+       (.core_clock_out(axi_pixel_fifo_1_m_pixel_stream_core_clock),
+        .fifo_read_enable(ilconstant_1_dout),
+        .pixel_clock(axi_pixel_fifo_1_m_pixel_stream_pixel_clock),
+        .pixel_data(axi_pixel_fifo_1_m_pixel_stream_pixel_data),
+        .pixel_sync(axi_pixel_fifo_1_m_pixel_stream_pixel_sync),
+        .s_axis_aresetn(rst_ps7_0_50M_peripheral_aresetn),
+        .s_axis_clock(processing_system7_0_FCLK_CLK0),
+        .s_axis_tdata(tdata),
+        .s_axis_tlast(tlast),
+        .s_axis_tvalid(tvalid));
   minimal_axi_smc_0 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arready(axi_smc_M00_AXI_ARREADY),
@@ -475,22 +420,14 @@ module minimal
         .M01_AXI_wdata(axi_smc_M01_AXI_WDATA),
         .M01_AXI_wready(axi_smc_M01_AXI_WREADY),
         .M01_AXI_wvalid(axi_smc_M01_AXI_WVALID),
-        .M02_AXI_araddr(axi_smc_M02_AXI_ARADDR),
-        .M02_AXI_arready(axi_smc_M02_AXI_ARREADY),
-        .M02_AXI_arvalid(axi_smc_M02_AXI_ARVALID),
-        .M02_AXI_awaddr(axi_smc_M02_AXI_AWADDR),
-        .M02_AXI_awready(axi_smc_M02_AXI_AWREADY),
-        .M02_AXI_awvalid(axi_smc_M02_AXI_AWVALID),
-        .M02_AXI_bready(axi_smc_M02_AXI_BREADY),
-        .M02_AXI_bresp(axi_smc_M02_AXI_BRESP),
-        .M02_AXI_bvalid(axi_smc_M02_AXI_BVALID),
-        .M02_AXI_rdata(axi_smc_M02_AXI_RDATA),
-        .M02_AXI_rready(axi_smc_M02_AXI_RREADY),
-        .M02_AXI_rresp(axi_smc_M02_AXI_RRESP),
-        .M02_AXI_rvalid(axi_smc_M02_AXI_RVALID),
-        .M02_AXI_wdata(axi_smc_M02_AXI_WDATA),
-        .M02_AXI_wready(axi_smc_M02_AXI_WREADY),
-        .M02_AXI_wvalid(axi_smc_M02_AXI_WVALID),
+        .M02_AXI_arready(1'b0),
+        .M02_AXI_awready(1'b0),
+        .M02_AXI_bresp({1'b0,1'b0}),
+        .M02_AXI_bvalid(1'b0),
+        .M02_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .M02_AXI_rresp({1'b0,1'b0}),
+        .M02_AXI_rvalid(1'b0),
+        .M02_AXI_wready(1'b0),
         .S00_AXI_araddr(processing_system7_0_M_AXI_GP0_ARADDR),
         .S00_AXI_arburst(processing_system7_0_M_AXI_GP0_ARBURST),
         .S00_AXI_arcache(processing_system7_0_M_AXI_GP0_ARCACHE),
@@ -562,67 +499,38 @@ module minimal
         .S00_AXI_rready(axi_dma_0_M_AXI_MM2S_RREADY),
         .S00_AXI_rresp(axi_dma_0_M_AXI_MM2S_RRESP),
         .S00_AXI_rvalid(axi_dma_0_M_AXI_MM2S_RVALID),
-        .S01_AXI_araddr(axi_dma_1_M_AXI_MM2S_ARADDR),
-        .S01_AXI_arburst(axi_dma_1_M_AXI_MM2S_ARBURST),
-        .S01_AXI_arcache(axi_dma_1_M_AXI_MM2S_ARCACHE),
-        .S01_AXI_arlen(axi_dma_1_M_AXI_MM2S_ARLEN),
+        .S01_AXI_araddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .S01_AXI_arburst({1'b0,1'b1}),
+        .S01_AXI_arcache({1'b0,1'b0,1'b1,1'b1}),
+        .S01_AXI_arlen({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .S01_AXI_arlock(1'b0),
-        .S01_AXI_arprot(axi_dma_1_M_AXI_MM2S_ARPROT),
+        .S01_AXI_arprot({1'b0,1'b0,1'b0}),
         .S01_AXI_arqos({1'b0,1'b0,1'b0,1'b0}),
-        .S01_AXI_arready(axi_dma_1_M_AXI_MM2S_ARREADY),
-        .S01_AXI_arsize(axi_dma_1_M_AXI_MM2S_ARSIZE),
-        .S01_AXI_arvalid(axi_dma_1_M_AXI_MM2S_ARVALID),
-        .S01_AXI_rdata(axi_dma_1_M_AXI_MM2S_RDATA),
-        .S01_AXI_rlast(axi_dma_1_M_AXI_MM2S_RLAST),
-        .S01_AXI_rready(axi_dma_1_M_AXI_MM2S_RREADY),
-        .S01_AXI_rresp(axi_dma_1_M_AXI_MM2S_RRESP),
-        .S01_AXI_rvalid(axi_dma_1_M_AXI_MM2S_RVALID),
+        .S01_AXI_arsize({1'b0,1'b1,1'b0}),
+        .S01_AXI_arvalid(1'b0),
+        .S01_AXI_rready(1'b0),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_50M_peripheral_aresetn));
-  minimal_axi_stream_to_pixels_0_0 axi_stream_to_pixels_0
-       (.core_clk_out(core_clk),
-        .pixel_clock(pixel_clock),
-        .pixel_data(pixel_data),
-        .pixel_sync(pixel_sync),
-        .s_axis_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axis_clock(processing_system7_0_FCLK_CLK0),
-        .s_axis_tdata(fifo_tdata),
-        .s_axis_tlast(fifo_tlast),
-        .s_axis_tready(fifo_tready),
-        .s_axis_tvalid(fifo_tvalid));
-  minimal_axi_stream_to_pixels_0_1 axi_stream_to_pixels_1
-       (.core_clk_out(axi_stream_to_pixels_1_core_clk_out),
-        .pixel_clock(tft_ili9341_wrapper_1_pixel_clock),
-        .pixel_data(axi_stream_to_pixels_1_pixel_data),
-        .pixel_sync(tft_ili9341_wrapper_1_pixel_sync),
-        .s_axis_aresetn(rst_ps7_0_50M_peripheral_aresetn),
-        .s_axis_clock(processing_system7_0_FCLK_CLK0),
-        .s_axis_tdata(axi_dma_1_M_AXIS_MM2S_TDATA),
-        .s_axis_tlast(axi_dma_1_M_AXIS_MM2S_TLAST),
-        .s_axis_tready(axi_dma_1_M_AXIS_MM2S_TREADY),
-        .s_axis_tvalid(axi_dma_1_M_AXIS_MM2S_TVALID));
-  minimal_ila_1_0 ila_1
+  minimal_ila_0_1 ila_0
        (.clk(processing_system7_0_FCLK_CLK0),
-        .probe0(fifo_tdata),
-        .probe1(fifo_tlast),
-        .probe10(fifo_level),
-        .probe11(axi_line_fifo_0_fifo_complete),
-        .probe12(pixel_data),
-        .probe13(pixel_clock),
-        .probe14(pixel_sync),
-        .probe15(tft_ili9341_wrapper_1_pixel_clock),
-        .probe16(axi_stream_to_pixels_1_pixel_data),
-        .probe17(tft_ili9341_wrapper_1_pixel_sync),
-        .probe18(axi_stream_to_pixels_1_core_clk_out),
-        .probe2(fifo_tvalid),
-        .probe3(fifo_tready),
-        .probe4(dma_tdata),
-        .probe5(dma_tlast),
-        .probe6(dma_tvalid),
-        .probe7(dma_tready),
-        .probe8(fifo_in_pos),
-        .probe9(fifo_out_pos));
-  assign ilconcat_0_dout = {axi_dma_1_mm2s_introut, axi_dma_0_mm2s_introut, axi_ethernetlite_0_ip2intc_irpt};
+        .probe0(tdata),
+        .probe1(tlast),
+        .probe10(axi_pixel_fifo_0_pixel_data),
+        .probe11(tft_ili9341_wrapper_0_pixel_clock),
+        .probe12(tft_ili9341_wrapper_0_pixel_sync),
+        .probe13(axi_pixel_fifo_0_fifo_in_pos),
+        .probe14(axi_pixel_fifo_0_fifo_out_pos),
+        .probe2(tvalid),
+        .probe3(axi_pixel_fifo_0_s_axis_tready),
+        .probe4(axi_pixel_fifo_0_fifo_write_complete),
+        .probe5(axi_pixel_fifo_0_fifo_read_complete),
+        .probe6(axi_pixel_fifo_0_fifo_txbuf_full),
+        .probe7(axi_pixel_fifo_0_fifo_rxbuf_full),
+        .probe8(axi_pixel_fifo_0_state),
+        .probe9(axi_pixel_fifo_0_core_clock_enable));
+  assign ilconcat_0_dout = {1'b0, axi_dma_0_mm2s_introut, axi_ethernetlite_0_ip2intc_irpt};
+  assign ilconstant_0_dout = 1'h1;
+  assign ilconstant_1_dout = 1'h0;
   minimal_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr),
         .DDR_BankAddr(DDR_ba),
@@ -730,21 +638,21 @@ module minimal
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
   minimal_tft_ili9341_wrapper_0_0 tft_ili9341_wrapper_0
-       (.core_clk(core_clk),
-        .pixel_clock(pixel_clock),
-        .pixel_data(pixel_data),
-        .pixel_sync(pixel_sync),
+       (.core_clock(axi_pixel_fifo_0_core_clock_out),
+        .pixel_clock(tft_ili9341_wrapper_0_pixel_clock),
+        .pixel_data(axi_pixel_fifo_0_pixel_data),
+        .pixel_sync(tft_ili9341_wrapper_0_pixel_sync),
         .tft_cs(m_ilispi_0_cs),
         .tft_dc(m_ilispi_0_dc),
         .tft_led(m_ilispi_0_led),
         .tft_nrst(m_ilispi_0_nrst),
         .tft_sck(m_ilispi_0_scl),
         .tft_sda(m_ilispi_0_sda));
-  minimal_tft_ili9341_wrapper_0_3 tft_ili9341_wrapper_1
-       (.core_clk(axi_stream_to_pixels_1_core_clk_out),
-        .pixel_clock(tft_ili9341_wrapper_1_pixel_clock),
-        .pixel_data(axi_stream_to_pixels_1_pixel_data),
-        .pixel_sync(tft_ili9341_wrapper_1_pixel_sync),
+  minimal_tft_ili9341_wrapper_1_0 tft_ili9341_wrapper_1
+       (.core_clock(axi_pixel_fifo_1_m_pixel_stream_core_clock),
+        .pixel_clock(axi_pixel_fifo_1_m_pixel_stream_pixel_clock),
+        .pixel_data(axi_pixel_fifo_1_m_pixel_stream_pixel_data),
+        .pixel_sync(axi_pixel_fifo_1_m_pixel_stream_pixel_sync),
         .tft_cs(m_ilispi_1_cs),
         .tft_dc(m_ilispi_1_dc),
         .tft_led(m_ilispi_1_led),

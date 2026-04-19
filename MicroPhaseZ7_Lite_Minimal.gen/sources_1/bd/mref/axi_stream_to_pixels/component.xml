@@ -40,7 +40,7 @@
             <spirit:name>core_clock</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>core_clk_out</spirit:name>
+            <spirit:name>core_clock_out</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -145,7 +145,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>39580408</spirit:value>
+            <spirit:value>9bb036d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -158,7 +158,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>39580408</spirit:value>
+            <spirit:value>9bb036d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -304,7 +304,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>core_clk_out</spirit:name>
+        <spirit:name>core_clock_out</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -358,7 +358,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-04-10T04:27:53Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2026-04-13T00:18:39Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>

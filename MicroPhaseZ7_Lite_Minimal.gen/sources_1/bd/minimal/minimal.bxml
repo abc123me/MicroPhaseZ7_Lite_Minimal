@@ -2,11 +2,11 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="minimal" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1775795293"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1775795293"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1775795293"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1775795293"/>
-    <Generation Name="INSTANTIATION_TEMPLATE" State="GENERATED" Timestamp="1775795293"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1776620738"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1776620738"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1776620738"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1776620738"/>
+    <Generation Name="INSTANTIATION_TEMPLATE" State="GENERATED" Timestamp="1776620738"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="minimal.vho" Type="VhdlTemplate">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

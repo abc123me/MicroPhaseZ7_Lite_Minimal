@@ -5,6 +5,7 @@ proc init_gui { IPINST } {
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   ipgui::add_param $IPINST -name "HEIGHT" -parent ${Page_0}
   ipgui::add_param $IPINST -name "INPUT_CLK_MHZ" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "PIXEL_WIDTH" -parent ${Page_0}
   ipgui::add_param $IPINST -name "WIDTH" -parent ${Page_0}
 
 
@@ -25,6 +26,15 @@ proc update_PARAM_VALUE.INPUT_CLK_MHZ { PARAM_VALUE.INPUT_CLK_MHZ } {
 
 proc validate_PARAM_VALUE.INPUT_CLK_MHZ { PARAM_VALUE.INPUT_CLK_MHZ } {
 	# Procedure called to validate INPUT_CLK_MHZ
+	return true
+}
+
+proc update_PARAM_VALUE.PIXEL_WIDTH { PARAM_VALUE.PIXEL_WIDTH } {
+	# Procedure called to update PIXEL_WIDTH when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.PIXEL_WIDTH { PARAM_VALUE.PIXEL_WIDTH } {
+	# Procedure called to validate PIXEL_WIDTH
 	return true
 }
 
@@ -51,5 +61,10 @@ proc update_MODELPARAM_VALUE.WIDTH { MODELPARAM_VALUE.WIDTH PARAM_VALUE.WIDTH } 
 proc update_MODELPARAM_VALUE.HEIGHT { MODELPARAM_VALUE.HEIGHT PARAM_VALUE.HEIGHT } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.HEIGHT}] ${MODELPARAM_VALUE.HEIGHT}
+}
+
+proc update_MODELPARAM_VALUE.PIXEL_WIDTH { MODELPARAM_VALUE.PIXEL_WIDTH PARAM_VALUE.PIXEL_WIDTH } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.PIXEL_WIDTH}] ${MODELPARAM_VALUE.PIXEL_WIDTH}
 }
 

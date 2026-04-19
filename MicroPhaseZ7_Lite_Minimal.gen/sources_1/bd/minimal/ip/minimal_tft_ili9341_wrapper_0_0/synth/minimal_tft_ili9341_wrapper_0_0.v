@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "tft_ili9341_wrapper,Vivado 2025.2" *)
 (* CHECK_LICENSE_TYPE = "minimal_tft_ili9341_wrapper_0_0,tft_ili9341_wrapper,{}" *)
-(* CORE_GENERATION_INFO = "minimal_tft_ili9341_wrapper_0_0,tft_ili9341_wrapper,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=tft_ili9341_wrapper,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,INPUT_CLK_MHZ=100,WIDTH=320,HEIGHT=240}" *)
+(* CORE_GENERATION_INFO = "minimal_tft_ili9341_wrapper_0_0,tft_ili9341_wrapper,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=tft_ili9341_wrapper,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,INPUT_CLK_MHZ=100,WIDTH=320,HEIGHT=240,PIXEL_WIDTH=16}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module minimal_tft_ili9341_wrapper_0_0 (
@@ -63,7 +63,7 @@ module minimal_tft_ili9341_wrapper_0_0 (
   tft_cs,
   tft_led,
   pixel_data,
-  core_clk,
+  core_clock,
   pixel_clock,
   pixel_sync
 );
@@ -85,7 +85,7 @@ output wire tft_led;
 (* X_INTERFACE_MODE = "slave" *)
 input wire [15 : 0] pixel_data;
 (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream core_clock" *)
-input wire core_clk;
+input wire core_clock;
 (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_clock" *)
 output wire pixel_clock;
 (* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_sync" *)
@@ -94,7 +94,8 @@ output wire pixel_sync;
   tft_ili9341_wrapper #(
     .INPUT_CLK_MHZ(100),
     .WIDTH(320),
-    .HEIGHT(240)
+    .HEIGHT(240),
+    .PIXEL_WIDTH(16)
   ) inst (
     .tft_sck(tft_sck),
     .tft_sda(tft_sda),
@@ -103,7 +104,7 @@ output wire pixel_sync;
     .tft_cs(tft_cs),
     .tft_led(tft_led),
     .pixel_data(pixel_data),
-    .core_clk(core_clk),
+    .core_clock(core_clock),
     .pixel_clock(pixel_clock),
     .pixel_sync(pixel_sync)
   );
