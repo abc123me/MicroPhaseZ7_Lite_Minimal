@@ -2,7 +2,7 @@
 
 VIVADO_PROJECT="MicroPhaseZ7_Lite_Minimal"
 BOARD_NAME="z7lite-dev"
-BSP_DIR="/opt/bsp/jlbsp/board/${BOARD_NAME}/fpga"
+BSP_DIR="/opt/bsp/alt2/jlbsp/board/${BOARD_NAME}/fpga"
 
 ls -la "${VIVADO_PROJECT}.runs/impl_1/minimal_wrapper.bit" "${VIVADO_PROJECT}.runs/impl_1/minimal_wrapper.ltx" \
 	"${VIVADO_PROJECT}.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/ps7_init_gpl.c" \

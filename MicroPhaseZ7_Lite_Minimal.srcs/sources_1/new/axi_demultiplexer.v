@@ -25,7 +25,6 @@ module axi_demultiplexer (
 	input  wire fifo_read_complete1,
 	output reg  fifo_read_enable1,
 	
-    output reg [1:0] state,
 	output reg tready_out,
 	input  wire axis_clock
 );
@@ -35,12 +34,9 @@ initial fifo_read_enable1 = 0;
 
 initial tready_out = 0;
 
-localparam STATE_FILL_DISPLAY_0 = 3'b000;
-localparam STATE_FILL_DISPLAY_1 = 3'b001;
-localparam STATE_WAIT_DISPLAY_0 = 3'b010;
-localparam STATE_WAIT_DISPLAY_1 = 3'b011;
-localparam STATE_READ_DISPLAY_0 = 3'b100;
-localparam STATE_READ_DISPLAY_1 = 3'b101;
+reg [0:0] state;
+localparam STATE_FILL_DISPLAY_0 = 1'b0;
+localparam STATE_FILL_DISPLAY_1 = 1'b1;
 initial state = STATE_FILL_DISPLAY_0;
 
 always @(negedge axis_clock) begin

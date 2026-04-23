@@ -1,68 +1,71 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.71793",
-   "Default View_TopLeft":"2238,-255",
+   "Default View_ScaleFactor":"2.17637",
+   "Default View_TopLeft":"3261,-171",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 8 -x 3890 -y 670 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 8 -x 3890 -y 700 -defaultsOSRD
-preplace port ETH_MDIO -pg 1 -lvl 8 -x 3890 -y 980 -defaultsOSRD
-preplace port ETH_MII -pg 1 -lvl 8 -x 3890 -y 950 -defaultsOSRD
-preplace port m_ilispi_0 -pg 1 -lvl 8 -x 3890 -y 50 -defaultsOSRD
-preplace port m_ilispi_1 -pg 1 -lvl 8 -x 3890 -y 480 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 6 -x 3210 -y 1110 -defaultsOSRD
-preplace inst axi_ethernetlite_0 -pg 1 -lvl 6 -x 3210 -y 1360 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 8 -x 3970 -y 1060 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 3970 -y 1110 -defaultsOSRD
+preplace port ETH_MDIO -pg 1 -lvl 8 -x 3970 -y 1380 -defaultsOSRD
+preplace port ETH_MII -pg 1 -lvl 8 -x 3970 -y 1340 -defaultsOSRD
+preplace port m_ilispi_0 -pg 1 -lvl 8 -x 3970 -y 40 -defaultsOSRD
+preplace port m_ilispi_1 -pg 1 -lvl 8 -x 3970 -y 480 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 3310 -y 1150 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 6 -x 3310 -y 1400 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 2 -x 830 -y 970 -defaultsOSRD
 preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 450 -y 710 -defaultsOSRD
 preplace inst ilconcat_0 -pg 1 -lvl 4 -x 2330 -y 1140 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1470 -y 800 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1530 -y 820 -defaultsOSRD
 preplace inst axi_smc1 -pg 1 -lvl 4 -x 2330 -y 960 -defaultsOSRD -resize 240 163
-preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 7 -x 3710 -y 50 -defaultsOSRD
-preplace inst axi_pixel_fifo_0 -pg 1 -lvl 6 -x 3210 -y 80 -defaultsOSRD
-preplace inst axi_pixel_fifo_1 -pg 1 -lvl 6 -x 3210 -y 560 -defaultsOSRD
-preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 7 -x 3710 -y 480 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 7 -x 3710 -y -270 -defaultsOSRD
-preplace inst ilconstant_1 -pg 1 -lvl 5 -x 2850 -y 620 -defaultsOSRD -resize 120 88
-preplace inst ilconstant_0 -pg 1 -lvl 5 -x 2850 -y 150 -defaultsOSRD
-preplace netloc axi_dma_0_mm2s_introut 1 3 1 1670 870n
-preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 3 4 2190 1220 NJ 1220 N 1220 3430
-preplace netloc axi_pixel_fifo_0_core_clock_enable 1 6 1 3490 -220n
-preplace netloc axi_pixel_fifo_0_core_clock_out 1 6 1 3500 40n
-preplace netloc axi_pixel_fifo_0_fifo_in_pos 1 6 1 3510 -140n
-preplace netloc axi_pixel_fifo_0_fifo_out_pos 1 6 1 3520 -120n
-preplace netloc axi_pixel_fifo_0_fifo_read_complete 1 6 1 3440 -300n
-preplace netloc axi_pixel_fifo_0_fifo_rxbuf_full 1 6 1 3460 -260n
-preplace netloc axi_pixel_fifo_0_fifo_txbuf_full 1 6 1 3450 -280n
-preplace netloc axi_pixel_fifo_0_fifo_write_complete 1 6 1 3430 -320n
-preplace netloc axi_pixel_fifo_0_pixel_data 1 6 1 3540 -200n
-preplace netloc axi_pixel_fifo_0_s_axis_tready 1 3 4 1660 90 NJ 90 2990 -340 N
-preplace netloc axi_pixel_fifo_0_state 1 6 1 3470 -240n
-preplace netloc ilconcat_0_dout 1 4 2 NJ 1140 2930
-preplace netloc ilconstant_0_dout 1 5 1 NJ 150
-preplace netloc ilconstant_1_dout 1 5 1 N 620
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 270 810 670 810 1290 930 2190 860 NJ 860 2980 260 3480
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 260 610 NJ 610 NJ 610 NJ 610 2470J 700 N 700 3420
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 5 680 750 1280 670 2170 1230 NJ 1230 2990
-preplace netloc tdata 1 3 4 1650J 530 NJ 530 2960 -400 N
-preplace netloc tft_ili9341_wrapper_0_pixel_clock 1 6 1 3560 -180n
-preplace netloc tft_ili9341_wrapper_0_pixel_sync 1 6 1 3550 -160n
-preplace netloc tlast 1 3 4 1670J 540 NJ 540 2970 -380 N
-preplace netloc tvalid 1 3 4 2190J 550 NJ 550 3000 -360 N
-preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 2180 730n
-preplace netloc axi_ethernetlite_0_MDIO 1 6 2 3550J 980 NJ
-preplace netloc axi_ethernetlite_0_MII 1 6 2 3540J 950 NJ
-preplace netloc axi_pixel_fifo_1_m_pixel_stream 1 6 1 N 480
-preplace netloc axi_smc1_M00_AXI 1 4 2 NJ 960 2930
-preplace netloc axi_smc_M00_AXI 1 2 4 NJ 950 1650J 1240 NJ 1240 2930
-preplace netloc axi_smc_M01_AXI 1 2 1 970 770n
-preplace netloc processing_system7_0_DDR 1 6 2 3510J 670 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 6 2 3530J 700 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 690 420 NJ 420 NJ 420 NJ 420 N 420 3430
-preplace netloc tft_ili9341_wrapper_0_m_ilispi 1 7 1 NJ 50
-preplace netloc tft_ili9341_wrapper_1_m_ilispi 1 7 1 N 480
-levelinfo -pg 1 -100 450 830 1470 2330 2850 3210 3710 3890
-pagesize -pg 1 -db -bbox -sgen -100 -880 4020 1440
+preplace inst axi_pixel_fifo_0 -pg 1 -lvl 6 -x 3310 -y 100 -defaultsOSRD
+preplace inst axi_pixel_fifo_1 -pg 1 -lvl 6 -x 3310 -y 580 -defaultsOSRD
+preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 7 -x 3810 -y 500 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 7 -x 3810 -y -300 -defaultsOSRD
+preplace inst axi_demultiplexer_0 -pg 1 -lvl 5 -x 2790 -y 380 -defaultsOSRD
+preplace inst tft_ili9341_wrapper_2 -pg 1 -lvl 7 -x 3810 -y 30 -defaultsOSRD -resize 240 108
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1720 900n
+preplace netloc axi_ethernetlite_0_ip2intc_irpt 1 3 4 2190 1220 NJ 1220 2990 1250 3530
+preplace netloc axi_pixel_fifo_0_core_clock_enable 1 6 1 3600 -250n
+preplace netloc axi_pixel_fifo_0_fifo_in_pos 1 6 1 3620 -170n
+preplace netloc axi_pixel_fifo_0_fifo_out_pos 1 6 1 3630 -150n
+preplace netloc axi_pixel_fifo_0_fifo_read_complete 1 4 3 2590 -80 N -80 3540
+preplace netloc axi_pixel_fifo_0_fifo_rxbuf_full 1 6 1 3560 -290n
+preplace netloc axi_pixel_fifo_0_fifo_txbuf_full 1 6 1 3550 -310n
+preplace netloc axi_pixel_fifo_0_fifo_write_complete 1 4 3 2580 -90 N -90 3530
+preplace netloc axi_pixel_fifo_0_pixel_data 1 6 1 3660 -230n
+preplace netloc axi_pixel_fifo_0_state 1 6 1 3570 -270n
+preplace netloc ilconcat_0_dout 1 4 2 NJ 1140 2970
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 260 830 670 830 1330 670 2190 530 2580J 530 3000 280 3590
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 270 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 2980 1260 3520
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 5 680 750 1350 680 2170 860 NJ 860 3090
+preplace netloc tdata 1 3 4 NJ 780 NJ 780 3010 -430 N
+preplace netloc tft_ili9341_wrapper_0_pixel_clock 1 6 1 3670 -210n
+preplace netloc tft_ili9341_wrapper_0_pixel_sync 1 6 1 3580 -190n
+preplace netloc tlast 1 3 4 NJ 820 NJ 820 3030 -410 N
+preplace netloc tvalid 1 3 4 1710J 830 NJ 830 3050 -390 N
+preplace netloc axi_demultiplexer_0_fifo_read_enable1 1 5 1 3080 380n
+preplace netloc axi_demultiplexer_0_fifo_read_enable0 1 5 1 3040 170n
+preplace netloc axi_demultiplexer_0_tready_out 1 3 4 1720 510 NJ 510 3020 -370 N
+preplace netloc axi_pixel_fifo_1_s_axis_tready 1 4 2 2590 840 3100
+preplace netloc axi_pixel_fifo_0_s_axis_tready 1 4 2 2610 110 NJ
+preplace netloc axi_pixel_fifo_1_fifo_write_complete 1 4 3 2610 500 3060J 440 3530
+preplace netloc axi_pixel_fifo_1_fifo_read_complete 1 4 3 2600 520 3070J 430 3540
+preplace netloc axi_pixel_fifo_0_core_clock_out 1 6 1 3610 45n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 2180 740n
+preplace netloc axi_ethernetlite_0_MDIO 1 6 2 3650J 1380 NJ
+preplace netloc axi_ethernetlite_0_MII 1 6 2 3590J 1340 NJ
+preplace netloc axi_pixel_fifo_1_m_pixel_stream 1 6 1 N 500
+preplace netloc axi_smc1_M00_AXI 1 4 2 NJ 960 2970
+preplace netloc axi_smc_M00_AXI 1 2 4 970J 960 1710J 1240 NJ 1240 2970
+preplace netloc axi_smc_M01_AXI 1 2 1 1340 790n
+preplace netloc processing_system7_0_DDR 1 6 2 3630J 1060 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 6 2 3650J 1110 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 690 260 NJ 260 NJ 260 NJ 260 3100 290 3550
+preplace netloc tft_ili9341_wrapper_1_m_ilispi 1 7 1 3950 480n
+preplace netloc tft_ili9341_wrapper_2_m_ilispi 1 7 1 3950 30n
+levelinfo -pg 1 -100 450 830 1530 2330 2790 3310 3810 3970
+pagesize -pg 1 -db -bbox -sgen -100 -880 4130 1480
 "
 }
 {

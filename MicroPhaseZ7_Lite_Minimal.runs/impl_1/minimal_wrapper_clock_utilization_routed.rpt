@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sun Apr 19 12:48:34 2026
+| Date         : Sun Apr 19 13:01:40 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_clock_utilization -file minimal_wrapper_clock_utilization_routed.rpt
 | Design       : minimal_wrapper
@@ -54,14 +54,14 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                      | Driver Pin                                                                                 | Net                                                                                 |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 4 |        5958 |               2 |       10.000 | clk_fpga_0                                                                                 | minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O                    | minimal_i/processing_system7_0/inst/FCLK_CLK0                                       |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 4 |        6083 |               2 |       10.000 | clk_fpga_0                                                                                 | minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O                    | minimal_i/processing_system7_0/inst/FCLK_CLK0                                       |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 1 |         461 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O                       | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                              |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 1 |          95 |               1 |       40.000 | ETH_MII_tx_clk                                                                             | minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX/O           | minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core                                     |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 1 |          90 |               0 |       40.000 | ETH_MII_rx_clk                                                                             | minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O           | minimal_i/axi_ethernetlite_0/U0/dest_clk                                            |
-| g4        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |                 1 |          63 |               0 |       10.000 | clk_fpga_0                                                                                 | minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG_inst/O                                 | minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG                                 |
-| g5        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y5  | n/a          |                 2 |          63 |               0 |       10.000 | clk_fpga_0                                                                                 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG_inst/O                                 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG                                 |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 2 |          90 |               0 |       40.000 | ETH_MII_rx_clk                                                                             | minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX/O           | minimal_i/axi_ethernetlite_0/U0/dest_clk                                            |
+| g4        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y5  | n/a          |                 1 |          63 |               0 |       10.000 | clk_fpga_0                                                                                 | minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG_inst/O                                 | minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG                                 |
+| g5        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y6  | n/a          |                 2 |          63 |               0 |       10.000 | clk_fpga_0                                                                                 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG_inst/O                                 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG                                 |
 | g6        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |                 2 |          35 |              35 |              |                                                                                            | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst/O | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
-| g7        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y6  | n/a          |                 2 |          35 |              17 |              |                                                                                            | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst/O | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
+| g7        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |                 2 |          35 |              33 |              |                                                                                            | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst/O | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -74,13 +74,13 @@ Table of Contents
 | Source Id | Global Id | Driver Type/Pin | Constraint | Site         | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock                                                                               | Driver Pin                                                                                 | Net                                                                               |
 +-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 | src0      | g0        | PS7/FCLKCLK[0]  | PS7_X0Y0   | PS7_X0Y0     | X0Y1         |           1 |               0 |              10.000 | clk_fpga_0                                                                                 | minimal_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]                                       | minimal_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                        |
-| src0      | g4        | LUT2/O          | None       | SLICE_X21Y46 | X0Y0         |           1 |               0 |              10.000 | clk_fpga_0                                                                                 | minimal_i/axi_pixel_fifo_0/inst/core_clock_out_INST_0/O                                    | minimal_i/axi_pixel_fifo_0/inst/core_clock_out                                    |
+| src0      | g4        | LUT2/O          | None       | SLICE_X22Y46 | X1Y0         |           1 |               0 |              10.000 | clk_fpga_0                                                                                 | minimal_i/axi_pixel_fifo_0/inst/core_clock_out_INST_0/O                                    | minimal_i/axi_pixel_fifo_0/inst/core_clock_out                                    |
 | src0      | g5        | LUT2/O          | None       | SLICE_X22Y46 | X1Y0         |           1 |               0 |              10.000 | clk_fpga_0                                                                                 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_INST_0/O                                    | minimal_i/axi_pixel_fifo_1/inst/core_clock_out                                    |
 | src1      | g1        | BSCANE2/TCK     | None       | BSCAN_X0Y0   | X0Y0         |           1 |               0 |              33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TCK                 |
 | src2      | g2        | IBUF/O          | IOB_X0Y56  | IOB_X0Y56    | X1Y1         |           1 |               0 |              40.000 | ETH_MII_tx_clk                                                                             | minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.TX_IBUF_INST/O            | minimal_i/axi_ethernetlite_0/U0/o                                                 |
 | src3      | g3        | IBUF/O          | IOB_X0Y76  | IOB_X0Y76    | X1Y1         |           1 |               0 |              40.000 | ETH_MII_rx_clk                                                                             | minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST/O            | minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.RX_IBUF_INST_n_0 |
-| src4      | g6        | FDRE/Q          | None       | SLICE_X20Y31 | X0Y0         |           1 |               0 |                     |                                                                                            | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg/Q             | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0    |
-| src5      | g7        | FDRE/Q          | None       | SLICE_X32Y46 | X1Y0         |           1 |               0 |                     |                                                                                            | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg/Q             | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0    |
+| src4      | g6        | FDRE/Q          | None       | SLICE_X18Y25 | X0Y0         |           1 |               0 |                     |                                                                                            | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg/Q             | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0    |
+| src5      | g7        | FDRE/Q          | None       | SLICE_X22Y33 | X1Y0         |           1 |               0 |                     |                                                                                            | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg/Q             | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0    |
 +-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -94,10 +94,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2912 |  1100 | 1213 |   400 |    0 |    20 |    9 |    10 |    0 |    20 |
-| X1Y0              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2545 |  1100 |  894 |   350 |    0 |    40 |   20 |    20 |    0 |    20 |
-| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  649 |  1100 |  209 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  315 |  1100 |  123 |   350 |    3 |    40 |    0 |    20 |    0 |    20 |
+| X0Y0              |    5 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3127 |  1100 | 1237 |   400 |    0 |    20 |    8 |    10 |    0 |    20 |
+| X1Y0              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2606 |  1100 |  822 |   350 |    0 |    40 |   20 |    20 |    0 |    20 |
+| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  554 |  1100 |  216 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  227 |  1100 |   89 |   350 |    3 |    40 |    1 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -120,7 +120,7 @@ All Modules
 +-----------+-----------------+-------------------+------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                           |
 +-----------+-----------------+-------------------+------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------+
-| g0        | BUFG/O          | n/a               | clk_fpga_0 |      10.000 | {0.000 5.000} |        5788 |        0 |              0 |        0 | minimal_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0        | BUFG/O          | n/a               | clk_fpga_0 |      10.000 | {0.000 5.000} |        5885 |        0 |              0 |        0 | minimal_i/processing_system7_0/inst/FCLK_CLK0 |
 +-----------+-----------------+-------------------+------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -131,8 +131,8 @@ All Modules
 +----+-------+-------+-----------------------+
 |    | X0    | X1    | HORIZONTAL PROG DELAY |
 +----+-------+-------+-----------------------+
-| Y1 |   556 |   220 |                     0 |
-| Y0 |  2962 |  2050 |                     0 |
+| Y1 |   477 |   131 |                     0 |
+| Y0 |  3162 |  2115 |                     0 |
 +----+-------+-------+-----------------------+
 
 
@@ -172,12 +172,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-----+----+-----------------------+
-|    | X0  | X1 | HORIZONTAL PROG DELAY |
-+----+-----+----+-----------------------+
-| Y1 |  96 |  0 |                     0 |
-| Y0 |   0 |  0 |                     - |
-+----+-----+----+-----------------------+
++----+----+-----+-----------------------+
+|    | X0 | X1  | HORIZONTAL PROG DELAY |
++----+----+-----+-----------------------+
+| Y1 |  0 |  96 |                     0 |
+| Y0 |  0 |   0 |                     - |
++----+----+-----+-----------------------+
 
 
 9. Device Cell Placement Summary for Global Clock g3
@@ -194,12 +194,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----+-----+-----------------------+
-|    | X0 | X1  | HORIZONTAL PROG DELAY |
-+----+----+-----+-----------------------+
-| Y1 |  0 |  89 |                     0 |
-| Y0 |  0 |   0 |                     - |
-+----+----+-----+-----------------------+
++----+-----+----+-----------------------+
+|    | X0  | X1 | HORIZONTAL PROG DELAY |
++----+-----+----+-----------------------+
+| Y1 |  80 |  9 |                     0 |
+| Y0 |   0 |  0 |                     - |
++----+-----+----+-----------------------+
 
 
 10. Device Cell Placement Summary for Global Clock g4
@@ -241,8 +241,8 @@ All Modules
 +----+----+-----+-----------------------+
 |    | X0 | X1  | HORIZONTAL PROG DELAY |
 +----+----+-----+-----------------------+
-| Y1 |  0 |  10 |                     0 |
-| Y0 |  0 |  53 |                     0 |
+| Y1 |  0 |   0 |                     - |
+| Y0 |  4 |  59 |                     0 |
 +----+----+-----+-----------------------+
 
 
@@ -260,12 +260,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-----+----+-----------------------+
-|    | X0  | X1 | HORIZONTAL PROG DELAY |
-+----+-----+----+-----------------------+
-| Y1 |   0 |  0 |                     - |
-| Y0 |  69 |  1 |                     0 |
-+----+-----+----+-----------------------+
++----+-----+-----+-----------------------+
+|    | X0  | X1  | HORIZONTAL PROG DELAY |
++----+-----+-----+-----------------------+
+| Y1 |   0 |   0 |                     - |
+| Y0 |  50 |  20 |                     0 |
++----+-----+-----+-----------------------+
 
 
 13. Device Cell Placement Summary for Global Clock g7
@@ -274,7 +274,7 @@ All Modules
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                 |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------+
-| g7        | BUFG/O          | n/a               |       |             |               |          52 |        0 |              0 |        0 | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
+| g7        | BUFG/O          | n/a               |       |             |               |          68 |        0 |              0 |        0 | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -282,12 +282,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----+-----+-----------------------+
-|    | X0 | X1  | HORIZONTAL PROG DELAY |
-+----+----+-----+-----------------------+
-| Y1 |  0 |   6 |                     0 |
-| Y0 |  0 |  46 |                     0 |
-+----+----+-----+-----------------------+
++----+-----+-----+-----------------------+
+|    | X0  | X1  | HORIZONTAL PROG DELAY |
++----+-----+-----+-----------------------+
+| Y1 |   0 |   0 |                     - |
+| Y0 |  35 |  33 |                     0 |
++----+-----+-----+-----------------------+
 
 
 14. Clock Region Cell Placement per Global Clock: Region X0Y0
@@ -296,9 +296,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2961 |               1 | 2815 |         137 |    9 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0                                       |
+| g0        | n/a   | BUFG/O          | None       |        3162 |               0 | 3034 |         119 |    8 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0                                       |
 | g4        | n/a   | BUFG/O          | None       |          63 |               0 |   63 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG                                 |
-| g6        | n/a   | BUFG/O          | None       |          34 |              35 |   34 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
+| g5        | n/a   | BUFG/O          | None       |           4 |               0 |    4 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG                                 |
+| g6        | n/a   | BUFG/O          | None       |          16 |              34 |   16 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
+| g7        | n/a   | BUFG/O          | None       |          10 |              25 |   10 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -311,11 +313,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2049 |               1 | 2002 |          27 |   20 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0                                       |
+| g0        | n/a   | BUFG/O          | None       |        2113 |               2 | 2045 |          48 |   20 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0                                       |
 | g1        | n/a   | BUFG/O          | None       |         458 |               0 |  458 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                              |
-| g5        | n/a   | BUFG/O          | None       |          53 |               0 |   53 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG                                 |
-| g6        | n/a   | BUFG/O          | None       |           1 |               0 |    1 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
-| g7        | n/a   | BUFG/O          | None       |          31 |              15 |   31 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
+| g5        | n/a   | BUFG/O          | None       |          59 |               0 |   59 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG                                 |
+| g6        | n/a   | BUFG/O          | None       |          19 |               1 |   19 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
+| g7        | n/a   | BUFG/O          | None       |          25 |               8 |   25 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -325,12 +327,12 @@ All Modules
 16. Clock Region Cell Placement per Global Clock: Region X0Y1
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                             |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         556 |               0 | 554 |           1 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0   |
-| g2        | n/a   | BUFG/O          | None       |          95 |               1 |  96 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                           |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         477 |               0 | 474 |           1 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0 |
+| g3        | n/a   | BUFG/O          | None       |          80 |               0 |  80 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_ethernetlite_0/U0/dest_clk      |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -339,14 +341,13 @@ All Modules
 17. Clock Region Cell Placement per Global Clock: Region X1Y1
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                 |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         220 |               0 | 212 |           0 |    3 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0                                       |
-| g3        | n/a   | BUFG/O          | None       |          89 |               0 |  89 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_ethernetlite_0/U0/dest_clk                                            |
-| g5        | n/a   | BUFG/O          | None       |          10 |               0 |  10 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG                                 |
-| g7        | n/a   | BUFG/O          | None       |           4 |               2 |   4 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                             |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         131 |               0 | 123 |           0 |    4 |   0 |  0 |    0 |   0 |       0 | minimal_i/processing_system7_0/inst/FCLK_CLK0   |
+| g2        | n/a   | BUFG/O          | None       |          95 |               1 |  96 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core |
+| g3        | n/a   | BUFG/O          | None       |           9 |               0 |   9 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | minimal_i/axi_ethernetlite_0/U0/dest_clk        |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -354,11 +355,11 @@ All Modules
 
 
 # Location of BUFG Primitives 
-set_property LOC BUFGCTRL_X0Y6 [get_cells minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y4 [get_cells minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y3 [get_cells minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y0 [get_cells minimal_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG]
-set_property LOC BUFGCTRL_X0Y5 [get_cells minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG_inst]
-set_property LOC BUFGCTRL_X0Y4 [get_cells minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y6 [get_cells minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y5 [get_cells minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y2 [get_cells minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_TX]
 set_property LOC BUFGCTRL_X0Y16 [get_cells minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX]
 set_property LOC BUFGCTRL_X0Y1 [get_cells dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck]
@@ -369,11 +370,11 @@ set_property LOC BUFGCTRL_X0Y1 [get_cells dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH
 set_property LOC IOB_X0Y76 [get_ports ETH_MII_rx_clk]
 set_property LOC IOB_X0Y56 [get_ports ETH_MII_tx_clk]
 
-# Clock net "minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG" driven by instance "minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst" located at site "BUFGCTRL_X0Y6"
+# Clock net "minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG" driven by instance "minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst" located at site "BUFGCTRL_X0Y4"
 #startgroup
 create_pblock {CLKAG_minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_minimal_i/tft_ili9341_wrapper_1/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
 # Clock net "minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG" driven by instance "minimal_i/tft_ili9341_wrapper_0/inst/nolabel_line84/frameBufferLowNibble_reg_0_BUFG_inst" located at site "BUFGCTRL_X0Y3"
@@ -390,14 +391,14 @@ add_cells_to_pblock [get_pblocks  {CLKAG_minimal_i/processing_system7_0/inst/FCL
 resize_pblock [get_pblocks {CLKAG_minimal_i/processing_system7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG" driven by instance "minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG_inst" located at site "BUFGCTRL_X0Y5"
+# Clock net "minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG" driven by instance "minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG_inst" located at site "BUFGCTRL_X0Y6"
 #startgroup
 create_pblock {CLKAG_minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_minimal_i/axi_pixel_fifo_1/inst/core_clock_out_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
-# Clock net "minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG" driven by instance "minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG_inst" located at site "BUFGCTRL_X0Y4"
+# Clock net "minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG" driven by instance "minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG_inst" located at site "BUFGCTRL_X0Y5"
 #startgroup
 create_pblock {CLKAG_minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="minimal_i/axi_pixel_fifo_0/inst/core_clock_out_BUFG"}]]]
@@ -408,14 +409,14 @@ resize_pblock [get_pblocks {CLKAG_minimal_i/axi_pixel_fifo_0/inst/core_clock_out
 #startgroup
 create_pblock {CLKAG_minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core}
 add_cells_to_pblock [get_pblocks  {CLKAG_minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core"}]]]
-resize_pblock [get_pblocks {CLKAG_minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+resize_pblock [get_pblocks {CLKAG_minimal_i/axi_ethernetlite_0/U0/phy_tx_clk_core}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "minimal_i/axi_ethernetlite_0/U0/dest_clk" driven by instance "minimal_i/axi_ethernetlite_0/U0/NO_LOOPBACK_GEN.INCLUDE_BUFG_GEN.CLOCK_BUFG_RX" located at site "BUFGCTRL_X0Y16"
 #startgroup
 create_pblock {CLKAG_minimal_i/axi_ethernetlite_0/U0/dest_clk}
 add_cells_to_pblock [get_pblocks  {CLKAG_minimal_i/axi_ethernetlite_0/U0/dest_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="minimal_i/axi_ethernetlite_0/U0/dest_clk"}]]]
-resize_pblock [get_pblocks {CLKAG_minimal_i/axi_ethernetlite_0/U0/dest_clk}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_minimal_i/axi_ethernetlite_0/U0/dest_clk}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i" driven by instance "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck" located at site "BUFGCTRL_X0Y1"

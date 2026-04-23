@@ -210,6 +210,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_tft
 # IP: bd/minimal/ip/minimal_ila_0_1/minimal_ila_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_ila_0_1 || ORIG_REF_NAME==minimal_ila_0_1} -quiet] -quiet
 
+# IP: bd/minimal/ip/minimal_axi_demultiplexer_0_0/minimal_axi_demultiplexer_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==minimal_axi_demultiplexer_0_0 || ORIG_REF_NAME==minimal_axi_demultiplexer_0_0} -quiet] -quiet
+
 # XDC: /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==minimal_processing_system7_0_0 || ORIG_REF_NAME==minimal_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 

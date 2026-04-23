@@ -87,6 +87,7 @@ read_verilog -library xil_defaultlib -sv {
 read_verilog -library xil_defaultlib {
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/tft_ili9341_wrapper.v
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_pixel_fifo.v
+  /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/new/axi_demultiplexer.v
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v
 }
 add_files /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/sources_1/bd/minimal/minimal.bd

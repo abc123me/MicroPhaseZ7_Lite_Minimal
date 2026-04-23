@@ -1,21 +1,21 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "minimal_tft_ili9341_wrapper_0_0",
-    "cell_name": "tft_ili9341_wrapper_0",
+    "xci_name": "minimal_tft_ili9341_wrapper_1_1",
+    "cell_name": "tft_ili9341_wrapper_2",
     "component_reference": "xilinx.com:module_ref:tft_ili9341_wrapper:1.0",
     "ip_revision": "1",
-    "gen_directory": "../../../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0",
+    "gen_directory": "../../../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_1_1",
     "parameters": {
       "component_parameters": {
-        "INPUT_CLK_MHZ": [ { "value": "100", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "INPUT_CLK_MHZ": [ { "value": "50", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "WIDTH": [ { "value": "320", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "HEIGHT": [ { "value": "240", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PIXEL_WIDTH": [ { "value": "16", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "Component_Name": [ { "value": "minimal_tft_ili9341_wrapper_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "minimal_tft_ili9341_wrapper_1_1", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "INPUT_CLK_MHZ": [ { "value": "100", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "INPUT_CLK_MHZ": [ { "value": "50", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "WIDTH": [ { "value": "320", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "HEIGHT": [ { "value": "240", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "PIXEL_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ]
@@ -37,7 +37,7 @@
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "1" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_0_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_1_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2025.2" } ],
@@ -85,5 +85,5 @@
       }
     }
   },
-  "checksum": "6ef5b35d"
+  "checksum": "8dd9ca5f"
 }

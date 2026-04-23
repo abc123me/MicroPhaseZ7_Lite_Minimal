@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sun Apr 19 12:47:35 2026
+| Date         : Sun Apr 19 13:00:41 2026
 | Host         : npc running 64-bit Arch Linux
 | Command      : report_utilization -file minimal_wrapper_utilization_synth.rpt -pb minimal_wrapper_utilization_synth.pb
 | Design       : minimal_wrapper
@@ -31,17 +31,17 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                | 4504 |     0 |          0 |     17600 | 25.59 |
-|   LUT as Logic             | 3981 |     0 |          0 |     17600 | 22.62 |
-|   LUT as Memory            |  523 |     0 |          0 |      6000 |  8.72 |
-|     LUT as Distributed RAM |  256 |     0 |            |           |       |
-|     LUT as Shift Register  |  267 |     0 |            |           |       |
-| Slice Registers            | 5824 |     0 |          0 |     35200 | 16.55 |
-|   Register as Flip Flop    | 5824 |     0 |          0 |     35200 | 16.55 |
+| Slice LUTs*                | 4689 |     0 |          0 |     17600 | 26.64 |
+|   LUT as Logic             | 4071 |     0 |          0 |     17600 | 23.13 |
+|   LUT as Memory            |  618 |     0 |          0 |      6000 | 10.30 |
+|     LUT as Distributed RAM |  344 |     0 |            |           |       |
+|     LUT as Shift Register  |  274 |     0 |            |           |       |
+| Slice Registers            | 5917 |     0 |          0 |     35200 | 16.81 |
+|   Register as Flip Flop    | 5917 |     0 |          0 |     35200 | 16.81 |
 |   Register as Latch        |    0 |     0 |          0 |     35200 |  0.00 |
 | F7 Muxes                   |   20 |     0 |          0 |      8800 |  0.23 |
 | F8 Muxes                   |    0 |     0 |          0 |      4400 |  0.00 |
-| Unique Control Sets        |  348 |       |          0 |      4400 |  7.91 |
+| Unique Control Sets        |  358 |       |          0 |      4400 |  8.14 |
 +----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -64,7 +64,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |          Set |
 | 171   |          Yes |           - |        Reset |
 | 220   |          Yes |         Set |            - |
-| 5433  |          Yes |       Reset |            - |
+| 5526  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -74,11 +74,11 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |   33 |     0 |          0 |        60 | 55.00 |
+| Block RAM Tile    | 33.5 |     0 |          0 |        60 | 55.83 |
 |   RAMB36/FIFO*    |   29 |     0 |          0 |        60 | 48.33 |
 |     RAMB36E1 only |   29 |       |            |           |       |
-|   RAMB18          |    8 |     0 |          0 |       120 |  6.67 |
-|     RAMB18E1 only |    8 |       |            |           |       |
+|   RAMB18          |    9 |     0 |          0 |       120 |  7.50 |
+|     RAMB18E1 only |    9 |       |            |           |       |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -155,27 +155,27 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+----------------------+
 | Ref Name | Used |  Functional Category |
 +----------+------+----------------------+
-| FDRE     | 5433 |         Flop & Latch |
-| LUT6     | 1372 |                  LUT |
-| LUT4     | 1004 |                  LUT |
-| LUT3     |  850 |                  LUT |
-| LUT5     |  773 |                  LUT |
-| LUT2     |  589 |                  LUT |
-| LUT1     |  315 |                  LUT |
+| FDRE     | 5526 |         Flop & Latch |
+| LUT6     | 1425 |                  LUT |
+| LUT4     | 1056 |                  LUT |
+| LUT3     |  866 |                  LUT |
+| LUT5     |  759 |                  LUT |
+| LUT2     |  597 |                  LUT |
+| LUT1     |  318 |                  LUT |
 | RAMD32   |  242 |   Distributed Memory |
-| SRL16E   |  229 |   Distributed Memory |
+| SRL16E   |  235 |   Distributed Memory |
 | FDSE     |  220 |         Flop & Latch |
+| RAMD64E  |  176 |   Distributed Memory |
 | FDCE     |  171 |         Flop & Latch |
-| CARRY4   |  140 |           CarryLogic |
-| SRLC32E  |  136 |   Distributed Memory |
+| CARRY4   |  143 |           CarryLogic |
+| SRLC32E  |  141 |   Distributed Memory |
 | BIBUF    |  130 |                   IO |
-| RAMD64E  |   88 |   Distributed Memory |
 | RAMS32   |   82 |   Distributed Memory |
 | RAMB36E1 |   29 |         Block Memory |
 | MUXF7    |   20 |                MuxFx |
 | OBUF     |   19 |                   IO |
 | IBUF     |   11 |                   IO |
-| RAMB18E1 |    8 |         Block Memory |
+| RAMB18E1 |    9 |         Block Memory |
 | BUFG     |    3 |                Clock |
 | SRLC16E  |    2 |   Distributed Memory |
 | PS7      |    1 | Specialized Resource |
