@@ -1,37 +1,37 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.14476",
-   "Default View_TopLeft":"-44,370",
+   "Default View_ScaleFactor":"0.729362",
+   "Default View_TopLeft":"-213,3",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 7 -x 1940 -y 910 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 7 -x 1940 -y 940 -defaultsOSRD
-preplace port ETH_MDIO -pg 1 -lvl 7 -x 1940 -y 970 -defaultsOSRD
-preplace port ETH_MII -pg 1 -lvl 7 -x 1940 -y 1000 -defaultsOSRD
-preplace port m_tftspi_0 -pg 1 -lvl 7 -x 1940 -y 340 -defaultsOSRD
-preplace port m_tftspi_1 -pg 1 -lvl 7 -x 1940 -y 160 -defaultsOSRD
-preplace port m_tftspi_2 -pg 1 -lvl 7 -x 1940 -y 640 -defaultsOSRD
-preplace port m_tftspi_3 -pg 1 -lvl 7 -x 1940 -y 780 -defaultsOSRD
-preplace port port-id_HC595_CLK -pg 1 -lvl 7 -x 1940 -y 1040 -defaultsOSRD
-preplace port port-id_HC595_SER -pg 1 -lvl 7 -x 1940 -y 1130 -defaultsOSRD
-preplace port port-id_HC595_LTC -pg 1 -lvl 7 -x 1940 -y 1100 -defaultsOSRD
-preplace port port-id_HC595_RST -pg 1 -lvl 7 -x 1940 -y 1070 -defaultsOSRD
-preplace inst ps -pg 1 -lvl 3 -x 990 -y 980 -defaultsOSRD
-preplace inst gpio74hc595_0 -pg 1 -lvl 6 -x 1780 -y 1090 -defaultsOSRD
-preplace inst axi_pixel_fifo_0 -pg 1 -lvl 2 -x 630 -y 370 -defaultsOSRD
-preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 3 -x 990 -y 360 -defaultsOSRD
-preplace inst ilconcat_0 -pg 1 -lvl 4 -x 1310 -y 250 -defaultsOSRD
-preplace inst ilconstant_1 -pg 1 -lvl 4 -x 1310 -y 410 -defaultsOSRD -resize 120 88
-preplace inst clk_wiz_0 -pg 1 -lvl 5 -x 1530 -y 1100 -defaultsOSRD
-preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 3 -x 990 -y 180 -defaultsOSRD -resize 260 118
-preplace inst tft_ili9341_wrapper_2 -pg 1 -lvl 3 -x 990 -y 660 -defaultsOSRD -resize 260 118
-preplace inst tft_ili9341_wrapper_3 -pg 1 -lvl 3 -x 990 -y 800 -defaultsOSRD -resize 260 118
-preplace inst axi_pixel_fifo_1 -pg 1 -lvl 2 -x 630 -y 190 -defaultsOSRD -resize 280 136
-preplace inst axi_pixel_fifo_2 -pg 1 -lvl 2 -x 630 -y 530 -defaultsOSRD -resize 280 136
-preplace inst axi_pixel_fifo_3 -pg 1 -lvl 2 -x 630 -y 810 -defaultsOSRD -resize 280 136
-preplace inst ilconcat_1 -pg 1 -lvl 5 -x 1530 -y 530 -defaultsOSRD
-preplace inst ilconcat_4 -pg 1 -lvl 4 -x 1310 -y 550 -defaultsOSRD -resize 160 136
+preplace port DDR -pg 1 -lvl 7 -x 1980 -y 910 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 1980 -y 940 -defaultsOSRD
+preplace port ETH_MDIO -pg 1 -lvl 7 -x 1980 -y 970 -defaultsOSRD
+preplace port ETH_MII -pg 1 -lvl 7 -x 1980 -y 1000 -defaultsOSRD
+preplace port m_tftspi_0 -pg 1 -lvl 7 -x 1980 -y 340 -defaultsOSRD
+preplace port m_tftspi_1 -pg 1 -lvl 7 -x 1980 -y 160 -defaultsOSRD
+preplace port m_tftspi_2 -pg 1 -lvl 7 -x 1980 -y 640 -defaultsOSRD
+preplace port m_tftspi_3 -pg 1 -lvl 7 -x 1980 -y 780 -defaultsOSRD
+preplace port port-id_HC595_CLK -pg 1 -lvl 7 -x 1980 -y 1040 -defaultsOSRD
+preplace port port-id_HC595_SER -pg 1 -lvl 7 -x 1980 -y 1130 -defaultsOSRD
+preplace port port-id_HC595_LTC -pg 1 -lvl 7 -x 1980 -y 1100 -defaultsOSRD
+preplace port port-id_HC595_RST -pg 1 -lvl 7 -x 1980 -y 1070 -defaultsOSRD
+preplace inst ps -pg 1 -lvl 3 -x 1010 -y 980 -defaultsOSRD
+preplace inst gpio74hc595_0 -pg 1 -lvl 6 -x 1820 -y 1090 -defaultsOSRD
+preplace inst axi_pixel_fifo_0 -pg 1 -lvl 2 -x 650 -y 370 -defaultsOSRD
+preplace inst tft_ili9341_wrapper_0 -pg 1 -lvl 3 -x 1010 -y 360 -defaultsOSRD
+preplace inst ilconcat_0 -pg 1 -lvl 4 -x 1350 -y 250 -defaultsOSRD
+preplace inst ilconstant_1 -pg 1 -lvl 4 -x 1350 -y 410 -defaultsOSRD -resize 120 88
+preplace inst clk_wiz_0 -pg 1 -lvl 5 -x 1570 -y 1100 -defaultsOSRD
+preplace inst tft_ili9341_wrapper_1 -pg 1 -lvl 3 -x 1010 -y 180 -defaultsOSRD -resize 260 118
+preplace inst tft_ili9341_wrapper_2 -pg 1 -lvl 3 -x 1010 -y 660 -defaultsOSRD -resize 260 118
+preplace inst tft_ili9341_wrapper_3 -pg 1 -lvl 3 -x 1010 -y 800 -defaultsOSRD -resize 260 118
+preplace inst axi_pixel_fifo_1 -pg 1 -lvl 2 -x 650 -y 190 -defaultsOSRD -resize 280 136
+preplace inst axi_pixel_fifo_2 -pg 1 -lvl 2 -x 650 -y 530 -defaultsOSRD -resize 280 136
+preplace inst axi_pixel_fifo_3 -pg 1 -lvl 2 -x 650 -y 810 -defaultsOSRD -resize 280 136
+preplace inst ilconcat_1 -pg 1 -lvl 5 -x 1570 -y 530 -defaultsOSRD
+preplace inst ilconcat_4 -pg 1 -lvl 4 -x 1350 -y 550 -defaultsOSRD -resize 160 136
 preplace inst ilconcat_2 -pg 1 -lvl 1 -x 220 -y 90 -defaultsOSRD -orient R180
 preplace inst ilslice_0 -pg 1 -lvl 1 -x 220 -y 360 -defaultsOSRD
 preplace inst ilslice_1 -pg 1 -lvl 1 -x 220 -y 230 -defaultsOSRD -resize 160 88
@@ -39,54 +39,54 @@ preplace inst ilslice_2 -pg 1 -lvl 1 -x 220 -y 920 -defaultsOSRD -resize 160 88
 preplace inst ilslice_3 -pg 1 -lvl 1 -x 220 -y 1030 -defaultsOSRD -resize 160 88
 preplace inst axi_fifo_sequencer_0 -pg 1 -lvl 1 -x 220 -y 620 -defaultsOSRD
 preplace netloc Net 1 0 2 20 1100 390
-preplace netloc axi_pixel_fifo_0_read_complete 1 1 2 390J 90 800
-preplace netloc axi_pixel_fifo_1_read_complete 1 1 2 NJ 100 790
-preplace netloc axi_pixel_fifo_2_read_complete 1 1 2 NJ 80 810
-preplace netloc axi_pixel_fifo_3_read_complete 1 1 2 390J 70 820
+preplace netloc axi_pixel_fifo_0_read_complete 1 1 2 390J 90 820
+preplace netloc axi_pixel_fifo_1_read_complete 1 1 2 NJ 100 810
+preplace netloc axi_pixel_fifo_2_read_complete 1 1 2 NJ 80 830
+preplace netloc axi_pixel_fifo_3_read_complete 1 1 2 390J 70 840
 preplace netloc clk_wiz_0_clk_out1 1 5 1 N 1090
 preplace netloc clk_wiz_0_locked 1 5 1 N 1110
-preplace netloc gpio74hc595_0_driver_clock 1 6 1 1920J 1040n
-preplace netloc gpio74hc595_0_driver_data 1 6 1 1920J 1120n
+preplace netloc gpio74hc595_0_driver_clock 1 6 1 1960J 1040n
+preplace netloc gpio74hc595_0_driver_data 1 6 1 1960J 1120n
 preplace netloc gpio74hc595_0_driver_latch 1 6 1 NJ 1100
-preplace netloc gpio74hc595_0_driver_resetn 1 6 1 1920J 1070n
-preplace netloc ilconcat_0_dout 1 4 1 1420 250n
-preplace netloc ilconcat_1_dout 1 5 1 1640 530n
+preplace netloc gpio74hc595_0_driver_resetn 1 6 1 1960J 1070n
+preplace netloc ilconcat_0_dout 1 4 1 1460 250n
+preplace netloc ilconcat_1_dout 1 5 1 1680 530n
 preplace netloc ilconcat_4_dout 1 4 1 N 550
-preplace netloc ilconstant_1_dout 1 4 1 1410 410n
+preplace netloc ilconstant_1_dout 1 4 1 1450 410n
 preplace netloc ilslice_0_Dout 1 1 1 420J 360n
 preplace netloc ilslice_1_Dout 1 1 1 420J 220n
-preplace netloc ilslice_2_Dout 1 1 1 460J 560n
-preplace netloc ilslice_3_Dout 1 1 1 470J 840n
-preplace netloc ps_FCLK_CLK0 1 0 5 50 840 430 720 830J 1100 1210 1110 N
-preplace netloc ps_peripheral_aresetn 1 0 5 40 850 450 1090 NJ 1090 1140 1090 N
-preplace netloc tft_ili9341_wrapper_0_tft_led 1 3 1 1150 220n
-preplace netloc tft_ili9341_wrapper_0_tft_nrst 1 3 1 1190 360n
-preplace netloc tft_ili9341_wrapper_1_tft_led 1 3 1 1210 200n
-preplace netloc tft_ili9341_wrapper_1_tft_nrst 1 3 1 1200 180n
-preplace netloc tft_ili9341_wrapper_2_tft_led 1 3 1 1160 260n
-preplace netloc tft_ili9341_wrapper_2_tft_nrst 1 3 1 1170 560n
-preplace netloc tft_ili9341_wrapper_3_tft_led 1 3 1 1180 280n
-preplace netloc tft_ili9341_wrapper_3_tft_nrst 1 3 1 1210 580n
+preplace netloc ilslice_2_Dout 1 1 1 480J 560n
+preplace netloc ilslice_3_Dout 1 1 1 490J 840n
+preplace netloc ps_FCLK_CLK0 1 0 5 50 840 450 720 850J 1100 1230 1110 N
+preplace netloc ps_peripheral_aresetn 1 0 5 40 850 470 1090 NJ 1090 1160 1090 N
+preplace netloc tft_ili9341_wrapper_0_tft_led 1 3 1 1170 220n
+preplace netloc tft_ili9341_wrapper_0_tft_nrst 1 3 1 1210 360n
+preplace netloc tft_ili9341_wrapper_1_tft_led 1 3 1 1230 200n
+preplace netloc tft_ili9341_wrapper_1_tft_nrst 1 3 1 1220 180n
+preplace netloc tft_ili9341_wrapper_2_tft_led 1 3 1 1180 260n
+preplace netloc tft_ili9341_wrapper_2_tft_nrst 1 3 1 1190 560n
+preplace netloc tft_ili9341_wrapper_3_tft_led 1 3 1 1200 280n
+preplace netloc tft_ili9341_wrapper_3_tft_nrst 1 3 1 1230 580n
 preplace netloc ilconcat_2_dout 1 0 1 30 90n
 preplace netloc axi_pixel_fifo_0_m_pixel_stream 1 2 1 N 360
 preplace netloc axi_pixel_fifo_1_m_pixel_stream 1 2 1 N 180
-preplace netloc axi_pixel_fifo_2_m_pixel_stream 1 2 1 830 520n
+preplace netloc axi_pixel_fifo_2_m_pixel_stream 1 2 1 850 520n
 preplace netloc axi_pixel_fifo_3_m_pixel_stream 1 2 1 N 800
-preplace netloc ps_DDR 1 3 4 1210J 910 NJ 910 NJ 910 NJ
-preplace netloc ps_ETH_MDIO 1 3 4 1140J 970 NJ 970 NJ 970 NJ
+preplace netloc ps_DDR 1 3 4 1230J 910 NJ 910 NJ 910 NJ
+preplace netloc ps_ETH_MDIO 1 3 4 1160J 970 NJ 970 NJ 970 NJ
 preplace netloc ps_ETH_MII 1 3 4 NJ 1000 NJ 1000 NJ 1000 NJ
 preplace netloc ps_FIXED_IO 1 3 4 NJ 940 NJ 940 NJ 940 NJ
 preplace netloc tft_ili9341_wrapper_0_m_tftspi 1 3 4 NJ 340 NJ 340 NJ 340 NJ
 preplace netloc tft_ili9341_wrapper_1_m_tftspi 1 3 4 NJ 160 NJ 160 NJ 160 NJ
 preplace netloc tft_ili9341_wrapper_2_m_tftspi 1 3 4 NJ 640 NJ 640 NJ 640 NJ
 preplace netloc tft_ili9341_wrapper_3_m_tftspi 1 3 4 NJ 780 NJ 780 NJ 780 NJ
-preplace netloc axi_fifo_sequencer_0_M00_AXIS 1 1 1 440 340n
+preplace netloc axi_fifo_sequencer_0_M00_AXIS 1 1 1 460 340n
 preplace netloc axi_fifo_sequencer_0_M01_AXIS 1 1 1 410 160n
 preplace netloc axi_fifo_sequencer_0_M02_AXIS 1 1 1 N 500
 preplace netloc axi_fifo_sequencer_0_M03_AXIS 1 1 1 410 520n
-preplace netloc ps_M_AXIS_MM2S 1 0 4 50 300 400J 60 NJ 60 1140
-levelinfo -pg 1 0 220 630 990 1310 1530 1780 1940
-pagesize -pg 1 -db -bbox -sgen 0 0 2070 1180
+preplace netloc ps_M_AXIS_MM2S 1 0 4 50 300 400J 60 NJ 60 1160
+levelinfo -pg 1 0 220 650 1010 1350 1570 1820 1980
+pagesize -pg 1 -db -bbox -sgen 0 0 2110 1190
 "
 }
 {

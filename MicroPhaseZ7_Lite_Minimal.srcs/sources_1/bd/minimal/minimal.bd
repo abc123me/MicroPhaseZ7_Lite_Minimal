@@ -4339,22 +4339,22 @@
         "ports": [
           "ps/FCLK_CLK0",
           "clk_wiz_0/clk_in1",
+          "axi_fifo_sequencer_0/axis_clock",
           "axi_pixel_fifo_0/s_axis_clock",
           "axi_pixel_fifo_1/s_axis_clock",
-          "axi_pixel_fifo_2/s_axis_clock",
           "axi_pixel_fifo_3/s_axis_clock",
-          "axi_fifo_sequencer_0/axis_clock"
+          "axi_pixel_fifo_2/s_axis_clock"
         ]
       },
       "ps_peripheral_aresetn": {
         "ports": [
           "ps/peripheral_aresetn",
           "clk_wiz_0/resetn",
+          "axi_fifo_sequencer_0/axis_aresetn",
           "axi_pixel_fifo_0/s_axis_aresetn",
           "axi_pixel_fifo_1/s_axis_aresetn",
-          "axi_pixel_fifo_2/s_axis_aresetn",
           "axi_pixel_fifo_3/s_axis_aresetn",
-          "axi_fifo_sequencer_0/axis_aresetn"
+          "axi_pixel_fifo_2/s_axis_aresetn"
         ]
       },
       "tft_ili9341_wrapper_0_tft_led": {
