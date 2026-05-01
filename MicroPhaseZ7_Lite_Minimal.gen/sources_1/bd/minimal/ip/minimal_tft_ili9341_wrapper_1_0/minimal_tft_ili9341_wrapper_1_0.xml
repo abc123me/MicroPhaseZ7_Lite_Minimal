@@ -6,9 +6,9 @@
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
-      <spirit:name>m_ilispi</spirit:name>
-      <spirit:busType spirit:vendor="kn4hji.ddns.net" spirit:library="interfaces" spirit:name="ilispi" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="kn4hji.ddns.net" spirit:library="interfaces" spirit:name="ilispi_rtl" spirit:version="1.0"/>
+      <spirit:name>m_tftspi</spirit:name>
+      <spirit:busType spirit:vendor="kn4hji.ddns.net" spirit:library="interface" spirit:name="tftspi" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="kn4hji.ddns.net" spirit:library="interface" spirit:name="tftspi_rtl" spirit:version="1.0"/>
       <spirit:master/>
       <spirit:portMaps>
         <spirit:portMap>
@@ -63,20 +63,12 @@
     </spirit:busInterface>
     <spirit:busInterface>
       <spirit:name>s_pixel_stream</spirit:name>
-      <spirit:busType spirit:vendor="kn4hji.ddns.net" spirit:library="interfaces" spirit:name="pixel_stream" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="kn4hji.ddns.net" spirit:library="interfaces" spirit:name="pixel_stream_rtl" spirit:version="1.0"/>
+      <spirit:busType spirit:vendor="kn4hji.ddns.net" spirit:library="interface" spirit:name="pixel_stream" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="kn4hji.ddns.net" spirit:library="interface" spirit:name="pixel_stream_rtl" spirit:version="1.0"/>
       <spirit:slave/>
       <spirit:portMaps>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>pixel_clock</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>pixel_clock</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
             <spirit:name>pixel_data</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
@@ -97,6 +89,22 @@
           </spirit:logicalPort>
           <spirit:physicalPort>
             <spirit:name>core_clock</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>pixel_ready</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>pixel_ready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>core_clock_en</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>core_clock_en</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -112,7 +120,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aa2a13e5</spirit:value>
+            <spirit:value>9:ed29bc63</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -124,7 +132,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:de88ea41</spirit:value>
+            <spirit:value>9:dee54442</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -135,7 +143,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:de88ea41</spirit:value>
+            <spirit:value>9:dee54442</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -146,7 +154,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:de88ea41</spirit:value>
+            <spirit:value>9:dee54442</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -162,11 +170,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 13 05:02:05 UTC 2026</spirit:value>
+            <spirit:value>Thu Apr 30 02:09:43 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aa2a13e5</spirit:value>
+            <spirit:value>9:ed29bc63</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -182,11 +190,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Apr 19 18:32:59 UTC 2026</spirit:value>
+            <spirit:value>Thu Apr 30 02:09:43 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:de88ea41</spirit:value>
+            <spirit:value>9:dee54442</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -301,7 +309,20 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>pixel_clock</spirit:name>
+        <spirit:name>core_clock_en</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>pixel_ready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>

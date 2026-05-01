@@ -1,18 +1,18 @@
-set_property SRC_FILE_INFO {cfile:/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc rfile:../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:minimal_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0.xdc rfile:../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0.xdc id:2 order:EARLY scoped_inst:minimal_i/axi_ethernetlite_0/U0} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc rfile:../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_ila_0_1/ila_v6_2/constraints/ila.xdc id:3 order:EARLY scoped_inst:minimal_i/ila_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc rfile:../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_processing_system7_0_0/minimal_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:minimal_i/ps/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0.xdc rfile:../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_axi_ethernetlite_0_0/minimal_axi_ethernetlite_0_0.xdc id:2 order:EARLY scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_clk_wiz_0_1/minimal_clk_wiz_0_1.xdc rfile:../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_clk_wiz_0_1/minimal_clk_wiz_0_1.xdc id:3 order:EARLY scoped_inst:minimal_i/clk_wiz_0/inst} [current_design]
 set_property SRC_FILE_INFO {cfile:/home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc rfile:../../../MicroPhaseZ7_Lite_Minimal.srcs/constrs_1/new/ios.xdc id:4} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:5 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:6 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:7 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:8 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:9 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:10 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:11 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:12 order:LATE scoped_inst:minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-current_instance minimal_i/processing_system7_0/inst
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:5 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:6 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:7 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:8 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:9 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:10 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:11 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../../../../opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:12 order:LATE scoped_inst:minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+current_instance minimal_i/ps/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter clk_fpga_0 0.3
+set_input_jitter clk_fpga_0 0.6
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "B15" [get_ports "MIO[45]"]
 set_property src_info {type:SCOPED_XDC file:1 line:38 export:INPUT save:INPUT read:READ} [current_design]
@@ -194,7 +194,7 @@ set_property PACKAGE_PIN "B10" [get_ports "PS_SRSTB"]
 set_property src_info {type:SCOPED_XDC file:1 line:443 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "E7" [get_ports "PS_CLK"]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0
+current_instance minimal_i/ps/axi_ethernetlite_0/U0
 set_property src_info {type:SCOPED_XDC file:2 line:65 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -scope -type CDC -id {CDC-10} -user "axi_ethernetlite" -desc "This is sustaining IP so there is no core level change hence waived" -tags "11999" -from [get_pins -of [get_cells -hier -filter {name =~ */TX/axi_phy_tx_en_i_p_reg*}] -filter {name =~ *C}] -to [get_pins -of [get_cells -hier -filter {name =~ *CDC_*/syncstages_ff_reg*}] -filter {name =~ *D}]
 set_property src_info {type:SCOPED_XDC file:2 line:67 export:INPUT save:INPUT read:READ} [current_design]
@@ -214,10 +214,12 @@ create_waiver -internal -scope -type CDC -id {CDC-10} -user "axi_ethernetlite" -
 set_property src_info {type:SCOPED_XDC file:2 line:81 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -scope -type CDC -id {CDC-10} -user "axi_ethernetlite" -desc "This is sustaining IP so there is no core level change hence waived" -tags "11999" -from [get_pins -of [get_cells -hier -filter {name =~ */TX/INST_TX_STATE_MACHINE/PRE_SFD_count/zero_i_reg*}] -filter {name =~ *C}] -to [get_pins -of [get_cells -hier -filter {name =~ *CDC_*/syncstages_ff_reg*}] -filter {name =~ *D}]
 current_instance
-current_instance minimal_i/ila_0/inst
-set_property src_info {type:SCOPED_XDC file:3 line:108 export:INPUT save:INPUT read:READ} [current_design]
-create_waiver -internal -type CDC -id {CDC-10} -user ila -tags "1191969" -description "CDC-10 waiver for DDR Calibration logic" -scope -from [get_pins -quiet -filter {REF_PIN_NAME=~*CLK} -of_objects [get_cells -hierarchical -filter {NAME =~*u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_3_allx_typeA_inst/DUT/u_srl_drive}]] -to [get_pins -quiet -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~*u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_3_allx_typeA_inst/DUT/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg}]]
+current_instance minimal_i/clk_wiz_0/inst
+set_property src_info {type:SCOPED_XDC file:3 line:54 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.200
 current_instance
+set_property src_info {type:XDC file:4 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN N18 IOSTANDARD LVCMOS33} [get_ports PL_CLK_50M]
 set_property src_info {type:XDC file:4 line:15 export:INPUT save:INPUT read:READ} [current_design]
 set_logic_zero [get_ports ETH_MII_col]
 set_property src_info {type:XDC file:4 line:16 export:INPUT save:INPUT read:READ} [current_design]
@@ -255,57 +257,73 @@ set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdi
 set_property src_info {type:XDC file:4 line:32 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN G14 IOSTANDARD LVCMOS33} [get_ports ETH_MDIO_mdc]
 set_property src_info {type:XDC file:4 line:37 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN L20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_scl]
+set_property -dict {PACKAGE_PIN W19 IOSTANDARD LVCMOS33} [get_ports HC595_SER]
 set_property src_info {type:XDC file:4 line:38 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_nrst]
+set_property -dict {PACKAGE_PIN Y19 IOSTANDARD LVCMOS33} [get_ports HC595_CLK]
 set_property src_info {type:XDC file:4 line:39 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_led]
+set_property -dict {PACKAGE_PIN W18 IOSTANDARD LVCMOS33} [get_ports HC595_LTC]
 set_property src_info {type:XDC file:4 line:40 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN L19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_sda]
-set_property src_info {type:XDC file:4 line:41 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_cs]
-set_property src_info {type:XDC file:4 line:42 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS33} [get_ports m_ilispi_0_dc]
+set_property -dict {PACKAGE_PIN Y18 IOSTANDARD LVCMOS33} [get_ports HC595_RST]
+set_property src_info {type:XDC file:4 line:44 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN Y16 IOSTANDARD LVCMOS33} [get_ports m_tftspi_0_scl]
+set_property src_info {type:XDC file:4 line:45 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN V17 IOSTANDARD LVCMOS33} [get_ports m_tftspi_0_sda]
 set_property src_info {type:XDC file:4 line:46 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN W15 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_scl]
+set_property -dict {PACKAGE_PIN W14 IOSTANDARD LVCMOS33} [get_ports m_tftspi_0_dc]
 set_property src_info {type:XDC file:4 line:47 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_nrst]
-set_property src_info {type:XDC file:4 line:48 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN U15 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_led]
-set_property src_info {type:XDC file:4 line:49 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN V15 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_sda]
-set_property src_info {type:XDC file:4 line:50 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_cs]
+set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS33} [get_ports m_tftspi_0_cs]
 set_property src_info {type:XDC file:4 line:51 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33} [get_ports m_ilispi_1_dc]
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
+set_property -dict {PACKAGE_PIN Y17 IOSTANDARD LVCMOS33} [get_ports m_tftspi_1_scl]
+set_property src_info {type:XDC file:4 line:52 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN V18 IOSTANDARD LVCMOS33} [get_ports m_tftspi_1_sda]
+set_property src_info {type:XDC file:4 line:53 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN Y14 IOSTANDARD LVCMOS33} [get_ports m_tftspi_1_dc]
+set_property src_info {type:XDC file:4 line:54 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN W16 IOSTANDARD LVCMOS33} [get_ports m_tftspi_1_cs]
+set_property src_info {type:XDC file:4 line:58 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN T17 IOSTANDARD LVCMOS33} [get_ports m_tftspi_2_scl]
+set_property src_info {type:XDC file:4 line:59 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports m_tftspi_2_sda]
+set_property src_info {type:XDC file:4 line:60 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN T14 IOSTANDARD LVCMOS33} [get_ports m_tftspi_2_dc]
+set_property src_info {type:XDC file:4 line:61 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN T11 IOSTANDARD LVCMOS33} [get_ports m_tftspi_2_cs]
+set_property src_info {type:XDC file:4 line:65 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports m_tftspi_3_scl]
+set_property src_info {type:XDC file:4 line:66 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN W13 IOSTANDARD LVCMOS33} [get_ports m_tftspi_3_sda]
+set_property src_info {type:XDC file:4 line:67 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN T15 IOSTANDARD LVCMOS33} [get_ports m_tftspi_3_dc]
+set_property src_info {type:XDC file:4 line:68 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN T10 IOSTANDARD LVCMOS33} [get_ports m_tftspi_3_cs]
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:5 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:6 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:7 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:8 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
 set_property src_info {type:SCOPED_XDC file:9 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
 set_property src_info {type:SCOPED_XDC file:10 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
 set_property src_info {type:SCOPED_XDC file:11 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance minimal_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+current_instance minimal_i/ps/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
 set_property src_info {type:SCOPED_XDC file:12 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]

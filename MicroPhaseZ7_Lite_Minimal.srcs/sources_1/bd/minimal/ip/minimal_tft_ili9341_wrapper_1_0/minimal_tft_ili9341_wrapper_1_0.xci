@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "minimal_tft_ili9341_wrapper_1_0",
-    "cell_name": "tft_ili9341_wrapper_1",
+    "cell_name": "tft_ili9341_wrapper_2",
     "component_reference": "xilinx.com:module_ref:tft_ili9341_wrapper:1.0",
     "ip_revision": "1",
     "gen_directory": "../../../../../../MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/ip/minimal_tft_ili9341_wrapper_1_0",
@@ -54,13 +54,14 @@
         "tft_led": [ { "direction": "out" } ],
         "pixel_data": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "core_clock": [ { "direction": "in" } ],
-        "pixel_clock": [ { "direction": "out" } ],
+        "core_clock_en": [ { "direction": "in" } ],
+        "pixel_ready": [ { "direction": "out" } ],
         "pixel_sync": [ { "direction": "out" } ]
       },
       "interfaces": {
-        "m_ilispi": {
-          "vlnv": "kn4hji.ddns.net:interfaces:ilispi:1.0",
-          "abstraction_type": "kn4hji.ddns.net:interfaces:ilispi_rtl:1.0",
+        "m_tftspi": {
+          "vlnv": "kn4hji.ddns.net:interface:tftspi:1.0",
+          "abstraction_type": "kn4hji.ddns.net:interface:tftspi_rtl:1.0",
           "mode": "master",
           "port_maps": {
             "sda": [ { "physical_name": "tft_sda" } ],
@@ -72,18 +73,19 @@
           }
         },
         "s_pixel_stream": {
-          "vlnv": "kn4hji.ddns.net:interfaces:pixel_stream:1.0",
-          "abstraction_type": "kn4hji.ddns.net:interfaces:pixel_stream_rtl:1.0",
+          "vlnv": "kn4hji.ddns.net:interface:pixel_stream:1.0",
+          "abstraction_type": "kn4hji.ddns.net:interface:pixel_stream_rtl:1.0",
           "mode": "slave",
           "port_maps": {
-            "pixel_clock": [ { "physical_name": "pixel_clock" } ],
             "pixel_data": [ { "physical_name": "pixel_data" } ],
             "pixel_sync": [ { "physical_name": "pixel_sync" } ],
-            "core_clock": [ { "physical_name": "core_clock" } ]
+            "core_clock": [ { "physical_name": "core_clock" } ],
+            "pixel_ready": [ { "physical_name": "pixel_ready" } ],
+            "core_clock_en": [ { "physical_name": "core_clock_en" } ]
           }
         }
       }
     }
   },
-  "checksum": "22f9f2c9"
+  "checksum": "38f5d2b7"
 }

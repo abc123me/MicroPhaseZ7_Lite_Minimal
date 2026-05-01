@@ -63,31 +63,34 @@ module minimal_tft_ili9341_wrapper_1_0 (
   tft_led,
   pixel_data,
   core_clock,
-  pixel_clock,
+  core_clock_en,
+  pixel_ready,
   pixel_sync
 );
 
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi scl" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:tftspi:1.0 m_tftspi scl" *)
 (* X_INTERFACE_MODE = "master" *)
 output wire tft_sck;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi sda" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:tftspi:1.0 m_tftspi sda" *)
 output wire tft_sda;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi dc" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:tftspi:1.0 m_tftspi dc" *)
 output wire tft_dc;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi nrst" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:tftspi:1.0 m_tftspi nrst" *)
 output wire tft_nrst;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi cs" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:tftspi:1.0 m_tftspi cs" *)
 output wire tft_cs;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:ilispi:1.0 m_ilispi led" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:tftspi:1.0 m_tftspi led" *)
 output wire tft_led;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_data" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:pixel_stream:1.0 s_pixel_stream pixel_data" *)
 (* X_INTERFACE_MODE = "slave" *)
 input wire [15 : 0] pixel_data;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream core_clock" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:pixel_stream:1.0 s_pixel_stream core_clock" *)
 input wire core_clock;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_clock" *)
-output wire pixel_clock;
-(* X_INTERFACE_INFO = "kn4hji.ddns.net:interfaces:pixel_stream:1.0 s_pixel_stream pixel_sync" *)
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:pixel_stream:1.0 s_pixel_stream core_clock_en" *)
+input wire core_clock_en;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:pixel_stream:1.0 s_pixel_stream pixel_ready" *)
+output wire pixel_ready;
+(* X_INTERFACE_INFO = "kn4hji.ddns.net:interface:pixel_stream:1.0 s_pixel_stream pixel_sync" *)
 output wire pixel_sync;
 
   tft_ili9341_wrapper #(
@@ -104,7 +107,8 @@ output wire pixel_sync;
     .tft_led(tft_led),
     .pixel_data(pixel_data),
     .core_clock(core_clock),
-    .pixel_clock(pixel_clock),
+    .core_clock_en(core_clock_en),
+    .pixel_ready(pixel_ready),
     .pixel_sync(pixel_sync)
   );
 endmodule

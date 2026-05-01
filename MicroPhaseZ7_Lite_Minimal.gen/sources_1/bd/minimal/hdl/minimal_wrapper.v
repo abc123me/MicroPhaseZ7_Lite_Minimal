@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sun Apr 19 12:58:46 2026
+//Date        : Thu Apr 30 00:48:52 2026
 //Host        : npc running 64-bit Arch Linux
 //Command     : generate_target minimal_wrapper.bd
 //Design      : minimal_wrapper
@@ -44,18 +44,26 @@ module minimal_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    m_ilispi_0_cs,
-    m_ilispi_0_dc,
-    m_ilispi_0_led,
-    m_ilispi_0_nrst,
-    m_ilispi_0_scl,
-    m_ilispi_0_sda,
-    m_ilispi_1_cs,
-    m_ilispi_1_dc,
-    m_ilispi_1_led,
-    m_ilispi_1_nrst,
-    m_ilispi_1_scl,
-    m_ilispi_1_sda);
+    HC595_CLK,
+    HC595_LTC,
+    HC595_RST,
+    HC595_SER,
+    m_tftspi_0_cs,
+    m_tftspi_0_dc,
+    m_tftspi_0_scl,
+    m_tftspi_0_sda,
+    m_tftspi_1_cs,
+    m_tftspi_1_dc,
+    m_tftspi_1_scl,
+    m_tftspi_1_sda,
+    m_tftspi_2_cs,
+    m_tftspi_2_dc,
+    m_tftspi_2_scl,
+    m_tftspi_2_sda,
+    m_tftspi_3_cs,
+    m_tftspi_3_dc,
+    m_tftspi_3_scl,
+    m_tftspi_3_sda);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -89,18 +97,26 @@ module minimal_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output m_ilispi_0_cs;
-  output m_ilispi_0_dc;
-  output m_ilispi_0_led;
-  output m_ilispi_0_nrst;
-  output m_ilispi_0_scl;
-  output m_ilispi_0_sda;
-  output m_ilispi_1_cs;
-  output m_ilispi_1_dc;
-  output m_ilispi_1_led;
-  output m_ilispi_1_nrst;
-  output m_ilispi_1_scl;
-  output m_ilispi_1_sda;
+  output HC595_CLK;
+  output HC595_LTC;
+  output HC595_RST;
+  output HC595_SER;
+  output m_tftspi_0_cs;
+  output m_tftspi_0_dc;
+  output m_tftspi_0_scl;
+  output m_tftspi_0_sda;
+  output m_tftspi_1_cs;
+  output m_tftspi_1_dc;
+  output m_tftspi_1_scl;
+  output m_tftspi_1_sda;
+  output m_tftspi_2_cs;
+  output m_tftspi_2_dc;
+  output m_tftspi_2_scl;
+  output m_tftspi_2_sda;
+  output m_tftspi_3_cs;
+  output m_tftspi_3_dc;
+  output m_tftspi_3_scl;
+  output m_tftspi_3_sda;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -138,18 +154,26 @@ module minimal_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire m_ilispi_0_cs;
-  wire m_ilispi_0_dc;
-  wire m_ilispi_0_led;
-  wire m_ilispi_0_nrst;
-  wire m_ilispi_0_scl;
-  wire m_ilispi_0_sda;
-  wire m_ilispi_1_cs;
-  wire m_ilispi_1_dc;
-  wire m_ilispi_1_led;
-  wire m_ilispi_1_nrst;
-  wire m_ilispi_1_scl;
-  wire m_ilispi_1_sda;
+  wire HC595_CLK;
+  wire HC595_LTC;
+  wire HC595_RST;
+  wire HC595_SER;
+  wire m_tftspi_0_cs;
+  wire m_tftspi_0_dc;
+  wire m_tftspi_0_scl;
+  wire m_tftspi_0_sda;
+  wire m_tftspi_1_cs;
+  wire m_tftspi_1_dc;
+  wire m_tftspi_1_scl;
+  wire m_tftspi_1_sda;
+  wire m_tftspi_2_cs;
+  wire m_tftspi_2_dc;
+  wire m_tftspi_2_scl;
+  wire m_tftspi_2_sda;
+  wire m_tftspi_3_cs;
+  wire m_tftspi_3_dc;
+  wire m_tftspi_3_scl;
+  wire m_tftspi_3_sda;
 
   IOBUF ETH_MDIO_mdio_iobuf
        (.I(ETH_MDIO_mdio_o),
@@ -192,16 +216,24 @@ module minimal_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .m_ilispi_0_cs(m_ilispi_0_cs),
-        .m_ilispi_0_dc(m_ilispi_0_dc),
-        .m_ilispi_0_led(m_ilispi_0_led),
-        .m_ilispi_0_nrst(m_ilispi_0_nrst),
-        .m_ilispi_0_scl(m_ilispi_0_scl),
-        .m_ilispi_0_sda(m_ilispi_0_sda),
-        .m_ilispi_1_cs(m_ilispi_1_cs),
-        .m_ilispi_1_dc(m_ilispi_1_dc),
-        .m_ilispi_1_led(m_ilispi_1_led),
-        .m_ilispi_1_nrst(m_ilispi_1_nrst),
-        .m_ilispi_1_scl(m_ilispi_1_scl),
-        .m_ilispi_1_sda(m_ilispi_1_sda));
+        .HC595_CLK(HC595_CLK),
+        .HC595_LTC(HC595_LTC),
+        .HC595_RST(HC595_RST),
+        .HC595_SER(HC595_SER),
+        .m_tftspi_0_cs(m_tftspi_0_cs),
+        .m_tftspi_0_dc(m_tftspi_0_dc),
+        .m_tftspi_0_scl(m_tftspi_0_scl),
+        .m_tftspi_0_sda(m_tftspi_0_sda),
+        .m_tftspi_1_cs(m_tftspi_1_cs),
+        .m_tftspi_1_dc(m_tftspi_1_dc),
+        .m_tftspi_1_scl(m_tftspi_1_scl),
+        .m_tftspi_1_sda(m_tftspi_1_sda),
+        .m_tftspi_2_cs(m_tftspi_2_cs),
+        .m_tftspi_2_dc(m_tftspi_2_dc),
+        .m_tftspi_2_scl(m_tftspi_2_scl),
+        .m_tftspi_2_sda(m_tftspi_2_sda),
+        .m_tftspi_3_cs(m_tftspi_3_cs),
+        .m_tftspi_3_dc(m_tftspi_3_dc),
+        .m_tftspi_3_scl(m_tftspi_3_scl),
+        .m_tftspi_3_sda(m_tftspi_3_sda));
 endmodule

@@ -249,7 +249,7 @@ input [5 : 0] S_AXI_HP0_AWID;
 input [5 : 0] S_AXI_HP0_WID;
 input [31 : 0] S_AXI_HP0_WDATA;
 input [3 : 0] S_AXI_HP0_WSTRB;
-input [2 : 0] IRQ_F2P;
+input [1 : 0] IRQ_F2P;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;
@@ -289,7 +289,7 @@ input PS_PORB;
     .C_S_AXI_HP2_DATA_WIDTH(64),
     .C_S_AXI_HP3_DATA_WIDTH(64),
     .C_HIGH_OCM_EN(0),
-    .C_FCLK_CLK0_FREQ(100.0),
+    .C_FCLK_CLK0_FREQ(50.0),
     .C_FCLK_CLK1_FREQ(10.0),
     .C_FCLK_CLK2_FREQ(10.0),
     .C_FCLK_CLK3_FREQ(10.0),
