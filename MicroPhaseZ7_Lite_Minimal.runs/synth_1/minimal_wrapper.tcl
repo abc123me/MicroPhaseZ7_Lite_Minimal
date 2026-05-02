@@ -78,13 +78,13 @@ set_property ip_output_repo /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv {
-  /home/jeremiah/Programming/FPGA/VivadoIP/rtl/tft_ili9341/tft_ili9341.sv
-  /home/jeremiah/Programming/FPGA/VivadoIP/rtl/tft_ili9341/tft_ili9341_spi.sv
-}
 read_verilog -library xil_defaultlib {
   /home/jeremiah/Programming/FPGA/VivadoIP/rtl/gpio74hc595/gpio74hc595.v
   /home/jeremiah/Programming/FPGA/VivadoIP/rtl/axi_pixel_fifo/axi_pixel_fifo.v
+  /home/jeremiah/Programming/FPGA/VivadoIP/rtl/bit_reverser/bit_reverser.v
+  /home/jeremiah/Programming/FPGA/VivadoIP/rtl/tft_ili9341/tft_ili9341.v
+  /home/jeremiah/Programming/FPGA/VivadoIP/rtl/tft_ili9341/tft_ili9341_init.v
+  /home/jeremiah/Programming/FPGA/VivadoIP/rtl/tft_ili9341/tft_ili9341_spi.v
   /home/jeremiah/Programming/FPGA/VivadoIP/rtl/tft_ili9341/tft_ili9341_wrapper.v
   /home/jeremiah/Programming/FPGA/VivadoIP/rtl/axi_fifo_sequencer/axi_fifo_sequencer.v
   /home/jeremiah/Programming/FPGA/Vivado/MicroPhaseZ7_Lite_Minimal/MicroPhaseZ7_Lite_Minimal.gen/sources_1/bd/minimal/hdl/minimal_wrapper.v

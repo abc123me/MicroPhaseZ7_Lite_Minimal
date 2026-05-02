@@ -104,14 +104,28 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../VivadoIP/rtl/tft_ili9341/tft_ili9341.sv">
+      <File Path="$PPRDIR/../../VivadoIP/rtl/bit_reverser/bit_reverser.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../VivadoIP/rtl/tft_ili9341/tft_ili9341_spi.sv">
+      <File Path="$PPRDIR/../../VivadoIP/rtl/tft_ili9341/tft_ili9341.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../VivadoIP/rtl/tft_ili9341/tft_ili9341_init.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../VivadoIP/rtl/tft_ili9341/tft_ili9341_spi.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
